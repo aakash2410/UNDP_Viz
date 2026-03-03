@@ -53,7 +53,15 @@ export default function MacroOverview() {
                                 <Info className="w-5 h-5" />
                             </button>
                         </h2>
-                        <p className="text-slate-500 mt-1">Multi-dimensional assessment of digital readiness parameters.</p>
+                        <p className="text-slate-500 mt-1 mb-4">Multi-dimensional assessment of digital readiness parameters.</p>
+                        <Link
+                            href="/scoring"
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 text-blue-700 font-medium text-sm rounded-lg hover:bg-blue-100 transition-colors"
+                        >
+                            <Info className="w-4 h-4" />
+                            How is scoring done?
+                            <ExternalLink className="w-3 h-3 ml-0.5 opacity-70" />
+                        </Link>
                     </div>
 
                     {/* Legend / Toggles */}
@@ -180,17 +188,7 @@ export default function MacroOverview() {
                 </div>
             </section>
 
-            {/* Additional Resources Link */}
-            <section className="max-w-6xl mx-auto mt-8 flex justify-end">
-                <Link
-                    href="/scoring"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 bg-slate-900 text-white font-medium rounded-xl hover:bg-slate-800 transition-colors shadow-sm hover:shadow-md"
-                >
-                    <Info className="w-4 h-4" />
-                    How is scoring done?
-                    <ExternalLink className="w-4 h-4 ml-1 opacity-70" />
-                </Link>
-            </section>
+
 
             {/* Country Profile Links */}
             <section className="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-8" aria-label="Country detailing profiles">
