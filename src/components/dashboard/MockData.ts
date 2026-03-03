@@ -242,7 +242,7 @@ export const cambodiaData: CountryDetailData = {
     electricityAccess: 92.3,
     internetPenetration: 60.0,
     dataCenters: '4 Commercial Data Centres',
-    politicalStability: 'Democracy Index (123/169)',
+    politicalStability: 'Authoritarian Regime - 123/169',
     electionCycles: 'Next: 2028',
     leadershipQuote: {
       text: "Building a digital economy and society is a key priority to drive new economic growth and realize the vision of becoming a high-income country by 2050.",
