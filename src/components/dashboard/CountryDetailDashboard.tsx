@@ -11,6 +11,9 @@ import { Actor, CountryDetailData, MetricCard } from './MockData';
 
 // Reusable Status Badge
 const StatusBadge = ({ status }: { status: string }) => {
+    // Extract just the core status by stripping out dashboard-specific suffixes like "- Maturing"
+    const displayStatus = status.split(' - ')[0].replace(' Early Success', '').trim();
+
     const getStyles = () => {
         const lower = status.toLowerCase();
         if (lower.includes('advanced') || lower.includes('mature') || lower.includes('maturing')) return 'bg-emerald-100 text-emerald-800 border-emerald-200';
@@ -22,7 +25,7 @@ const StatusBadge = ({ status }: { status: string }) => {
 
     return (
         <span className={`px-2.5 py-1 rounded-full text-xs font-semibold border ${getStyles()}`}>
-            {status}
+            {displayStatus}
         </span>
     );
 };
@@ -91,8 +94,13 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                     <h3 className="font-bold text-slate-800 leading-tight">{cardData.title}</h3>
                 </div>
             </div>
-            <div className="mb-4">
+            <div className="mb-4 flex flex-wrap gap-2 items-center">
                 <StatusBadge status={cardData.status} />
+                {cardData.implementationAgency && (
+                    <span className="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded-md border border-slate-200">
+                        {cardData.implementationAgency}
+                    </span>
+                )}
             </div>
             <p className="text-sm text-slate-600 mt-auto">{cardData.description}</p>
             {cardData.modalDetails && (
@@ -159,7 +167,7 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                             {/* Modal Body */}
                             <div className="p-8 space-y-6">
                                 <div>
-                                    <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500 mb-3">Historical Context</h3>
+                                    <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500 mb-3">Context/Snapshot/Overview</h3>
                                     <p className="text-slate-700 leading-relaxed text-base">
                                         {selectedMetric.modalDetails.fullContext}
                                     </p>
@@ -212,6 +220,23 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
 
             <div className="max-w-7xl mx-auto space-y-16">
 
+                {/* Top Level Leadership Quotes */}
+                {data.sectionB.leadershipQuote && (
+                    <div className="mb-12">
+                        <blockquote className="relative p-8 bg-blue-50/50 rounded-2xl border border-blue-100 transition-all hover:bg-blue-50 hover:border-blue-200">
+                            <div className="absolute -top-3 left-4 text-6xl text-blue-200/60 font-serif leading-none" aria-hidden="true">&ldquo;</div>
+                            <p className="text-xl md:text-2xl font-serif text-slate-800 leading-relaxed italic z-10 relative pl-4">
+                                {data.sectionB.leadershipQuote.text}
+                            </p>
+                            <footer className="mt-4 flex items-center gap-3 pl-4">
+                                <div className="h-px w-8 bg-emerald-400"></div>
+                                <span className="font-semibold text-slate-900">{data.sectionB.leadershipQuote.author}</span>
+                                <span className="text-slate-500 text-sm italic">&mdash; {data.sectionB.leadershipQuote.context}</span>
+                            </footer>
+                        </blockquote>
+                    </div>
+                )}
+
                 {/* SECTION A.1: Digital Public Infrastructure */}
                 <section aria-labelledby="section-dpi-title">
                     <div className="flex items-center gap-3 mb-8">
@@ -260,7 +285,17 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                 >
                     <div className="bg-white rounded-2xl border border-slate-200 p-10 shadow-sm relative overflow-hidden group hover:border-blue-200 transition-colors">
                         <div className="absolute top-0 left-0 w-1 h-full bg-blue-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <h2 id="section-b-title" className="text-2xl font-bold mb-8 border-b border-slate-100 pb-5 tracking-tight">Physical Infrastructure</h2>
+                        <div className="flex items-center justify-between mb-8 border-b border-slate-100 pb-5">
+                            <h2 id="section-b-title" className="text-2xl font-bold tracking-tight">Digital Infrastructure</h2>
+                            {data.sectionB.infraModalDetails && (
+                                <button
+                                    onClick={() => setSelectedMetric({ title: 'Digital Infrastructure', status: '', description: '', modalDetails: data.sectionB.infraModalDetails } as MetricCard)}
+                                    className="text-sm font-semibold text-blue-600 flex items-center gap-1.5 hover:text-blue-700 transition-colors bg-blue-50 px-3 py-1.5 rounded-lg hover:bg-blue-100"
+                                >
+                                    <Info className="w-4 h-4" /> View Context
+                                </button>
+                            )}
+                        </div>
 
                         <div className="space-y-8">
                             <div>
@@ -283,6 +318,18 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                                 </div>
                             </div>
 
+                            {data.sectionB.deviceAccess !== undefined && (
+                                <div>
+                                    <div className="flex justify-between items-center mb-2">
+                                        <span className="font-semibold text-slate-700">Access to Devices</span>
+                                        <span className="font-bold text-slate-900">{data.sectionB.deviceAccess}%</span>
+                                    </div>
+                                    <div className="w-full bg-slate-100 rounded-full h-3 overflow-hidden" role="progressbar" aria-valuenow={data.sectionB.deviceAccess} aria-valuemin={0} aria-valuemax={100}>
+                                        <div className="bg-indigo-500 h-3 rounded-full" style={{ width: `${data.sectionB.deviceAccess}%` }}></div>
+                                    </div>
+                                </div>
+                            )}
+
                             {data.sectionB.dataCenters && (
                                 <div>
                                     <div className="flex justify-between items-center mb-2">
@@ -298,7 +345,17 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
 
                     <div className="bg-white rounded-2xl border border-slate-200 p-10 shadow-sm relative overflow-hidden group hover:border-emerald-200 transition-colors">
                         <div className="absolute top-0 left-0 w-1 h-full bg-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <h2 className="text-2xl font-bold mb-8 border-b border-slate-100 pb-5 tracking-tight">Political Context</h2>
+                        <div className="flex items-center justify-between mb-8 border-b border-slate-100 pb-5">
+                            <h2 className="text-2xl font-bold tracking-tight">Political Context</h2>
+                            {data.sectionB.politicalModalDetails && (
+                                <button
+                                    onClick={() => setSelectedMetric({ title: 'Political Context', status: '', description: '', modalDetails: data.sectionB.politicalModalDetails } as MetricCard)}
+                                    className="text-sm font-semibold text-emerald-600 flex items-center gap-1.5 hover:text-emerald-700 transition-colors bg-emerald-50 px-3 py-1.5 rounded-lg hover:bg-emerald-100"
+                                >
+                                    <Info className="w-4 h-4" /> View Context
+                                </button>
+                            )}
+                        </div>
                         <div className="space-y-6">
                             <div className="flex gap-4">
                                 <div className="flex-shrink-0 mt-1"><Building2 className="w-5 h-5 text-slate-400" /></div>
@@ -314,18 +371,17 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                                     <p className="text-sm text-slate-600 mt-1 leading-relaxed">{data.sectionB.electionCycles}</p>
                                 </div>
                             </div>
-                            {data.sectionB.leadershipQuote && (
+                            {data.sectionB.politicalSubParameters && data.sectionB.politicalSubParameters.length > 0 && (
                                 <div className="mt-6 pt-6 border-t border-emerald-100/80">
-                                    <blockquote className="relative p-5 bg-emerald-50/50 rounded-xl border border-emerald-100 transition-all hover:bg-emerald-50">
-                                        <div className="absolute -top-1 left-2 text-5xl text-emerald-200/60 font-serif leading-none" aria-hidden="true">&ldquo;</div>
-                                        <p className="relative z-10 text-sm text-slate-700 italic leading-relaxed pl-6 pr-2">
-                                            {data.sectionB.leadershipQuote.text}
-                                        </p>
-                                        <footer className="mt-4 pl-6">
-                                            <p className="text-sm font-bold text-emerald-900">{data.sectionB.leadershipQuote.author}</p>
-                                            <p className="text-xs text-emerald-700/80 font-medium">{data.sectionB.leadershipQuote.context}</p>
-                                        </footer>
-                                    </blockquote>
+                                    <h4 className="text-sm font-bold tracking-wider text-emerald-800 uppercase mb-3">Key Indicators</h4>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        {data.sectionB.politicalSubParameters.map((param, idx) => (
+                                            <div key={idx} className="bg-emerald-50/50 p-4 rounded-xl border border-emerald-100/80">
+                                                <span className="block text-xs font-semibold text-emerald-600 uppercase tracking-wide">{param.label}</span>
+                                                <span className="block text-sm font-bold text-emerald-900 mt-1">{param.value}</span>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             )}
                         </div>
@@ -341,19 +397,10 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                     aria-labelledby="section-c-title"
                     className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden"
                 >
-                    <div className="p-8 md:p-10 border-b border-slate-100">
+                    <div className="p-8 md:p-10 border-b border-slate-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                         <div className="flex items-center gap-3">
                             <Users className="w-8 h-8 text-slate-700" />
                             <h2 id="section-c-title" className="text-3xl font-bold tracking-tight">Community & Key Actors</h2>
-                        </div>
-                        <div className="mt-3 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                            <p className="text-lg text-slate-600">Click on an organization to view their associated major initiatives and goals.</p>
-                            <button
-                                onClick={() => setAllActorsExpanded(!allActorsExpanded)}
-                                className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium rounded-lg text-sm transition-colors"
-                            >
-                                {allActorsExpanded ? 'Collapse All' : 'Expand All'}
-                            </button>
                         </div>
                     </div>
 
@@ -361,58 +408,58 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                         <table className="w-full text-left text-lg" aria-label="Community Actors">
                             <thead className="bg-slate-50/80 backdrop-blur-md sticky top-0 z-10">
                                 <tr>
-                                    <th scope="col" className="px-8 py-5 font-bold text-slate-900 border-b border-slate-200">Organization Name</th>
+                                    <th scope="col" className="px-8 py-5 font-bold text-slate-900 border-b border-slate-200 w-1/4">Organization Name</th>
                                     <th scope="col" className="px-8 py-5 font-bold text-slate-900 border-b border-slate-200">Sector</th>
-                                    <th scope="col" className="px-8 py-5 font-bold text-slate-900 border-b border-slate-200">Primary Role</th>
+                                    <th scope="col" className="px-8 py-5 font-bold text-slate-900 border-b border-slate-200 w-1/2">Major Initiatives</th>
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-slate-100">
-                                {data.sectionC.actors.map((actor: Actor) => {
-                                    const isExpanded = allActorsExpanded || expandedActorId === actor.id;
-                                    return (
-                                        <React.Fragment key={actor.id}>
-                                            <tr
-                                                className="hover:bg-blue-50/40 cursor-pointer transition-colors group"
-                                                onClick={() => {
-                                                    if (allActorsExpanded) setAllActorsExpanded(false);
-                                                    setExpandedActorId(isExpanded ? null : actor.id);
-                                                }}
-                                                aria-expanded={isExpanded}
-                                            >
-                                                <td className="px-8 py-6 font-bold text-slate-900 group-hover:text-blue-600 transition-colors">{actor.name}</td>
-                                                <td className="px-8 py-6">
-                                                    <span className="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-semibold bg-slate-100 text-slate-800 border border-slate-200">
-                                                        {actor.type}
-                                                    </span>
-                                                </td>
-                                                <td className="px-8 py-6 text-slate-700 max-w-sm truncate">{actor.role}</td>
-                                            </tr>
-                                            {/* Collapsible content (Progressive Disclosure) */}
-                                            {isExpanded && (
-                                                <tr className="bg-blue-50/20" aria-hidden={expandedActorId !== actor.id}>
-                                                    <td colSpan={3} className="px-8 py-6">
-                                                        <div className="pl-6 border-l-4 border-blue-500 py-3">
-                                                            <h5 className="font-bold text-sm uppercase tracking-wider text-slate-600 mb-3">Major Initiatives</h5>
-                                                            {actor.initiatives && actor.initiatives.length > 0 ? (
-                                                                <ul className="list-disc list-inside space-y-2 text-base text-slate-800">
-                                                                    {actor.initiatives.map((init, idx) => (
-                                                                        <li key={idx}>{init}</li>
-                                                                    ))}
-                                                                </ul>
-                                                            ) : (
-                                                                <p className="text-slate-500 italic">No explicit initiatives documented.</p>
-                                                            )}
-                                                        </div>
-                                                    </td>
-                                                </tr>
+                                {data.sectionC.actors.map((actor: Actor) => (
+                                    <tr key={actor.id} className="hover:bg-blue-50/40 transition-colors group">
+                                        <td className="px-8 py-6 font-bold text-slate-900">{actor.name}</td>
+                                        <td className="px-8 py-6">
+                                            <span className="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-semibold bg-slate-100 text-slate-800 border border-slate-200">
+                                                {actor.type}
+                                            </span>
+                                        </td>
+                                        <td className="px-8 py-6 text-slate-700">
+                                            {actor.initiatives && actor.initiatives.length > 0 ? (
+                                                <ul className="list-disc list-inside space-y-1.5 text-sm">
+                                                    {actor.initiatives.map((init, idx) => (
+                                                        <li key={idx} className="leading-relaxed">{init}</li>
+                                                    ))}
+                                                </ul>
+                                            ) : (
+                                                <span className="text-slate-500 italic text-sm">No explicit initiatives documented.</span>
                                             )}
-                                        </React.Fragment>
-                                    );
-                                })}
+                                        </td>
+                                    </tr>
+                                ))}
                             </tbody>
                         </table>
                     </div>
                 </motion.section>
+
+                {/* SECTION C.2: Funding Landscape */}
+                {data.sectionB.fundingLandscape && (
+                    <motion.section
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        transition={{ duration: 0.6 }}
+                        className="bg-emerald-50 border border-emerald-200 rounded-2xl p-8 shadow-sm flex gap-6"
+                    >
+                        <div className="flex-shrink-0 mt-1">
+                            <Building2 className="w-8 h-8 text-emerald-600" />
+                        </div>
+                        <div>
+                            <h3 className="text-xl font-bold tracking-tight text-emerald-900 mb-3">Funding Landscape</h3>
+                            <p className="text-emerald-800 leading-relaxed font-medium">
+                                {data.sectionB.fundingLandscape}
+                            </p>
+                        </div>
+                    </motion.section>
+                )}
 
                 {/* SECTION D: Strategic Insights Tabs */}
                 <motion.section
@@ -431,30 +478,30 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                     </div>
 
                     <div className="p-6 md:p-8">
-                        <div className="flex border-b border-slate-200" role="tablist">
+                        <div className="flex flex-wrap gap-4 border-b border-slate-100 pb-6" role="tablist">
                             <button
                                 role="tab"
                                 aria-selected={activeTab === 'Opportunities'}
                                 onClick={() => setActiveTab('Opportunities')}
-                                className={`flex items - center gap - 2 px - 6 py - 3 font - medium transition - colors border - b - 2 font - medium ${activeTab === 'Opportunities' ? 'border-emerald-500 text-emerald-700 bg-emerald-50/50' : 'border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50'} `}
+                                className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all shadow-sm border-2 ${activeTab === 'Opportunities' ? 'border-emerald-500 text-emerald-800 bg-emerald-100' : 'border-slate-200 text-slate-500 hover:bg-slate-50 hover:text-slate-700 hover:border-emerald-200'}`}
                             >
-                                <TrendingUp className="w-4 h-4" /> Emerging Opportunities
+                                <TrendingUp className="w-5 h-5" /> Emerging Opportunities
                             </button>
                             <button
                                 role="tab"
                                 aria-selected={activeTab === 'Risks'}
                                 onClick={() => setActiveTab('Risks')}
-                                className={`flex items - center gap - 2 px - 6 py - 3 font - medium transition - colors border - b - 2 font - medium ${activeTab === 'Risks' ? 'border-rose-500 text-rose-700 bg-rose-50/50' : 'border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50'} `}
+                                className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all shadow-sm border-2 ${activeTab === 'Risks' ? 'border-rose-500 text-rose-800 bg-rose-100' : 'border-slate-200 text-slate-500 hover:bg-slate-50 hover:text-slate-700 hover:border-rose-200'}`}
                             >
-                                <AlertCircle className="w-4 h-4" /> Potential Risks
+                                <AlertCircle className="w-5 h-5" /> Potential Risks
                             </button>
                             <button
                                 role="tab"
                                 aria-selected={activeTab === 'Partnerships'}
                                 onClick={() => setActiveTab('Partnerships')}
-                                className={`flex items - center gap - 2 px - 6 py - 3 font - medium transition - colors border - b - 2 font - medium ${activeTab === 'Partnerships' ? 'border-blue-500 text-blue-700 bg-blue-50/50' : 'border-transparent text-slate-500 hover:text-slate-700 hover:bg-slate-50'} `}
+                                className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold transition-all shadow-sm border-2 ${activeTab === 'Partnerships' ? 'border-blue-500 text-blue-800 bg-blue-100' : 'border-slate-200 text-slate-500 hover:bg-slate-50 hover:text-slate-700 hover:border-blue-200'}`}
                             >
-                                <Handshake className="w-4 h-4" /> Partnerships
+                                <Handshake className="w-5 h-5" /> Partnerships
                             </button>
                         </div>
 
@@ -483,6 +530,31 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                     </div>
                 </motion.section>
 
+                {/* SECTION E: Information Sources */}
+                {data.sources && data.sources.length > 0 && (
+                    <motion.section
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        transition={{ duration: 0.6 }}
+                        aria-labelledby="section-sources-title"
+                        className="bg-slate-50/50 rounded-2xl p-8 shadow-sm border border-slate-200 mt-12"
+                    >
+                        <h2 id="section-sources-title" className="text-xl font-bold tracking-tight text-slate-800 border-b border-slate-200 pb-4 mb-6">Information Sources</h2>
+                        <ul className="space-y-3">
+                            {data.sources.map((link, idx) => (
+                                <li key={idx} className="flex gap-3">
+                                    <div className="flex-shrink-0 mt-1">
+                                        <Globe className="w-4 h-4 text-slate-400" />
+                                    </div>
+                                    <a href={link} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 text-sm font-medium hover:underline break-all">
+                                        {link}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </motion.section>
+                )}
             </div>
         </div>
     );
