@@ -173,19 +173,21 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                                     </p>
                                 </div>
 
-                                <div className="bg-blue-50/50 p-6 rounded-2xl border border-blue-100">
-                                    <h3 className="text-sm font-bold uppercase tracking-wider text-blue-800 mb-4">Key Metrics & Milestones</h3>
-                                    <ul className="space-y-3">
-                                        {selectedMetric.modalDetails.keyMetrics.map((point, idx) => (
-                                            <li key={idx} className="flex gap-3">
-                                                <div className="flex-shrink-0 mt-1">
-                                                    <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
-                                                </div>
-                                                <span className="text-slate-700 font-medium">{point}</span>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
+                                {selectedMetric.modalDetails.keyMetrics && selectedMetric.modalDetails.keyMetrics.length > 0 && (
+                                    <div className="bg-blue-50/50 p-6 rounded-2xl border border-blue-100">
+                                        <h3 className="text-sm font-bold uppercase tracking-wider text-blue-800 mb-4">Key Metrics & Milestones</h3>
+                                        <ul className="space-y-3">
+                                            {selectedMetric.modalDetails.keyMetrics.map((point, idx) => (
+                                                <li key={idx} className="flex gap-3">
+                                                    <div className="flex-shrink-0 mt-1">
+                                                        <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                                                    </div>
+                                                    <span className="text-slate-700 font-medium">{point}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
                             </div>
                         </motion.div>
                     </motion.div>

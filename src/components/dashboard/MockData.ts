@@ -100,25 +100,36 @@ export const malaysiaData: CountryDetailData = {
     digitalId: {
       title: 'Digital ID', status: 'Implemented (Maturing)', description: 'MyDigital ID (8.7M users)', implementationAgency: 'My Digital ID Sdn Bhd',
       modalDetails: {
-        fullContext: "MyDigital ID was formally launched in 2024 with an RM80 million allocation, managed by My Digital ID Sdn Bhd and the Ministry of Digital. It serves as the national foundation for verified digital interactions.",
-        keyMetrics: ["8.7 million registered users (~33% adoption)", "RM80.0M central budget allocation", "Used as unified SSO across 10 ministry portals"],
-        timeline: "Launched 2024"
+        fullContext: "MyDigital ID (RM80M budget) is a secure, government digital identity solution facilitating access to online portals via single sign-on. It references government databases for identity verification without storing any personal data.",
+        keyMetrics: [
+          "RM80 million budget allocation",
+          "Registration began in 2024 via MyGOV Malaysia",
+          "Identity verification without storing personal data"
+        ],
+        timeline: ""
       }
     },
     payments: {
       title: 'Digital Payments', status: 'Implemented', description: 'DuitNow (5.3 bn transactions)', implementationAgency: 'PayNet',
       modalDetails: {
-        fullContext: "Implemented initially via the Real-time Retail Payments Platform, DuitNow (managed by PayNet) operates as the primary sovereign retail payment rail, bridging fragmented banking architectures and achieving massive national saturation.",
-        keyMetrics: ["5.3 billion transactions processed in 2024", "RM5.4 Trillion in transaction value", "Near-universal banking integration"],
-        timeline: "Launched 2018"
+        fullContext: "The Real-time Retail Payments Platform (RPP), launched in 2018 and operated by PayNet, is a fast payment system enabling real-time, data-rich transactions among Malaysian consumers, businesses, and government agencies.",
+        keyMetrics: [
+          "Real-time Retail Payments Platform (RPP) launched in 2018",
+          "Enables real-time, data-rich payments between accounts",
+          "Operated by PayNet (merger of MEPS and MyClear)"
+        ],
+        timeline: ""
       }
     },
     dataExchange: {
       title: 'Data Exchange', status: 'Implemented', description: 'MYGDX (35 million transactions)', implementationAgency: 'MAMPU',
       modalDetails: {
-        fullContext: "The Malaysia Government Central Data Exchange (MYGDX) is a secure, API-driven data brokerage platform preventing data duplication across ministries and facilitating immediate citizen services.",
-        keyMetrics: ["35 million successful transactions", "125 unique agencies integrated", "Hosts 262 distinct data services"],
-        timeline: "Launched 2020"
+        fullContext: "The Malaysian Government Central Data Exchange (MyGDX) is a secure data-sharing ecosystem allowing classified data to be coordinated efficiently across ministries, reducing integration costs and empowering data-driven governance.",
+        keyMetrics: [
+          "Enhances end-to-end (E2E) online services towards a data-driven government",
+          "Reduces cost of infrastructure and system integration"
+        ],
+        timeline: ""
       }
     },
   },
@@ -126,33 +137,50 @@ export const malaysiaData: CountryDetailData = {
     policy: {
       title: 'AI Strategy', status: 'Implemented', description: 'Malaysia Artificial Intelligence Roadmap 2021-2025', implementationAgency: 'Malaysian National AI Office (NAIO)',
       modalDetails: {
-        fullContext: "Malaysia's Artificial Intelligence Roadmap 2021-2025 outlines the strategic policy.",
-        keyMetrics: ["Roadmap 2021-2025"],
-        timeline: "Implemented"
+        fullContext: "Malaysia\'s AI Roadmap 2021-2025 (MOSTI) aims to augment jobs, drive national competitiveness, and encourage innovation. Outcomes focus on establishing governance, advancing R&D, and fostering AI talents securely.",
+        keyMetrics: [
+          "Malaysia's Artificial Intelligence Roadmap 2021-2025",
+          "Aims to augment jobs and drive national competitiveness",
+          "Six envisioned outcomes including AI governance, R&D, and talent"
+        ],
+        timeline: ""
       }
     },
     governance: {
       title: 'AI Governance', status: 'Implemented', description: 'National Guidelines on AI Governance and Ethics (AIGE)', implementationAgency: 'Malaysian National AI Office (NAIO)',
       modalDetails: {
-        fullContext: "The following guidelines are currently being used: National Guidelines on AI Governance and Ethics (AIGE).",
-        keyMetrics: ["AIGE Guidelines active"],
-        timeline: "Implemented"
+        fullContext: "Regulated via the National Guidelines on AI Governance and Ethics (AIGE) and ASEAN AI guides. Structured across Users, Regulators, and Developers, it is built on 7 principles including fairness, reliability, and human-centricity.",
+        keyMetrics: [
+          "Built on 7 AI Principles including fairness, reliability, and human-centricity",
+          "Structured across three levels: Users, Regulators, and Developers",
+          "Guided by National Guidelines (AIGE) and ASEAN AI guide"
+        ],
+        timeline: ""
       }
     },
     legislation: {
       title: 'Data Legislation', status: 'Implemented', description: 'Data Protection and Privacy Laws', implementationAgency: 'Department of Personal Data Protection',
       modalDetails: {
-        fullContext: "Data Protection and Privacy Laws including the Electronic and Postal regulatory frameworks.",
-        keyMetrics: ["Data Protection laws active"],
-        timeline: "Implemented"
+        fullContext: "Governed prominently by the Personal Data Protection Act (PDPA) 2010 (amended 2024) alongside the Computer Crimes Act 1997. The JPDP oversees enforcement, achieving a dynamic legal framework score of 4.17/5 in privacy.",
+        keyMetrics: [
+          "Personal Data Protection (Amendment) Act 2024 addresses privacy",
+          "Score of 4.17/5 in data and privacy (UNDP Digital Development Compass)",
+          "Score of 5/5 in cybersecurity (UNDP Digital Development Compass)"
+        ],
+        timeline: ""
       }
     },
     initiatives: {
       title: 'Government AI Initiatives', status: 'Active', description: 'AI in Healthcare & Digital Hospitals', implementationAgency: 'Ministry of Health',
       modalDetails: {
-        fullContext: "Initiatives include AI in Healthcare through the establishment of Digital Hospitals.",
-        keyMetrics: ["AI in Healthcare"],
-        timeline: "Ongoing"
+        fullContext: "Healthcare commands primary focus with initiatives like MySejahtera (Public Health Gateway), DR MATA (Diabetic Retinopathy Screening), Cof\'e (Cough Sound Screening), and CODIC-MY (Remote Monitoring).",
+        keyMetrics: [
+          "MySejahtera: Public Health Digital Gateway",
+          "DR MATA: AI-Based Diabetic Retinopathy Screening",
+          "Cof’e: AI-Driven Cough Sound Screening for COVID-19",
+          "CODIC-MY: AI-Powered Remote Monitoring"
+        ],
+        timeline: ""
       }
     },
   },
@@ -213,25 +241,32 @@ export const cambodiaData: CountryDetailData = {
     digitalId: {
       title: 'Digital ID', status: 'Implemented (Early Success)', description: 'CamDigiKey (86k Users)', implementationAgency: 'MEF',
       modalDetails: {
-        fullContext: "Launched by the Ministry of Economy and Finance in 2019, CamDigiKey is Cambodia’s national platform for verified e-kyc, though adoption presently leans heavily toward business-related government services over retail civilian use.",
-        keyMetrics: ["86,000 active users", "Managed by MEF", "Primary driver for business e-services"],
-        timeline: "Launched 2019"
+        fullContext: "Digital identity is prioritized in Phase 1 (2021-2025) of the Cambodia Digital Economy Policy Framework, focusing on the successful deployment of E-ID alongside digital payment gateways and robust cybersecurity laws.",
+        keyMetrics: [
+          "Targeted in Phase 1 (2021-2025) of the Digital Economy Framework",
+          "Focus restricted to foundational E-ID and payment gateways"
+        ],
+        timeline: ""
       }
     },
     payments: {
       title: 'Digital Payments', status: 'Implemented', description: 'Bakong (60% adult population)', implementationAgency: 'NBC',
       modalDetails: {
-        fullContext: "Bakong is Cambodia's flagship sovereign digital payment system. Operating on blockchain-inspired quasi-decentralised ledgers under the National Bank of Cambodia, it successfully synthesized mobile payments nationwide.",
-        keyMetrics: ["Reaches 60% of the adult population", "Operates across local banks and e-wallets", "Blockchain-enabled architecture"],
-        timeline: "Launched 2020"
+        fullContext: "Bakong operates as a primary, DPI-like overarching digital payments infrastructure.",
+        keyMetrics: [
+          "Bakong identified as primary DPI-like digital payment mechanism"
+        ],
+        timeline: ""
       }
     },
     dataExchange: {
       title: 'Data Exchange', status: 'Implemented', description: 'CamDX', implementationAgency: 'Techo Startup Center',
       modalDetails: {
-        fullContext: "CamDX acts as the unified data exchange layer for the Cambodian government, notably powering systems like Verify.gov.kh for secure government document verification.",
-        keyMetrics: ["Managed by MEF", "Powers Verify.gov.kh", "Core to Cambodian e-gov architecture"],
-        timeline: "Launched 2020"
+        fullContext: "CamDigiKey acts as a foundational, DPI-like digital identity system facilitating governmental digital exchange.",
+        keyMetrics: [
+          "CamDigiKey listed as primary DPI-like digital ID and exchange mechanism"
+        ],
+        timeline: ""
       }
     },
   },
@@ -239,33 +274,48 @@ export const cambodiaData: CountryDetailData = {
     policy: {
       title: 'AI Strategy', status: 'Drafted', description: 'National AI Strategy 2025-30', implementationAgency: 'N/A',
       modalDetails: {
-        fullContext: "National AI Strategy 2025-30 is in the draft stage.",
-        keyMetrics: ["Draft 2025-30 stage"],
-        timeline: "Drafted"
+        fullContext: "The Draft National AI Strategy 2025-30 aims to transform Cambodia into a skillful AI adopter. It focuses on developing human capital, digital government excellence, Khmer-language LLM inclusion, and sovereign HPC data centers.",
+        keyMetrics: [
+          "Draft National AI Strategy 2025-30",
+          "Establishing a National AI and Data Science Lab",
+          "Strategic push for Khmer Large Language Model (LLM)"
+        ],
+        timeline: ""
       }
     },
     governance: {
       title: 'AI Governance', status: 'Drafted', description: 'AI Readiness Assessment', implementationAgency: 'N/A',
       modalDetails: {
-        fullContext: "Cambodia scored 55 out of 100 in the Artificial Intelligence Readiness Assessment, with drafts of Legislation on Personal Data Protection and Cybersecurity yet to pass.",
-        keyMetrics: ["Score: 55/100 (AI Readiness)"],
-        timeline: "Drafted"
+        fullContext: "Cambodia pursues a \'soft law\' approach guided by UNESCO RAM and ASEAN standards. The MPTC oversees efforts to foster a human-centered, rights-based governance ecosystem with drafts for Cybersecurity and Data Protection pending.",
+        keyMetrics: [
+          "Scored 55 out of 100 in UNESCO AI Readiness Assessment",
+          "Implementing a 'soft law' approach guided by UNESCO RAM",
+          "Foundational laws on Data Protection and Cybersecurity pending"
+        ],
+        timeline: ""
       }
     },
     legislation: {
       title: 'Data Legislation', status: 'Drafted', description: 'Data protection and Privacy regulation', implementationAgency: 'N/A',
       modalDetails: {
-        fullContext: "Low amount of Data protection and Privacy regulation. Sector Specific AI Regulations haven't been proposed yet; sweeping legislation is in draft.",
-        keyMetrics: ["Regulations in draft stage"],
-        timeline: "Drafted"
+        fullContext: "Currently operating on a limited privacy framework. Sub-Decree 252 applies exclusively to Ministry of Interior identification data. A broader Draft Law on Personal Data Protection was pushed for public consultation in July 2025.",
+        keyMetrics: [
+          "Sub-Decree 252 applies only to Ministry of Interior identification data",
+          "Draft Law on Personal Data Protection released for public consultation (July 2025)"
+        ],
+        timeline: ""
       }
     },
     initiatives: {
       title: 'Government AI Initiatives', status: 'Early Success', description: 'National Research Center on AI & Landmine mapping', implementationAgency: 'CMAC & MPTC',
       modalDetails: {
-        fullContext: "As part of the draft of the National AI Strategy, Cambodia has created the National Research Center on AI for Education, while for practical uses, Landmine detection tools using AI are being built.",
-        keyMetrics: ["National Research Center on AI", "Landmine detection tools"],
-        timeline: "Active"
+        fullContext: "Key projects include the National Research Center on AI for Education, AI-based Landmine detection tools aimed at achieving a landmine-free status by 2030, and a Khmer-based LLM building on open-source frameworks.",
+        keyMetrics: [
+          "National Research Center on AI for Education inaugurated (Nov 2025)",
+          "AI-assisted Landmine detection targeting a landmine-free status by 2030",
+          "Developing an open-source Khmer Large Language Model with Singapore"
+        ],
+        timeline: ""
       }
     },
   },
@@ -326,25 +376,34 @@ export const philippinesData: CountryDetailData = {
     digitalId: {
       title: 'Digital ID', status: 'Implemented', description: 'PhilSys / PhilID', implementationAgency: 'PSA & BSP',
       modalDetails: {
-        fullContext: "PhilSys / PhilID acts as the sovereign foundational identification framework.",
-        keyMetrics: ["Implemented"],
-        timeline: "Active"
+        fullContext: "The Philippine Identification System (PhilSys) administers the PhilID and a unique biometric-supported identification number. Driven by the Philippine Statistics Authority, it streamlines transactions strictly under Data Privacy Act safeguards.",
+        keyMetrics: [
+          "PhilSys issues unique identification number supported by biometric data",
+          "Administered by the Philippine Statistics Authority"
+        ],
+        timeline: ""
       }
     },
     payments: {
       title: 'Digital Payments', status: 'Implemented', description: 'PhilPASSPlus, InstaPay, PESONet', implementationAgency: 'PSA & BSP',
       modalDetails: {
-        fullContext: "PhilPASSPlus is governed centrally alongside commercial payment rails like InstaPay, PESONet & QR Ph.",
-        keyMetrics: ["PhilPASSPlus", "InstaPay", "PESONet"],
-        timeline: "Active"
+        fullContext: "PhilPaSSplus constitutes the BSP-operated real-time gross settlement system. It enables high-value interbank fund transfers and market settlements, strengthening payment system resilience and national liquidity management.",
+        keyMetrics: [
+          "PhilPaSSplus enables real time high-value interbank fund transfers",
+          "Operated by the Bangko Sentral ng Pilipinas"
+        ],
+        timeline: ""
       }
     },
     dataExchange: {
       title: 'Data Exchange', status: 'Implemented', description: 'eGovDX', implementationAgency: 'DICT',
       modalDetails: {
-        fullContext: "eGovDX serves as the primary data exchange integration layer.",
-        keyMetrics: ["eGovDX active"],
-        timeline: "Active"
+        fullContext: "The eGovDX platform (DICT) enables interoperable inter-agency data sharing. Complementary retail payments rely on InstaPay, PESONet, and QR Ph for real-time, low-cost financial fund routing.",
+        keyMetrics: [
+          "eGovDX enables interoperable data sharing among government agencies",
+          "InstaPay, PESONet, and QR Ph facilitate electronic fund transfers"
+        ],
+        timeline: ""
       }
     },
   },
@@ -352,33 +411,50 @@ export const philippinesData: CountryDetailData = {
     policy: {
       title: 'AI Strategy', status: 'Adopted', description: 'National Artificial Intelligence Strategy', implementationAgency: 'DTI',
       modalDetails: {
-        fullContext: "Adopted, National Artificial Intelligence Strategy.",
-        keyMetrics: ["Adopted"],
-        timeline: "Implemented"
+        fullContext: "The National AI Strategy Roadmap (NAISR) 2.0 targets boosting R&D spending to 1.0% GDP. It centers on the Center for AI Research (CAIR) to orchestrate sustainable agriculture, resilience, and large-scale workforce upskilling.",
+        keyMetrics: [
+          "National AI Strategy Roadmap (NAISR) 2.0 targets 1.0% of GDP R&D spending",
+          "Aims to boost economy by up to PHP 2.6 trillion annually",
+          "Launched the Center for AI Research (CAIR)"
+        ],
+        timeline: ""
       }
     },
     governance: {
       title: 'AI Governance', status: 'Drafted', description: 'Senate Bill no 25', implementationAgency: 'Senate',
       modalDetails: {
-        fullContext: "Draft, Pending Appoval for Senate Bill no 25 and others.",
-        keyMetrics: ["Senate Bill 25 pending"],
-        timeline: "Planned"
+        fullContext: "Senate Bill No. 25 (AI Regulation Act) is pending. It proposes a National AI Commission, an AI Ethics Review Board, risk-based system classifications, and strict labor protections requiring advanced notification of AI workplace integration.",
+        keyMetrics: [
+          "Senate Bill No. 25 proposes a National AI Commission",
+          "Mandates risk-based classification of AI systems",
+          "Requires employers to provide advance notification for AI integration"
+        ],
+        timeline: ""
       }
     },
     legislation: {
       title: 'Data Legislation', status: 'Implemented', description: 'Data Privacy Act', implementationAgency: 'NPC',
       modalDetails: {
-        fullContext: "The Philippines’ data protection regime is governed by the national Data Privacy Act.",
-        keyMetrics: ["Data Privacy Act"],
-        timeline: "Implemented"
+        fullContext: "The Data Privacy Act of 2012 (enforced by the National Privacy Commission) strictly regulates personal data processing, mandating lawful bases like consent, strict confidentiality, and 72-hour breach notifications.",
+        keyMetrics: [
+          "Governed by the Data Privacy Act of 2012 (Republic Act No. 10173)",
+          "Regulated by the independent National Privacy Commission",
+          "Requires 72-hour breach notification where risk of harm exists"
+        ],
+        timeline: ""
       }
     },
     initiatives: {
       title: 'Government AI Initiatives', status: 'Active', description: 'AI-4RP & SkAI-Pinas', implementationAgency: 'DOST',
       modalDetails: {
-        fullContext: "AI-4RP (AI Weather Forecasting & Disaster Resilience) and SkAI-Pinas & ASTI-ALaM among others.",
-        keyMetrics: ["AI Weather Forecasting", "SkAI-Pinas"],
-        timeline: "Active"
+        fullContext: "Over 12 major projects, including AI-4RP (weather forecasting), iTANONG (natural language government queries), AI traffic signaling by the MMDA, the National Data Lakehouse, and a ₱1.5 Billion national AI upskilling allocation.",
+        keyMetrics: [
+          "₱1.5 Billion national allocation for AI Upskilling Initiative",
+          "Digital Bayanihan Chain (Blockchain for National Budget Transparency)",
+          "AI-4RP AI-enhanced weather forecasting with DOST-ASTI",
+          "National Data Lakehouse under GATES Program"
+        ],
+        timeline: ""
       }
     },
   },
@@ -441,25 +517,34 @@ export const bangladeshData: CountryDetailData = {
     digitalId: {
       title: 'Digital ID', status: 'Implemented', description: 'National ID', implementationAgency: 'Ministry of Home Affairs',
       modalDetails: {
-        fullContext: "The National ID system in Bangladesh managed by the Ministry of Home Affairs is heavily integrated. Youth aged 16 or above are now eligible for NID cards and services, expanding the reach of the e-KYC infrastructure.",
-        keyMetrics: ["Tk 70.63 crore allocated for 2026-27", "Youth aged 16+ eligible", "Managed by Ministry of Home Affairs"],
-        timeline: "Launched 2016"
+        fullContext: "The National ID is a microchip-embedded smart card featuring a unique 10-digit National Identification Number (NIN). It is historically foundational for verifying access to banking, mobile registration, and voting.",
+        keyMetrics: [
+          "National ID is a smart card featuring a unique 10-digit NIN",
+          "90 million NID cards achieved by 2018 under World Bank IDEAS Project"
+        ],
+        timeline: ""
       }
     },
     payments: {
       title: 'Digital Payments', status: 'Implemented', description: 'National Payment Switch Bangladesh', implementationAgency: 'Bangladesh Bank',
       modalDetails: {
-        fullContext: "The National Payment Switch Bangladesh (NPSB) facilitates interoperability among banks and MFS providers, setting standardised transfer fees to accelerate adoption.",
-        keyMetrics: ["Managed by Bangladesh Bank", "Standardized transfer fees", "Cross-bank interoperability limit established"],
-        timeline: "Launched 2012"
+        fullContext: "Operational since 2012, the National Payment Switch (NPSB) allows seamless, structured fund routing from customers to banks to Mobile Financial Services (MFS) with strictly regulated transfer rates.",
+        keyMetrics: [
+          "National Payment Switch Bangladesh (NPSB) operational since 2012",
+          "Fees regulated at Tk 1.5 per Tk 1,000 (Bank-to-MFS)"
+        ],
+        timeline: ""
       }
     },
     dataExchange: {
       title: 'Data Exchange', status: 'Implemented', description: 'National E-Service Bus & Doptor', implementationAgency: 'BNEA',
       modalDetails: {
-        fullContext: "The National E-Service Bus managed by the Bangladesh National Enterprise Architecture (BNEA) provides secure interoperability. Meanwhile, Doptor offers over 10 services and 40 applications to 14,000+ public offices.",
-        keyMetrics: ["E-Service Bus used by 15 government agencies", "Doptor serves 140k users", "Scalable interoperability framework"],
-        timeline: "National E-Service Bus launched 2019"
+        fullContext: "The National E-Service Bus connects roughly 15 government agencies (e.g. NID, agricultural ministries) by standardizing API specifications and operational technical capacity for consolidated service delivery.",
+        keyMetrics: [
+          "National E-Service Bus used by ~15 government agencies (Aug 2025)",
+          "World Bank assisting with API standardization and capacity building"
+        ],
+        timeline: ""
       }
     },
   },
@@ -467,33 +552,47 @@ export const bangladeshData: CountryDetailData = {
     policy: {
       title: 'AI Strategy', status: 'Drafted', description: 'National AI Policy Bangladesh 2026-30', implementationAgency: 'Ministry of ICT',
       modalDetails: {
-        fullContext: "Vision: To develop an ethical and innovative environment for the use and development of AI to accelerate Bangladesh’s path towards a middle-income country, as outlined in the Vision 2041 master plan.",
-        keyMetrics: ["Aligned with Vision 2041", "Establishes a Smart Bangladesh", "Promotes economic growth"],
-        timeline: "Drafted"
+        fullContext: "The Draft National AI Policy 2026-30 envisions a \'Smart Bangladesh\' mapped across Smart Government, Society, Economy, and Citizen. It focuses on elevating global AI readiness and ethical compliance.",
+        keyMetrics: [
+          "National AI Policy 2026-30 (Draft V2.0)",
+          "4 Pillars: Smart Government, Smart Society, Smart Economy, Smart Citizen",
+          "Aligned with the Vision 2041 master plan"
+        ],
+        timeline: ""
       }
     },
     governance: {
       title: 'AI Governance', status: 'Absent', description: '-', implementationAgency: 'N/A',
       modalDetails: {
-        fullContext: "No formal AI Governance frameworks or regulations currently exist independently of the drafted AI Policy.",
-        keyMetrics: ["None"],
-        timeline: "-"
+        fullContext: "Governance targets are woven into the AI Policy drafting mechanisms to institute ethical oversight, secure compliance mandates, and champion innovation strictly within the public sector.",
+        keyMetrics: [
+          "Objectives mandate ethical and secure AI governance and compliance"
+        ],
+        timeline: ""
       }
     },
     legislation: {
       title: 'Data Legislation', status: 'Implemented', description: 'Personal Data Protection Ordinance', implementationAgency: 'Ministry of ICT',
       modalDetails: {
-        fullContext: "Vision: Make provisions for processing personal data ensuring privacy, confidentiality and security. Mission: Creating a unified framework that aligns with international standards.",
-        keyMetrics: ["Citizen focused control", "Consent based processes", "Digital sovereignty"],
-        timeline: "Implemented"
+        fullContext: "The Personal Data Protection Ordinance 2025 intends to establish a unified data framework prioritizing citizen-focused control, consent-based operational processes, and overarching digital sovereignty.",
+        keyMetrics: [
+          "Personal Data Protection Ordinance (2025)",
+          "Recognizes personal data as a personal right of the data-subject",
+          "Prioritizes citizen-focused control and consent-based processes"
+        ],
+        timeline: ""
       }
     },
     initiatives: {
       title: 'Government AI Initiatives', status: 'Early Success', description: 'MyGov, Kagoj AI & EBLICT', implementationAgency: 'Ministry of ICT',
       modalDetails: {
-        fullContext: "MyGov is a one-stop access point for 172 digitised services. Kagoj AI is the first AI platform for Bangla. EBLICT is a joint initiative increasing Bengali inclusion for AI.",
-        keyMetrics: ["172 digitised services on MyGov", "Kagoj AI for Bangla NLP", "EBLICT for R&D"],
-        timeline: "Active"
+        fullContext: "Prominent deployments include \'MyGov\' (centralizing 172 digitized services) and \'Kagoj AI\' (Bangladesh’s first Bangla-language AI processing platform enhancing dual-language digitized writing).",
+        keyMetrics: [
+          "MyGov platform centralizes 172 digitized services across 7 sectors",
+          "Kagoj AI supports AI-driven language processing in Bangla",
+          "EBLICT initiative to increase inclusion of Bengali for AI development"
+        ],
+        timeline: ""
       }
     },
   },
@@ -552,33 +651,85 @@ export const nepalData: CountryDetailData = {
   dpiEcosystem: {
     digitalId: {
       title: 'Digital ID', status: 'Implemented (Maturing)', description: 'Rastriya Parichaya Patra', implementationAgency: 'Department of National ID',
-      modalDetails: { fullContext: "As of 2025, over 17 million people have been registered which is about 57% of the population and approximately 6 million cards have been printed. The government has started making it mandatory for banking and services.", keyMetrics: ["17 million people registered", "Mandatory in 28 districts for pensions", "97% of local govts online"], timeline: "Launched 2018" }
+      modalDetails: {
+        fullContext: "The Rastriya Parichaya Patra (National Identity) integrates closely with the Nagarik App. It is mandated for vital events, banking, and social security across millions, though physical KYC authentication hurdles remain common.",
+        keyMetrics: [
+          "Rastriya Parichaya Patra registered over 17 million people (57% of population)",
+          "Mandated in 28 districts for access to pensions and health insurance",
+          "Integrated with the Nagarik App"
+        ],
+        timeline: ""
+      }
     },
     payments: {
       title: 'Digital Payments', status: 'Implemented', description: 'National Payments Interface (NPI)', implementationAgency: 'Nepal Rastra Bank',
-      modalDetails: { fullContext: "National Payments Interface (NPI) is the consolidated set of APIs of multiple payment systems hosted by NCHL. Fonepay Payment Service Ltd is the largest interoperable network licensed by the Central Bank. In 2024/25, NCHL processed 186M transactions.", keyMetrics: ["186M+ transactions in 2024/25", "Rs 98.43 trillion total transaction value", "Interoperable with UPI Nepal"], timeline: "Launched 2019" }
+      modalDetails: {
+        fullContext: "The National Payments Interface (NPI) consolidates APIs across public payment systems (NCHL-IPS, RPS). Operated by Nepal Clearing House Limited, it handles immense trading volumes encompassing nearly 90% of government expenses.",
+        keyMetrics: [
+          "National Payments Interface (NPI) handles ~90% of government digital expenses",
+          "Processed 186 million transactions in 2024/25",
+          "QR payments accepted by over 2 million merchants (117% volume growth)"
+        ],
+        timeline: ""
+      }
     },
     dataExchange: {
       title: 'Data Exchange', status: 'Pipeline', description: 'Government Cloud', implementationAgency: 'MoCIT',
-      modalDetails: { fullContext: "The government of Nepal has partnered with cloud service providers to build infrastructure. The Government Integrated Data Center (GIDC) is operational but data exchange is manual and siloed.", keyMetrics: ["GIDC operational", "Nepal National Single Window (NNSW) central hub"], timeline: "Pipeline" }
+      modalDetails: {
+        fullContext: "Inter-agency data interoperability predominantly rides the rails of the National Payments Interface stack to orchestrate real-time financial clearing routes.",
+        keyMetrics: [
+          "Operates an Open API platform concept via the National Payments Interface"
+        ],
+        timeline: ""
+      }
     },
   },
   aiEcosystem: {
     policy: {
       title: 'AI Strategy', status: 'Implemented', description: 'National AI Policy 2025', implementationAgency: 'MoCIT',
-      modalDetails: { fullContext: "Vision: To build a human-Centered, ethical, and prosperous Nepal through AI. Goals include producing 5k skilled human resources within 5 years and establishing AI Excellence Centres.", keyMetrics: ["5k skilled workers target", "AI Excellence centers in all provinces", "Increase AI literary"], timeline: "Implemented 2025" }
+      modalDetails: {
+        fullContext: "The National AI Policy 2025 strives to dramatically elevate socio-economic development, boost IT GDP contributions by 1%, train 5,000 AI professionals, establish provincial AI centers, and achieve universal AI literacy.",
+        keyMetrics: [
+          "National AI Policy 2025 aims to increase IT sector GDP contribution by 1%",
+          "Goal to produce 5,000 skilled AI human resources within 5 years",
+          "Establish AI Excellence Centres across all provinces"
+        ],
+        timeline: ""
+      }
     },
     governance: {
       title: 'AI Governance', status: 'Implemented', description: 'National AI Policy 2025', implementationAgency: 'MoCIT',
-      modalDetails: { fullContext: "The Nepal government embedded ethical AI principles and AI Governance within the broader National AI Policy 2025 framework rather than as a standalone legislation.", keyMetrics: ["Tied exclusively to AI Policy 2025"], timeline: "Implemented 2025" }
+      modalDetails: {
+        fullContext: "Directly embedded inside the overarching AI Policy objectives to orchestrate a sustainable, reliable, and secure AI ecosystem bridging public service delivery systems.",
+        keyMetrics: [
+          "Goal to improve Nepal’s position within the top 50 in Global Government AI Readiness",
+          "Build a sustainable and reliable AI ecosystem"
+        ],
+        timeline: ""
+      }
     },
     legislation: {
       title: 'Data Legislation', status: 'Implemented', description: 'National Cyber Security Policy 2023', implementationAgency: 'MoCIT',
-      modalDetails: { fullContext: "To ensure information and data security through developing legal and institutional structure. Goal: to increase Global Cyber Security Index score from 44.99% to 80% in 15 years.", keyMetrics: ["Goal: 80% GCR Index score", "Establish legal framework"], timeline: "Implemented 2023" }
+      modalDetails: {
+        fullContext: "Governed dynamically by the National Cyber Security Policy 2023, which aims to protect critical national infrastructure and aggressively scale Nepal\'s Global Cyber Security Index to 80% over 15 years.",
+        keyMetrics: [
+          "National Cyber Security Policy 2023",
+          "Goal to increase Global Cyber Security Index score to 80% within 15 years",
+          "Aims to protect critical national infrastructure"
+        ],
+        timeline: ""
+      }
     },
     initiatives: {
       title: 'Government AI Initiatives', status: 'Early Success', description: 'Lalitpur Traffic & SITA', implementationAgency: 'Ministry of Health / LMC',
-      modalDetails: { fullContext: "Lalitpur Metropolitan City uses an AI-based intelligent traffic light system. SITA, developed with UNFPA, is an AI platform to rapidly analyse massive national datasets (e.g. NDHS).", keyMetrics: ["Intelligent traffic lights active", "SITA analyzing national datasets", "Plantsat Nepal in Agri in use"], timeline: "Active" }
+      modalDetails: {
+        fullContext: "Implementations encompass a pioneering AI-based intelligent traffic light grid in Lalitpur City and the \'SITA\' AI platform which analyzes immense demographic datasets to instantly generate actionable, human-quality narrative insights.",
+        keyMetrics: [
+          "SITA AI platform developed with UNFPA to rapidly analyze national datasets",
+          "AI-based intelligent traffic light system deployed in Lalitpur Metropolitan City"
+        ],
+        timeline: ""
+      }
     },
   },
   sectionB: {
