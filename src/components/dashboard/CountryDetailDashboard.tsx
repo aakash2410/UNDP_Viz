@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import {
     Network, Zap, CheckCircle2, AlertCircle, Clock,
-    Map, Activity, Users, Building2, Lightbulb, TrendingUp, Handshake, Globe, ShieldCheck, FileText, Cpu, ArrowLeft, X, Info
+    Map, Activity, Users, Building2, Lightbulb, TrendingUp, Handshake, Globe, ShieldCheck, FileText, Cpu, ArrowLeft, X, Info, Radio, Landmark
 } from 'lucide-react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import Link from 'next/link';
@@ -275,29 +275,31 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                 </section>
 
                 {/* SECTION B: Infrastructure & Politics */}
-                <motion.section
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-50px" }}
-                    transition={{ duration: 0.6 }}
-                    aria-labelledby="section-b-title"
-                    className="grid lg:grid-cols-2 gap-10"
-                >
-                    <div className="bg-white rounded-2xl border border-slate-200 p-10 shadow-sm relative overflow-hidden group hover:border-blue-200 transition-colors">
-                        <div className="absolute top-0 left-0 w-1 h-full bg-blue-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <div className="flex items-center justify-between mb-8 border-b border-slate-100 pb-5">
-                            <h2 id="section-b-title" className="text-2xl font-bold tracking-tight">Digital Infrastructure</h2>
-                            {data.sectionB.infraModalDetails && (
-                                <button
-                                    onClick={() => setSelectedMetric({ title: 'Digital Infrastructure', status: '', description: '', modalDetails: data.sectionB.infraModalDetails } as MetricCard)}
-                                    className="text-sm font-semibold text-blue-600 flex items-center gap-1.5 hover:text-blue-700 transition-colors bg-blue-50 px-3 py-1.5 rounded-lg hover:bg-blue-100"
-                                >
-                                    <Info className="w-4 h-4" /> View Context
-                                </button>
-                            )}
+                {/* SECTION B.1: Digital Infrastructure */}
+                <section aria-labelledby="section-infra-title">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+                        <div className="flex items-center gap-3">
+                            <Radio className="w-8 h-8 text-indigo-600" />
+                            <h2 id="section-infra-title" className="text-3xl font-bold tracking-tight">Digital Infrastructure</h2>
                         </div>
-
-                        <div className="space-y-8">
+                        {data.sectionB.infraModalDetails && (
+                            <button
+                                onClick={() => setSelectedMetric({ title: 'Digital Infrastructure', status: '', description: '', modalDetails: data.sectionB.infraModalDetails } as MetricCard)}
+                                className="text-sm font-semibold text-indigo-600 flex items-center gap-1.5 hover:text-indigo-700 transition-colors bg-indigo-50 px-3 py-1.5 rounded-lg hover:bg-indigo-100 w-fit"
+                            >
+                                <Info className="w-4 h-4" /> View Context
+                            </button>
+                        )}
+                    </div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        transition={{ duration: 0.6 }}
+                        className="bg-white rounded-2xl border border-slate-200 p-8 md:p-10 shadow-sm relative overflow-hidden group hover:border-indigo-200 transition-colors"
+                    >
+                        <div className="absolute top-0 left-0 w-1 h-full bg-indigo-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div className="space-y-8 max-w-3xl">
                             <div>
                                 <div className="flex justify-between items-center mb-3">
                                     <span className="text-lg font-semibold text-slate-700">Access to Electricity</span>
@@ -341,22 +343,34 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                                 </div>
                             )}
                         </div>
-                    </div>
+                    </motion.div>
+                </section>
 
-                    <div className="bg-white rounded-2xl border border-slate-200 p-10 shadow-sm relative overflow-hidden group hover:border-emerald-200 transition-colors">
-                        <div className="absolute top-0 left-0 w-1 h-full bg-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <div className="flex items-center justify-between mb-8 border-b border-slate-100 pb-5">
-                            <h2 className="text-2xl font-bold tracking-tight">Political Context</h2>
-                            {data.sectionB.politicalModalDetails && (
-                                <button
-                                    onClick={() => setSelectedMetric({ title: 'Political Context', status: '', description: '', modalDetails: data.sectionB.politicalModalDetails } as MetricCard)}
-                                    className="text-sm font-semibold text-emerald-600 flex items-center gap-1.5 hover:text-emerald-700 transition-colors bg-emerald-50 px-3 py-1.5 rounded-lg hover:bg-emerald-100"
-                                >
-                                    <Info className="w-4 h-4" /> View Context
-                                </button>
-                            )}
+                {/* SECTION B.2: Political Context */}
+                <section aria-labelledby="section-political-title">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+                        <div className="flex items-center gap-3">
+                            <Landmark className="w-8 h-8 text-emerald-600" />
+                            <h2 id="section-political-title" className="text-3xl font-bold tracking-tight">Political Context</h2>
                         </div>
-                        <div className="space-y-6">
+                        {data.sectionB.politicalModalDetails && (
+                            <button
+                                onClick={() => setSelectedMetric({ title: 'Political Context', status: '', description: '', modalDetails: data.sectionB.politicalModalDetails } as MetricCard)}
+                                className="text-sm font-semibold text-emerald-600 flex items-center gap-1.5 hover:text-emerald-700 transition-colors bg-emerald-50 px-3 py-1.5 rounded-lg hover:bg-emerald-100 w-fit"
+                            >
+                                <Info className="w-4 h-4" /> View Context
+                            </button>
+                        )}
+                    </div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        transition={{ duration: 0.6 }}
+                        className="bg-white rounded-2xl border border-slate-200 p-8 md:p-10 shadow-sm relative overflow-hidden group hover:border-emerald-200 transition-colors"
+                    >
+                        <div className="absolute top-0 left-0 w-1 h-full bg-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div className="space-y-6 max-w-4xl">
                             <div className="flex gap-4">
                                 <div className="flex-shrink-0 mt-1"><Building2 className="w-5 h-5 text-slate-400" /></div>
                                 <div>
@@ -372,21 +386,21 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                                 </div>
                             </div>
                             {data.sectionB.politicalSubParameters && data.sectionB.politicalSubParameters.length > 0 && (
-                                <div className="mt-6 pt-6 border-t border-emerald-100/80">
-                                    <h4 className="text-sm font-bold tracking-wider text-emerald-800 uppercase mb-3">Key Indicators</h4>
+                                <div className="mt-8 pt-8 border-t border-emerald-100/80">
+                                    <h4 className="text-sm font-bold tracking-wider text-emerald-800 uppercase mb-4">Key Indicators & Capacities</h4>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                         {data.sectionB.politicalSubParameters.map((param, idx) => (
                                             <div key={idx} className="bg-emerald-50/50 p-4 rounded-xl border border-emerald-100/80">
                                                 <span className="block text-xs font-semibold text-emerald-600 uppercase tracking-wide">{param.label}</span>
-                                                <span className="block text-sm font-bold text-emerald-900 mt-1">{param.value}</span>
+                                                <span className="block text-sm font-medium text-emerald-900 mt-1.5 leading-relaxed">{param.value}</span>
                                             </div>
                                         ))}
                                     </div>
                                 </div>
                             )}
                         </div>
-                    </div>
-                </motion.section>
+                    </motion.div>
+                </section>
 
                 {/* SECTION C: Ecosystem Actors Map */}
                 <motion.section
