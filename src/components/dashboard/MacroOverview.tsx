@@ -29,8 +29,8 @@ export default function MacroOverview() {
             {/* Hero Section */}
             <header className="mb-16 max-w-5xl mx-auto text-center">
                 <div className="flex flex-wrap items-center justify-center mb-10 pt-4 opacity-90">
-                    <div className="flex items-center justify-center border-r border-slate-300 pr-6 md:pr-10 text-3xl font-extrabold tracking-tight text-blue-900">
-                        UNDP
+                    <div className="flex items-center justify-center border-r border-slate-300 pr-6 md:pr-10">
+                        <img src="/undp-logo.png" alt="UNDP Logo" className="h-20 md:h-25 w-auto object-contain" />
                     </div>
                     <div className="border-r border-slate-300 px-6 md:px-10 flex items-center justify-center">
                         <img src="/artha-logo.png" alt="Artha Global Logo" className="h-10 md:h-14 w-auto object-contain" />
