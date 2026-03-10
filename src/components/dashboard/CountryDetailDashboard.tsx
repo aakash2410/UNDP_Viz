@@ -523,24 +523,40 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
 
                         <div className="pt-6" role="tabpanel">
                             <ul className="space-y-4">
-                                {activeTab === 'Opportunities' && data.sectionD.opportunities.map(item => (
-                                    <li key={item.id} className="flex gap-4 bg-emerald-50/30 p-5 rounded-2xl border border-emerald-100">
-                                        <div className="mt-1"><CheckCircle2 className="w-6 h-6 text-emerald-600" /></div>
-                                        <p className="text-slate-800 leading-relaxed text-base">{highlightKeyMetrics(item.text)}</p>
-                                    </li>
-                                ))}
-                                {activeTab === 'Risks' && data.sectionD.risks.map(item => (
-                                    <li key={item.id} className="flex gap-4 bg-rose-50/30 p-5 rounded-2xl border border-rose-100">
-                                        <div className="mt-1"><AlertCircle className="w-6 h-6 text-rose-600" /></div>
-                                        <p className="text-slate-800 leading-relaxed text-base">{highlightKeyMetrics(item.text)}</p>
-                                    </li>
-                                ))}
-                                {activeTab === 'Partnerships' && data.sectionD.partnerships.map(item => (
-                                    <li key={item.id} className="flex gap-4 bg-blue-50/30 p-5 rounded-2xl border border-blue-100">
-                                        <div className="mt-1"><Handshake className="w-6 h-6 text-blue-600" /></div>
-                                        <p className="text-slate-800 leading-relaxed text-base">{highlightKeyMetrics(item.text)}</p>
-                                    </li>
-                                ))}
+                                {activeTab === 'Opportunities' ? (
+                                    data.sectionD.opportunities.length > 0 ? (
+                                        data.sectionD.opportunities.map(item => (
+                                            <li key={item.id} className="flex gap-4 bg-emerald-50/30 p-5 rounded-2xl border border-emerald-100">
+                                                <div className="mt-1"><CheckCircle2 className="w-6 h-6 text-emerald-600" /></div>
+                                                <p className="text-slate-800 leading-relaxed text-base">{highlightKeyMetrics(item.text)}</p>
+                                            </li>
+                                        ))
+                                    ) : (
+                                        <li className="flex gap-4 bg-emerald-50/30 p-5 rounded-2xl border border-emerald-100 italic text-slate-500">Data Pending: Information will be updated in the upcoming cycle.</li>
+                                    )
+                                ) : activeTab === 'Risks' ? (
+                                    data.sectionD.risks.length > 0 ? (
+                                        data.sectionD.risks.map(item => (
+                                            <li key={item.id} className="flex gap-4 bg-rose-50/30 p-5 rounded-2xl border border-rose-100">
+                                                <div className="mt-1"><AlertCircle className="w-6 h-6 text-rose-600" /></div>
+                                                <p className="text-slate-800 leading-relaxed text-base">{highlightKeyMetrics(item.text)}</p>
+                                            </li>
+                                        ))
+                                    ) : (
+                                        <li className="flex gap-4 bg-rose-50/30 p-5 rounded-2xl border border-rose-100 italic text-slate-500">Data Pending: Information will be updated in the upcoming cycle.</li>
+                                    )
+                                ) : activeTab === 'Partnerships' ? (
+                                    data.sectionD.partnerships.length > 0 ? (
+                                        data.sectionD.partnerships.map(item => (
+                                            <li key={item.id} className="flex gap-4 bg-blue-50/30 p-5 rounded-2xl border border-blue-100">
+                                                <div className="mt-1"><Handshake className="w-6 h-6 text-blue-600" /></div>
+                                                <p className="text-slate-800 leading-relaxed text-base">{highlightKeyMetrics(item.text)}</p>
+                                            </li>
+                                        ))
+                                    ) : (
+                                        <li className="flex gap-4 bg-blue-50/30 p-5 rounded-2xl border border-blue-100 italic text-slate-500">Data Pending: Information will be updated in the upcoming cycle.</li>
+                                    )
+                                ) : null}
                             </ul>
                         </div>
                     </div>

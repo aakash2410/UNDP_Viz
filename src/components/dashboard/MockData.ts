@@ -774,9 +774,22 @@ export const nepalData: CountryDetailData = {
     ],
   },
   sectionD: {
-    opportunities: [{ id: 'no1', text: 'Data Pending: Information will be updated in the upcoming cycle.' }],
-    risks: [{ id: 'nr1', text: 'Data Pending: Information will be updated in the upcoming cycle.' }],
-    partnerships: [{ id: 'np1', text: 'Data Pending: Information will be updated in the upcoming cycle.' }],
+    opportunities: [
+      { id: 'nepal-o1', text: 'Nepal Digital Transformation Project: World Bank approved a $50m loan that aims to strengthen Nepal’s digital public infrastructure and improve the delivery and use of inclusive, high-impact digital government services.' },
+      { id: 'nepal-o2', text: 'Broadband and Data Infrastructure Expansion: IFC, Standard Chartered Bank Nepal Limited, and WorldLink Communications Ltd. partner on $29 million project to expand connectivity, create jobs, and drive economic growth.' }
+    ],
+    risks: [
+      { id: 'nepal-r1', text: 'GIDC lacks resources which results in outages/breaches: Government Integrated Data Center (GIDC) is understaffed and lacks resources including technical infrastructure which led to outages and data loss across 10–15 agencies in 2023.' },
+      { id: 'nepal-r2', text: 'Weak Systems and Limited Uptake: DPI understanding remains low beyond central ministries, limiting sectoral uptake. Nepal scores 0.439 on the GovTech Index, reflecting weak systems and skills across government.' },
+      { id: 'nepal-r3', text: 'Data Protection Landscape: The 2024 Draft Cyber Bill has been criticised for potentially enabling government surveillance and censorship — especially through a proposed national internet gateway — while lacking strong privacy safeguards and adequate public consultation.' }
+    ],
+    partnerships: [
+      { id: 'nepal-p1', text: 'Strengthening of GDIC: UNDP could support the institutional strengthening of the Government Integrated Data Center (GIDC) by helping design operational standards, cybersecurity protocols, and workforce capacity programmes for digital infrastructure management.' },
+      { id: 'nepal-p2', text: 'Focused Capacity-Building Across High-Priority Ministries: Since DPI understanding remains concentrated within central ministries, UNDP could run capacity-building programmes for specific ministries to increase adoption of digital systems.' },
+      { id: 'nepal-p3', text: 'Supporting Rights-Based Data Governance: With concerns around the 2024 Draft Cyber Bill, UNDP could facilitate multi-stakeholder dialogue and technical assistance on data protection and cybersecurity legislation, ensuring alignment with international norms.' },
+      { id: 'nepal-p4', text: 'Given Nepal’s focus on digital infrastructure expansion, there is scope for the country to become a part of the 50-in-5 initiative.' }
+    ]
   },
+
   sources: ["https://nepaleconomicforum.org/a-view-on-the-national-ai-policy/", "https://asiapacific.unfpa.org/en/news/sita-nepals-new-ai-tool-could-change-how-country-uses-data", "https://www.datacentermap.com/nepal/", "https://nagarikapp.gov.np/", "https://www.nepjol.info/index.php/njes2/article/view/82964/63413", "https://susasan.org/tools", "https://www.myrepublica.nagariknetwork.com/amp/news/national-id-backlog-details-of-20m-collected-only-75m-cards-printed-19-46.html#:~:text=Listen,Related%20story", "https://english.nepalnews.com/s/business/nepals-digital-transactions-hit-rs-98-43-trillion-in-fy-2024-25/", "https://nasc.org.np/sites/default/files/IT%20Infrastructure%20report.pdf", "https://www.wipo.int/gii-ranking/en/indicators/313", "https://carnegieendowment.org/russia-eurasia/research/2025/09/nepal-gen-z-topple-government", "https://risingnepaldaily.com/news/66941", "https://www.britishcouncil.org.np/sites/default/files/nepal_cso_landsape_study_final_report.pdf", "https://nexus.ingroupe.com/nepals-national-pki-relies-on-nexus", "https://digitalrightsnepal.org/wp-content/uploads/2025/05/Final-2022_organized.pdf", "https://www.digitalpublicgoods.net/r/rahat", "https://nta.gov.np/uploads/contents/MIS%202079%20Magh.pdf", "https://www.undp.org/nepal/funding-delivery", "https://www.worldbank.org/en/news/press-release/2026/02/09/nepal-world-bank-approves-50-million-digital-transformation-project", "https://docs.google.com/document/d/1fkS-vL6lOiX4vC5YfVEqGEmiGCafAZE8zq9ZgcYeDvA/edit?tab=t.wcy24r1uwpnr", "https://english.biznessnews.com/posts/nepal-to-resign-world-bank-loan-for-digital-transformation-"]
 };
