@@ -116,7 +116,8 @@ export const malaysiaData: CountryDetailData = {
         keyMetrics: [
           "Real-time Retail Payments Platform (RPP) launched in 2018",
           "Enables real-time, data-rich payments between accounts",
-          "Operated by PayNet (merger of MEPS and MyClear)"
+          "Operated by PayNet (merger of MEPS and MyClear)",
+          "5.3 billion transactions recorded in 2024, representing RM5.4T transaction value"
         ],
         timeline: ""
       }
@@ -127,7 +128,8 @@ export const malaysiaData: CountryDetailData = {
         fullContext: "The Malaysian Government Central Data Exchange (MyGDX) is a secure data-sharing ecosystem allowing classified data to be coordinated efficiently across ministries, reducing integration costs and empowering data-driven governance.",
         keyMetrics: [
           "Enhances end-to-end (E2E) online services towards a data-driven government",
-          "Reduces cost of infrastructure and system integration"
+          "Reduces cost of infrastructure and system integration",
+          "MyGDX currently supports 657 users and 35 million transactions"
         ],
         timeline: ""
       }
@@ -141,7 +143,8 @@ export const malaysiaData: CountryDetailData = {
         keyMetrics: [
           "Malaysia's Artificial Intelligence Roadmap 2021-2025",
           "Aims to augment jobs and drive national competitiveness",
-          "Six envisioned outcomes including AI governance, R&D, and talent"
+          "Six envisioned outcomes including AI governance, R&D, and talent",
+          "RM285M allocated to MOSTI for AI governance and RM10M for National AI Office (NAIO) in 2025 Budget"
         ],
         timeline: ""
       }
@@ -244,7 +247,8 @@ export const cambodiaData: CountryDetailData = {
         fullContext: "Digital identity is prioritized in Phase 1 (2021-2025) of the Cambodia Digital Economy Policy Framework, focusing on the successful deployment of E-ID alongside digital payment gateways and robust cybersecurity laws.",
         keyMetrics: [
           "Targeted in Phase 1 (2021-2025) of the Digital Economy Framework",
-          "Focus restricted to foundational E-ID and payment gateways"
+          "Focus restricted to foundational E-ID and payment gateways",
+          "CamDigiKey adoption currently stands at ~86,000 users"
         ],
         timeline: ""
       }
@@ -264,7 +268,8 @@ export const cambodiaData: CountryDetailData = {
       modalDetails: {
         fullContext: "CamDigiKey acts as a foundational, DPI-like digital identity system facilitating governmental digital exchange.",
         keyMetrics: [
-          "CamDigiKey listed as primary DPI-like digital ID and exchange mechanism"
+          "CamDigiKey listed as primary DPI-like digital ID and exchange mechanism",
+          "Verify.gov Cambodia successfully integrated for national government document verification"
         ],
         timeline: ""
       }
@@ -278,7 +283,8 @@ export const cambodiaData: CountryDetailData = {
         keyMetrics: [
           "Draft National AI Strategy 2025-30",
           "Establishing a National AI and Data Science Lab",
-          "Strategic push for Khmer Large Language Model (LLM)"
+          "Strategic push for Khmer Large Language Model (LLM)",
+          "AI Strategy is integrated into the $10.1B national budget, targeting an R&D rise from current 0.09% GDP"
         ],
         timeline: ""
       }
@@ -379,7 +385,8 @@ export const philippinesData: CountryDetailData = {
         fullContext: "The Philippine Identification System (PhilSys) administers the PhilID and a unique biometric-supported identification number. Driven by the Philippine Statistics Authority, it streamlines transactions strictly under Data Privacy Act safeguards.",
         keyMetrics: [
           "PhilSys issues unique identification number supported by biometric data",
-          "Administered by the Philippine Statistics Authority"
+          "Administered by the Philippine Statistics Authority",
+          "90.02 Million registered users (~80% of population) utilizing PhilSys backed by a ₱30B budget"
         ],
         timeline: ""
       }
@@ -390,7 +397,8 @@ export const philippinesData: CountryDetailData = {
         fullContext: "PhilPaSSplus constitutes the BSP-operated real-time gross settlement system. It enables high-value interbank fund transfers and market settlements, strengthening payment system resilience and national liquidity management.",
         keyMetrics: [
           "PhilPaSSplus enables real time high-value interbank fund transfers",
-          "Operated by the Bangko Sentral ng Pilipinas"
+          "Operated by the Bangko Sentral ng Pilipinas",
+          "Projected ₱24.745 trillion in total transaction value by the end of 2025 across InstaPay and PESONet"
         ],
         timeline: ""
       }
@@ -401,7 +409,8 @@ export const philippinesData: CountryDetailData = {
         fullContext: "The eGovDX platform (DICT) enables interoperable inter-agency data sharing. Complementary retail payments rely on InstaPay, PESONet, and QR Ph for real-time, low-cost financial fund routing.",
         keyMetrics: [
           "eGovDX enables interoperable data sharing among government agencies",
-          "InstaPay, PESONet, and QR Ph facilitate electronic fund transfers"
+          "InstaPay, PESONet, and QR Ph facilitate electronic fund transfers",
+          "eGov PH Super App achieved 5M+ downloads with 42 out of 75 NGAs integrated successfully"
         ],
         timeline: ""
       }
@@ -415,7 +424,8 @@ export const philippinesData: CountryDetailData = {
         keyMetrics: [
           "National AI Strategy Roadmap (NAISR) 2.0 targets 1.0% of GDP R&D spending",
           "Aims to boost economy by up to PHP 2.6 trillion annually",
-          "Launched the Center for AI Research (CAIR)"
+          "Launched the Center for AI Research (CAIR)",
+          "Center for AI Research (CAIR) launched alongside machine learning optimization (ALAM Project)"
         ],
         timeline: ""
       }
@@ -520,7 +530,9 @@ export const bangladeshData: CountryDetailData = {
         fullContext: "The National ID is a microchip-embedded smart card featuring a unique 10-digit National Identification Number (NIN). It is historically foundational for verifying access to banking, mobile registration, and voting.",
         keyMetrics: [
           "National ID is a smart card featuring a unique 10-digit NIN",
-          "90 million NID cards achieved by 2018 under World Bank IDEAS Project"
+          "90 million NID cards achieved by 2018 under World Bank IDEAS Project",
+          "Youth aged 16 or above now eligible for NID cards as of February 2026",
+          "Tk 70.63 crore allocated for NID initiatives spanning 2026-27"
         ],
         timeline: ""
       }
@@ -531,7 +543,8 @@ export const bangladeshData: CountryDetailData = {
         fullContext: "Operational since 2012, the National Payment Switch (NPSB) allows seamless, structured fund routing from customers to banks to Mobile Financial Services (MFS) with strictly regulated transfer rates.",
         keyMetrics: [
           "National Payment Switch Bangladesh (NPSB) operational since 2012",
-          "Fees regulated at Tk 1.5 per Tk 1,000 (Bank-to-MFS)"
+          "Fees regulated at Tk 1.5 per Tk 1,000 (Bank-to-MFS)",
+          "Regulated transaction fees: Bank-to-MFS set at Tk 1.5/Tk 1,000; MFS-to-bank at Tk 8.5/Tk 1,000"
         ],
         timeline: ""
       }
@@ -542,7 +555,8 @@ export const bangladeshData: CountryDetailData = {
         fullContext: "The National E-Service Bus connects roughly 15 government agencies (e.g. NID, agricultural ministries) by standardizing API specifications and operational technical capacity for consolidated service delivery.",
         keyMetrics: [
           "National E-Service Bus used by ~15 government agencies (Aug 2025)",
-          "World Bank assisting with API standardization and capacity building"
+          "World Bank assisting with API standardization and capacity building",
+          "National E-Service Bus utilization scaled to 15 key Bangladeshi government agencies as of August 2025"
         ],
         timeline: ""
       }
@@ -656,7 +670,8 @@ export const nepalData: CountryDetailData = {
         keyMetrics: [
           "Rastriya Parichaya Patra registered over 17 million people (57% of population)",
           "Mandated in 28 districts for access to pensions and health insurance",
-          "Integrated with the Nagarik App"
+          "Integrated with the Nagarik App",
+          "Rastriya Parichaya Patra enrollment reached 57% of the total demographic population"
         ],
         timeline: ""
       }
@@ -668,7 +683,8 @@ export const nepalData: CountryDetailData = {
         keyMetrics: [
           "National Payments Interface (NPI) handles ~90% of government digital expenses",
           "Processed 186 million transactions in 2024/25",
-          "QR payments accepted by over 2 million merchants (117% volume growth)"
+          "QR payments accepted by over 2 million merchants (117% volume growth)",
+          "NPI processed 186 million transactions, covering 17% of total market volume but 77% of value"
         ],
         timeline: ""
       }
