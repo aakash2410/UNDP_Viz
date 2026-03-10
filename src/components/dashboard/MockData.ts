@@ -98,7 +98,7 @@ export const malaysiaData: CountryDetailData = {
   countryName: 'Malaysia',
   dpiEcosystem: {
     digitalId: {
-      title: 'Digital ID', status: 'Implemented (Maturing)', description: 'MyDigital ID (8.7M users)', implementationAgency: 'My Digital ID Sdn Bhd',
+      title: 'Digital ID', status: 'Implemented', description: 'MyDigital ID (8.7M users)', implementationAgency: 'My Digital ID Sdn Bhd',
       modalDetails: {
         fullContext: "MyDigital ID (RM80M budget) is a secure, government digital identity solution facilitating access to online portals via single sign-on. It references government databases for identity verification without storing any personal data.",
         keyMetrics: [
@@ -174,7 +174,7 @@ export const malaysiaData: CountryDetailData = {
       }
     },
     initiatives: {
-      title: 'Government AI Initiatives', status: 'Active', description: 'AI in Healthcare & Digital Hospitals', implementationAgency: 'Ministry of Health',
+      title: 'Government AI Initiatives', status: 'Implemented', description: 'AI in Healthcare & Digital Hospitals', implementationAgency: 'Ministry of Health',
       modalDetails: {
         fullContext: "Healthcare commands primary focus with initiatives like MySejahtera (Public Health Gateway), DR MATA (Diabetic Retinopathy Screening), Cof\'e (Cough Sound Screening), and CODIC-MY (Remote Monitoring).",
         keyMetrics: [
@@ -242,7 +242,7 @@ export const cambodiaData: CountryDetailData = {
   countryName: 'Cambodia',
   dpiEcosystem: {
     digitalId: {
-      title: 'Digital ID', status: 'Implemented (Early Success)', description: 'CamDigiKey (86k Users)', implementationAgency: 'MEF',
+      title: 'Digital ID', status: 'Implemented', description: 'CamDigiKey (86k Users)', implementationAgency: 'MEF',
       modalDetails: {
         fullContext: "Digital identity is prioritized in Phase 1 (2021-2025) of the Cambodia Digital Economy Policy Framework, focusing on the successful deployment of E-ID alongside digital payment gateways and robust cybersecurity laws.",
         keyMetrics: [
@@ -598,7 +598,7 @@ export const bangladeshData: CountryDetailData = {
       }
     },
     initiatives: {
-      title: 'Government AI Initiatives', status: 'Early Success', description: 'MyGov, Kagoj AI & EBLICT', implementationAgency: 'Ministry of ICT',
+      title: 'Government AI Initiatives', status: 'Drafted', description: 'MyGov, Kagoj AI & EBLICT', implementationAgency: 'Ministry of ICT',
       modalDetails: {
         fullContext: "Prominent deployments include \'MyGov\' (centralizing 172 digitized services) and \'Kagoj AI\' (Bangladesh’s first Bangla-language AI processing platform enhancing dual-language digitized writing).",
         keyMetrics: [
@@ -664,7 +664,7 @@ export const nepalData: CountryDetailData = {
   countryName: 'Nepal',
   dpiEcosystem: {
     digitalId: {
-      title: 'Digital ID', status: 'Implemented (Maturing)', description: 'Rastriya Parichaya Patra', implementationAgency: 'Department of National ID',
+      title: 'Digital ID', status: 'Implemented', description: 'Rastriya Parichaya Patra', implementationAgency: 'Department of National ID',
       modalDetails: {
         fullContext: "The Rastriya Parichaya Patra (National Identity) integrates closely with the Nagarik App. It is mandated for vital events, banking, and social security across millions, though physical KYC authentication hurdles remain common.",
         keyMetrics: [
@@ -690,7 +690,7 @@ export const nepalData: CountryDetailData = {
       }
     },
     dataExchange: {
-      title: 'Data Exchange', status: 'Pipeline', description: 'Government Cloud', implementationAgency: 'MoCIT',
+      title: 'Data Exchange', status: 'Implemented', description: 'Government Cloud', implementationAgency: 'MoCIT',
       modalDetails: {
         fullContext: "Inter-agency data interoperability predominantly rides the rails of the National Payments Interface stack to orchestrate real-time financial clearing routes.",
         keyMetrics: [
@@ -737,7 +737,7 @@ export const nepalData: CountryDetailData = {
       }
     },
     initiatives: {
-      title: 'Government AI Initiatives', status: 'Early Success', description: 'Lalitpur Traffic & SITA', implementationAgency: 'Ministry of Health / LMC',
+      title: 'Government AI Initiatives', status: 'Implemented', description: 'Lalitpur Traffic & SITA', implementationAgency: 'Ministry of Health / LMC',
       modalDetails: {
         fullContext: "Implementations encompass a pioneering AI-based intelligent traffic light grid in Lalitpur City and the \'SITA\' AI platform which analyzes immense demographic datasets to instantly generate actionable, human-quality narrative insights.",
         keyMetrics: [
@@ -750,26 +750,27 @@ export const nepalData: CountryDetailData = {
   },
   sectionB: {
     fundingLandscape: "",
-    electricityAccess: 0,
-    internetPenetration: 0,
-    deviceAccess: 0,
-    dataCenters: 'Data Pending',
-    politicalStability: 'Data Pending',
-    electionCycles: 'Data Pending',
+    electricityAccess: 94,
+    internetPenetration: 56,
+    deviceAccess: 95.5,
+    dataCenters: '37 data centres (Internet Society: Pulse)',
+    politicalStability: 'Hybrid Regime (4.6/10)',
+    electionCycles: 'November 2022 | March 2026',
     politicalSubParameters: [
-      { label: 'Elections', value: '5-year cycle (next: March 2026). Recent mass youth-led protests (Sept 2025) prompted the appointment of an interim government.' },
-      { label: 'Governance Structure', value: 'Federal Democratic Republic (since 2015), comprising seven administrative regions to decentralize power and increase citizen participation.' },
-      { label: 'Political Stability', value: 'Historically unstable with 27 Prime Ministers since 1990. Scored 58.8 in Political Stability and 55.8 in Accountability, though government effectiveness remains low (34.1).' },
-      { label: 'Digital Priority', value: 'Executing the \'Digital Nepal Framework,\' emphasizing decentralized technology access and foundational e-governance restructuring.' },
-      { label: 'Institutional Capacity', value: 'Moderate implementation capacity (rating: 3/6), constrained by structural turnover and resourcing gaps.' },
-      { label: 'Leadership Champions', value: 'Previous leadership explicitly endorsed the Digital Nepal Framework and successfully pushed Cabinet approval of the National AI Policy.' },
-      { label: 'Technical Expertise', value: 'GovTech Index score (0.439) indicates a pressing need to upgrade technical skills and core systems across the civil service suite.' },
-      { label: 'Civil Society', value: 'Highly active network of nearly 50,000 NGOs, user groups, and tech policy think-tanks (e.g. Digital Rights Nepal) driving civil transparency.' }
-    ],
+      { label: 'Elections', value: 'National Election cycle spans from November 2022 up to the upcoming March 2026 cycle.' },
+      { label: 'Political Stability', value: 'Categorized as a Hybrid Regime (4.6/10). Saw a 10.87% increase in Political Stability Index (from 47.94 in 2014 to 58.81 in 2024).' },
+      { label: 'Digital Inclusion Gaps', value: 'Higher internet access in urban areas (65%) versus rural regions (22%). Only 53% have 4G coverage and just 56% used the internet recently.' },
+      { label: 'Institutional Capacity', value: 'Nepal is participating in the global 50-in-5 initiative for policy implementation.' }
+    ]
   },
   sectionC: {
     actors: [
-      { id: 'n1', type: 'Pending', name: 'Actors Pending', role: 'Pending', initiatives: ['Updates available in upcoming version'] },
+      { id: 'nepal-g1', type: 'Government', name: 'MoCIT, Nepal e-governance board, Fonepay, NTA, OCC', role: 'Decision-makers & Implementers', initiatives: ['Fonepay collaborated with NPCI to facilitate UPI payments'] },
+      { id: 'nepal-p1', type: 'Private', name: 'Leapfrog, F1Soft, Verisk Nepal, CloudFactory, Fusemachines', role: 'Implementers', initiatives: [] },
+      { id: 'nepal-d1', type: 'Development Partners', name: 'World Bank, ADB, UNDP, GEF, GCF', role: 'Policy Influencers & Funders', initiatives: ['UNDP implemented $20.4M programmes in 2021', 'WB & ADB co-financed $90M Digital Transformation Project'] },
+      { id: 'nepal-a1', type: 'Academia', name: 'Open Knowledge Nepal', role: 'Policy Influencers', initiatives: [] },
+      { id: 'nepal-c1', type: 'Civil Society', name: 'Digital Rights Nepal', role: 'Policy Influencers & Implementers', initiatives: [] },
+      { id: 'nepal-f1', type: 'Funding Orgs', name: 'NPCI (NIPL), AI Association Nepal', role: 'Funders', initiatives: [] }
     ],
   },
   sectionD: {
