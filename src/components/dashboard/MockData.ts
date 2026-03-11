@@ -9,10 +9,10 @@ export interface RadarDataPoint {
 }
 
 export const radarData: RadarDataPoint[] = [
-  { parameter: 'AI Ecosystem Maturity', Malaysia: 3, Cambodia: 3, Philippines: 3, Bangladesh: 2, Nepal: 0, fullMark: 5 },
-  { parameter: 'DPI Ecosystem Maturity', Malaysia: 4, Cambodia: 3, Philippines: 4, Bangladesh: 3, Nepal: 0, fullMark: 5 },
-  { parameter: 'Digital Infra Availability', Malaysia: 4, Cambodia: 2, Philippines: 3, Bangladesh: 3, Nepal: 0, fullMark: 5 },
-  { parameter: 'Political Stability', Malaysia: 3, Cambodia: 3, Philippines: 3, Bangladesh: 2, Nepal: 0, fullMark: 5 },
+  { parameter: 'AI Ecosystem Maturity', Malaysia: 4, Cambodia: 2, Philippines: 3, Bangladesh: 2, Nepal: 0, fullMark: 5 },
+  { parameter: 'DPI Ecosystem Maturity', Malaysia: 4, Cambodia: 4, Philippines: 4, Bangladesh: 3, Nepal: 0, fullMark: 5 },
+  { parameter: 'Digital Infra Availability', Malaysia: 5, Cambodia: 2, Philippines: 3, Bangladesh: 3, Nepal: 0, fullMark: 5 },
+  { parameter: 'Political Stability', Malaysia: 4, Cambodia: 4, Philippines: 3, Bangladesh: 2, Nepal: 0, fullMark: 5 },
   { parameter: 'Stakeholder Participation', Malaysia: 3, Cambodia: 3, Philippines: 3, Bangladesh: 3, Nepal: 0, fullMark: 5 },
   { parameter: 'Funding Landscape', Malaysia: 3, Cambodia: 3, Philippines: 3, Bangladesh: 2, Nepal: 0, fullMark: 5 },
 ];
@@ -99,9 +99,9 @@ export const malaysiaData: CountryDetailData = {
   countryName: 'Malaysia',
   dpiEcosystem: {
     digitalId: {
-      title: 'Digital ID', status: 'Implemented', description: 'MyDigital ID (8.7M users)', implementationAgency: 'My Digital ID Sdn Bhd',
+      title: 'Digital ID', status: 'Maturing', description: 'MyDigital ID (8.7M users)', implementationAgency: 'My Digital ID Sdn Bhd',
       modalDetails: {
-        fullContext: "MyDigital ID (RM80M budget) is a secure, government digital identity solution facilitating access to online portals via single sign-on. It references government databases for identity verification without storing any personal data.",
+        fullContext: "Implementation status: Implemented Program details: MyDigital ID I 2024 I RM80mn allocation Implementation agency: My Digital ID Sdn Bhd, Ministry of Digital Adoption: 8.7 million users (~33%) ",
         keyMetrics: [
           "RM80 million budget allocation",
           "Registration began in 2024 via MyGOV Malaysia",
@@ -111,9 +111,9 @@ export const malaysiaData: CountryDetailData = {
       }
     },
     payments: {
-      title: 'Digital Payments', status: 'Implemented', description: 'DuitNow (5.3 bn transactions)', implementationAgency: 'PayNet',
+      title: 'Digital Payments', status: 'Maturing', description: 'DuitNow (5.3 bn transactions)', implementationAgency: 'PayNet',
       modalDetails: {
-        fullContext: "The Real-time Retail Payments Platform (RPP), launched in 2018 and operated by PayNet, is a fast payment system enabling real-time, data-rich transactions among Malaysian consumers, businesses, and government agencies.",
+        fullContext: "Implementation status: Implemented Program details: Real-time Retail Payments Platform I 2018, DuitNow Implementation agency: PayNet Adoption: 5.3 bn transactions in 2024, RM5.4T transaction value - 70% population (Above 15) made 1 digital payment in 2018/19 ",
         keyMetrics: [
           "Real-time Retail Payments Platform (RPP) launched in 2018",
           "Enables real-time, data-rich payments between accounts",
@@ -124,9 +124,9 @@ export const malaysiaData: CountryDetailData = {
       }
     },
     dataExchange: {
-      title: 'Data Exchange', status: 'Implemented', description: 'MYGDX (35 million transactions)', implementationAgency: 'MAMPU',
+      title: 'Data Exchange', status: 'Maturing', description: 'MYGDX (35 million transactions)', implementationAgency: 'MAMPU',
       modalDetails: {
-        fullContext: "The Malaysian Government Central Data Exchange (MyGDX) is a secure data-sharing ecosystem allowing classified data to be coordinated efficiently across ministries, reducing integration costs and empowering data-driven governance.",
+        fullContext: "Implementation status: Implemented Program details: Malaysian Government Central Data Exchange (MyGDX) I 2018  Implementation agency: MAMPU (Malaysian Administration Modernization and Management Planning Unit) Adoption:657 users, 35 million transactions ",
         keyMetrics: [
           "Enhances end-to-end (E2E) online services towards a data-driven government",
           "Reduces cost of infrastructure and system integration",
@@ -138,9 +138,9 @@ export const malaysiaData: CountryDetailData = {
   },
   aiEcosystem: {
     policy: {
-      title: 'AI Strategy', status: 'Implemented', description: 'Malaysia Artificial Intelligence Roadmap 2021-2025', implementationAgency: 'Malaysian National AI Office (NAIO)',
+      title: 'AI Strategy', status: 'Maturing', description: 'Malaysia Artificial Intelligence Roadmap 2021-2025', implementationAgency: 'Malaysian National AI Office (NAIO)',
       modalDetails: {
-        fullContext: "Malaysia\'s AI Roadmap 2021-2025 (MOSTI) aims to augment jobs, drive national competitiveness, and encourage innovation. Outcomes focus on establishing governance, advancing R&D, and fostering AI talents securely.",
+        fullContext: "- Malaysia's Artificial Intelligence Roadmap 2021-2025 (launched in Aug 2022 by Malaysian Ministry of Science, Technology, and Innovation (MOSTI))  - National AI Office est. in 2024 under the Ministry of Digital to  oversee implementation and coordination   - As of the third quarter of 2024, Malaysia’s National AI Roadmap 2021-2025 has achieved 63% completion ",
         keyMetrics: [
           "Malaysia's Artificial Intelligence Roadmap 2021-2025",
           "Aims to augment jobs and drive national competitiveness",
@@ -151,9 +151,9 @@ export const malaysiaData: CountryDetailData = {
       }
     },
     governance: {
-      title: 'AI Governance', status: 'Implemented', description: 'National Guidelines on AI Governance and Ethics (AIGE)', implementationAgency: 'Malaysian National AI Office (NAIO)',
+      title: 'AI Governance', status: 'Early success', description: 'National Guidelines on AI Governance and Ethics (AIGE)', implementationAgency: 'Malaysian National AI Office (NAIO)',
       modalDetails: {
-        fullContext: "Regulated via the National Guidelines on AI Governance and Ethics (AIGE) and ASEAN AI guides. Structured across Users, Regulators, and Developers, it is built on 7 principles including fairness, reliability, and human-centricity.",
+        fullContext: "- There is currently no specific legislation regulating the use of machine learning and AI in Malaysia. But the govt has put forward guidelines for the AI users, policy makers and developers, designers etc.   - The intention of the National Guidelines on AI Governance & Ethics (AIGE) is to develop and deploy AI in a safe, trustworthy, and ethical manner, taking an approach to developing and deploying AI from both an ethical and legal point of view  - The guidelines are not legally binding and are for the voluntary adoption of the seven AI Principles by developers and deployers of AI alongside existing laws to ensure that the adoption of AI technology ",
         keyMetrics: [
           "Built on 7 AI Principles including fairness, reliability, and human-centricity",
           "Structured across three levels: Users, Regulators, and Developers",
@@ -163,9 +163,9 @@ export const malaysiaData: CountryDetailData = {
       }
     },
     legislation: {
-      title: 'Data Legislation', status: 'Implemented', description: 'Data Protection and Privacy Laws', implementationAgency: 'Department of Personal Data Protection',
+      title: 'Data Legislation', status: 'Maturing', description: 'Data Protection and Privacy Laws', implementationAgency: 'Department of Personal Data Protection',
       modalDetails: {
-        fullContext: "Governed prominently by the Personal Data Protection Act (PDPA) 2010 (amended 2024) alongside the Computer Crimes Act 1997. The JPDP oversees enforcement, achieving a dynamic legal framework score of 4.17/5 in privacy.",
+        fullContext: "- Malaysia's Personal Data Protection (Amendment) Act 2024  - PDPA Act's enforcement is overseen by the Department of Personal Data Protection (JPDP)  -As per the UNDP Digital Development Compass, Malaysia has a score of 4.17 in data and privacy and  5 in cybersecurity. (5 is the top score representing transformational performance). It has dynamic Legal Framework: Comprehensive law, baselines, compliance, international alignment.",
         keyMetrics: [
           "Personal Data Protection (Amendment) Act 2024 addresses privacy",
           "Score of 4.17/5 in data and privacy (UNDP Digital Development Compass)",
@@ -175,9 +175,9 @@ export const malaysiaData: CountryDetailData = {
       }
     },
     initiatives: {
-      title: 'Government AI Initiatives', status: 'Implemented', description: 'AI in Healthcare & Digital Hospitals', implementationAgency: 'Ministry of Health',
+      title: 'Government AI Initiatives', status: 'Maturing', description: 'AI in Healthcare & Digital Hospitals', implementationAgency: 'Ministry of Health',
       modalDetails: {
-        fullContext: "Healthcare commands primary focus with initiatives like MySejahtera (Public Health Gateway), DR MATA (Diabetic Retinopathy Screening), Cof\'e (Cough Sound Screening), and CODIC-MY (Remote Monitoring).",
+        fullContext: "- The National AI Roadmap has defined 11 national AI Use cases across 5 sectors (Agriculture and forestry, healthcare, smart cities and transportation, education and public services)  -Both Federal Government and the State Governments have embarked on numerous AI initiatives. - Examples: a. Healthcare:  Ministry of Health unveiled “DR. MATA”, an AI-powered diagnostic tool to detect diabetic retinopathy, a leading cause of blindness among diabetics.  AI is also digitally transforming the operations of public health clinics, with the roll-out of cloud-based digital management system (CCMS), enhancing efficiency and accessibility of healthcare services.   b. Smart cities and transportation: AI adoption is traffic management. In Kuala Lumpur, a citywide CCTV network enables AI platforms to count vehicles, classify them by type, and recognise licence plates. This allows real-time traffic analysis  c.Financial services: In August 2024, the Central Bank of Malaysia, in partnership with PayNet, and other financial institutions, launched the National Fraud Portal (NFP), utilising AI to combat financial fraud through predictive analysis.   d. Agriculture: Malaysia launched the world’s first AI-driven smart palm oil mill",
         keyMetrics: [
           "MySejahtera: Public Health Digital Gateway",
           "DR MATA: AI-Based Diabetic Retinopathy Screening",
@@ -190,12 +190,12 @@ export const malaysiaData: CountryDetailData = {
   },
   sectionB: {
     fundingLandscape: "The 2025 National Budget allocates RM285M to MOSTI for AI governance and RM10M for the National AI Office (NAIO). Private sector investments are heavily focused on data centre development and smart city initiatives.",
-    electricityAccess: 100,
-    internetPenetration: 97.7,
+    electricityAccess: 100, // 100% access to electricity (World Bank, 2022) 
+    internetPenetration: 97.7, // 97.7% internet penetration rate (ITU, 2024)
     deviceAccess: 95.5,
-    digitalInclusion: "Nearly equal access for men and women, urban and rural areas.",
-    dataCenters: '32 operational, 19 under construction',
-    politicalStability: 'Flawed Democracy (44/167) (Source: Democracy Index 2024)',
+    digitalInclusion: "- Nearly equal access for men and women, urban and rural areas",
+    dataCenters: '- As of Nov 2024, 87 data centres  - RM114.7 billion in data centre and cloud investments (2021–2023)',
+    politicalStability: 'Political stability improved from 2014 to 2024 by ~5 percentage points (67.4 to 72.47) (Source: WB WGI 2024)',
     electionCycles: '5 years (Next: Nov-Dec 2027)',
     politicalSubParameters: [
       { label: 'Elections', value: '5-year cycle (last: Nov 2022). Historical instability since 2020 led to changes in coalition governments.' },
@@ -244,9 +244,9 @@ export const cambodiaData: CountryDetailData = {
   countryName: 'Cambodia',
   dpiEcosystem: {
     digitalId: {
-      title: 'Digital ID', status: 'Implemented', description: 'CamDigiKey (86k Users)', implementationAgency: 'MEF',
+      title: 'Digital ID', status: 'Early Success', description: 'CamDigiKey (86k Users)', implementationAgency: 'MEF',
       modalDetails: {
-        fullContext: "Digital identity is prioritized in Phase 1 (2021-2025) of the Cambodia Digital Economy Policy Framework, focusing on the successful deployment of E-ID alongside digital payment gateways and robust cybersecurity laws.",
+        fullContext: "Launched by the Ministry of Economy of Finance in 2019, CamDigiKey is Cambodia's national platform for verified e-kyc, though adoption presently leans heavily towards business-related government e-services over civilian use. ",
         keyMetrics: [
           "Targeted in Phase 1 (2021-2025) of the Digital Economy Framework",
           "Focus restricted to foundational E-ID and payment gateways",
@@ -256,68 +256,63 @@ export const cambodiaData: CountryDetailData = {
       }
     },
     payments: {
-      title: 'Digital Payments', status: 'Implemented', description: 'Bakong (60% adult population)', implementationAgency: 'NBC',
+      title: 'Digital Payments', status: 'Maturing', description: 'Bakong (60% adult population)', implementationAgency: 'NBC',
       modalDetails: {
-        fullContext: "Bakong operates as a primary, DPI-like overarching digital payments infrastructure.",
-        keyMetrics: [
-          "Bakong identified as primary DPI-like digital payment mechanism"
-        ],
-        timeline: ""
+        fullContext: "Bakong is Cambodia's flagship sovereign digital payment system. Operating on blockchain-inspired quasi-decentralized ledgers under the National Bank of Cambodia, it successfully synthesized mobile payments nationwide.",
+        keyMetrics: ["Reaches 60% of the adult population", "Operates across local banks and e-wallets", "Blockchain-enabled architecture"],
+        timeline: "Launched 2020"
       }
     },
     dataExchange: {
-      title: 'Data Exchange', status: 'Implemented', description: 'CamDX', implementationAgency: 'Techo Startup Center',
+      title: 'Data Exchange', status: 'Maturing', description: 'CamDX', implementationAgency: 'Techo Startup Center',
       modalDetails: {
-        fullContext: "CamDigiKey acts as a foundational, DPI-like digital identity system facilitating governmental digital exchange.",
-        keyMetrics: [
-          "CamDigiKey listed as primary DPI-like digital ID and exchange mechanism",
-          "Verify.gov Cambodia successfully integrated for national government document verification"
-        ],
-        timeline: ""
+        fullContext: "CamDX acts as the unified data exchange layer for the Cambodian government, notably powering systems like Verify.gov.kh for secure government document verification.",
+        keyMetrics: ["Managed by MEF", "Powers Verify.gov.kh", "Core to Cambodian e-gov architecture", "Verify.gov Cambodia successfully integrated for national government document verification"],
+        timeline: "Launched 2020"
       }
     },
   },
   aiEcosystem: {
     policy: {
-      title: 'AI Strategy', status: 'Drafted', description: 'National AI Strategy 2025-30', implementationAgency: 'N/A',
+      title: 'AI Strategy', status: 'Open to Adopt', description: 'National AI Strategy 2025-30', implementationAgency: 'Ministry of Post and Telecommunications',
       modalDetails: {
-        fullContext: "The Draft National AI Strategy 2025-30 aims to transform Cambodia into a skillful AI adopter. It focuses on developing human capital, digital government excellence, Khmer-language LLM inclusion, and sovereign HPC data centers.",
+        fullContext: "The National AI Strategy, finalized by the Ministry of Post & Telecommunications in 2024, establishes the foundational trajectory for AI capability and procurement in Cambodia.",
         keyMetrics: [
           "Draft National AI Strategy 2025-30",
           "Establishing a National AI and Data Science Lab",
           "Strategic push for Khmer Large Language Model (LLM)",
           "AI Strategy is integrated into the $10.1B national budget, targeting an R&D rise from current 0.09% GDP"
         ],
-        timeline: ""
+        timeline: "Drafted 2024"
       }
     },
     governance: {
-      title: 'AI Governance', status: 'Drafted', description: 'AI Readiness Assessment', implementationAgency: 'N/A',
+      title: 'AI Governance', status: 'Open to Adopt', description: 'AI Readiness Assessment', implementationAgency: 'Ministry of Post and Telecommunications (MPTC)',
       modalDetails: {
-        fullContext: "Cambodia pursues a \'soft law\' approach guided by UNESCO RAM and ASEAN standards. The MPTC oversees efforts to foster a human-centered, rights-based governance ecosystem with drafts for Cybersecurity and Data Protection pending.",
+        fullContext: "Designed concurrently with the National Strategy, this framework intends to regulate AI deployment, emphasizing safety and human-centric deployment principles before widespread public integration.",
         keyMetrics: [
           "Scored 55 out of 100 in UNESCO AI Readiness Assessment",
           "Implementing a 'soft law' approach guided by UNESCO RAM",
-          "Foundational laws on Data Protection and Cybersecurity pending"
+          "Foundational laws on Data Protection and Cybersecurity drafted, pending consultation"
         ],
-        timeline: ""
+        timeline: "Drafted 2024"
       }
     },
     legislation: {
-      title: 'Data Legislation', status: 'Drafted', description: 'Data protection and Privacy regulation', implementationAgency: 'N/A',
+      title: 'Data Legislation', status: 'Open to Adopt', description: 'Data protection and Privacy regulation', implementationAgency: 'Ministry of Post and Telecommunications (MPTC)',
       modalDetails: {
-        fullContext: "Currently operating on a limited privacy framework. Sub-Decree 252 applies exclusively to Ministry of Interior identification data. A broader Draft Law on Personal Data Protection was pushed for public consultation in July 2025.",
+        fullContext: "Draft Data Protection law w/ Public Consultation underway",
         keyMetrics: [
           "Sub-Decree 252 applies only to Ministry of Interior identification data",
           "Draft Law on Personal Data Protection released for public consultation (July 2025)"
         ],
-        timeline: ""
+        timeline: "Expected to pass in 2026"
       }
     },
     initiatives: {
       title: 'Government AI Initiatives', status: 'Early Success', description: 'National Research Center on AI & Landmine mapping', implementationAgency: 'CMAC & MPTC',
       modalDetails: {
-        fullContext: "Key projects include the National Research Center on AI for Education, AI-based Landmine detection tools aimed at achieving a landmine-free status by 2030, and a Khmer-based LLM building on open-source frameworks.",
+        fullContext: "Cambodia has launched several key AI initiatives, including the National Research Center on AI for Education and AI-assisted Landmine detection, with support from international partners.",
         keyMetrics: [
           "National Research Center on AI for Education inaugurated (Nov 2025)",
           "AI-assisted Landmine detection targeting a landmine-free status by 2030",
@@ -328,7 +323,7 @@ export const cambodiaData: CountryDetailData = {
     },
   },
   sectionB: {
-    fundingLandscape: "Digital transformation is included in the $10.1B national budget, with specific AI/Digital R&D targeted to rise from 0.09% of GDP. Furthermore, private actors account for a part of $10B in registered investment projects with a major focus on Fintech and logistics AI, alongside ~$3.1B in concessional loans provided to ADB.",
+    fundingLandscape: "Digital transformation is included in the $10.1B national budget, with specific AI/Digital R&D targeted to rise from 0.09% of GDP. Furthermore, private actors account for a part of $10B in registered investment projects with a major focus on Fintech and logistics AI",
     electricityAccess: 92.3,
     internetPenetration: 60.0,
     digitalInclusion: "Gender divide more evident in rural areas for digital access.",
