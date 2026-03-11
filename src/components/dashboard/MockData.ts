@@ -60,6 +60,7 @@ export interface CountryDetailData {
     electricityAccess: number;
     internetPenetration: number;
     deviceAccess?: number;
+    digitalInclusion?: string;
     dataCenters?: string;
     politicalStability: string;
     electionCycles: string;
@@ -188,12 +189,13 @@ export const malaysiaData: CountryDetailData = {
     },
   },
   sectionB: {
-    fundingLandscape: "",
+    fundingLandscape: "The 2025 National Budget allocates RM285M to MOSTI for AI governance and RM10M for the National AI Office (NAIO). Private sector investments are heavily focused on data centre development and smart city initiatives.",
     electricityAccess: 100,
     internetPenetration: 97.7,
     deviceAccess: 95.5,
+    digitalInclusion: "Nearly equal access for men and women, urban and rural areas.",
     dataCenters: '32 operational, 19 under construction',
-    politicalStability: 'Flawed Democracy (44/167)',
+    politicalStability: 'Flawed Democracy (44/167) (Source: Democracy Index 2024)',
     electionCycles: '5 years (Next: Nov-Dec 2027)',
     politicalSubParameters: [
       { label: 'Elections', value: '5-year cycle (last: Nov 2022). Historical instability since 2020 led to changes in coalition governments.' },
@@ -326,11 +328,12 @@ export const cambodiaData: CountryDetailData = {
     },
   },
   sectionB: {
-    fundingLandscape: "",
+    fundingLandscape: "Digital transformation is included in the $10.1B national budget, with specific AI/Digital R&D targeted to rise from 0.09% of GDP. Furthermore, private actors account for a part of $10B in registered investment projects with a major focus on Fintech and logistics AI, alongside ~$3.1B in concessional loans provided to ADB.",
     electricityAccess: 92.3,
     internetPenetration: 60.0,
+    digitalInclusion: "Gender divide more evident in rural areas for digital access.",
     dataCenters: '4 Commercial Data Centres',
-    politicalStability: 'Authoritarian Regime - 123/169',
+    politicalStability: 'Authoritarian Regime - 123/169 (Source: Democracy Index 2024)',
     electionCycles: 'Next: 2028',
     politicalSubParameters: [
       { label: 'Elections', value: '5-year cycle (last: 2023-24; next: 2028-29). Predominantly single-party governance model.' },
@@ -469,12 +472,13 @@ export const philippinesData: CountryDetailData = {
     },
   },
   sectionB: {
-    fundingLandscape: "",
+    fundingLandscape: "The DICT 2026 Proposed Budget allocates ₱18.9 Billion. Multilateral funding includes a $378M World Bank/AIIB Loan and $273M for the Philippine Digital Infrastructure Project (PDIP). Private sector valuation is led by GCash ($4.1 Billion) alongside roughly ~$2B projected for data centers by 2026.",
     electricityAccess: 97.5,
     internetPenetration: 83.8,
     deviceAccess: 81.0,
+    digitalInclusion: "Significant geographic gap between Metro Manila (~68.7% penetration) and regions like BARMM (27.7%) or Zamboanga (21.2%).",
     dataCenters: '28 operational, 13 upcoming',
-    politicalStability: 'Flawed Democracy (51/167)',
+    politicalStability: 'Flawed Democracy (51/167) (Source: Democracy Index 2024)',
     electionCycles: '6-year cycle (Next: May 2028)',
     politicalSubParameters: [
       { label: 'Elections', value: '6-year presidential terms; 3-year midterms (last: May 2025; next presidential: 2028). Transitions are often influenced by political alliance shifts.' },
@@ -611,12 +615,13 @@ export const bangladeshData: CountryDetailData = {
     },
   },
   sectionB: {
-    fundingLandscape: "",
+    fundingLandscape: "The government has aggressively prioritized digitalization, allocating ~$200 million to the ICT Division and $11 million to support digital entrepreneurship in the fiscal year 2024/25. Important multilateral support is also active via World Bank and ADB loans.",
     electricityAccess: 99.5,
     internetPenetration: 45,
     deviceAccess: 40.0,
+    digitalInclusion: "Higher access in urban areas (71.3% men, 62.4% women) vs rural (36.6% men, 23% women). Overall geographic divide: 66.8% vs 29.7%.",
     dataCenters: '36 total operational',
-    politicalStability: 'Hybrid Regime (100/167)',
+    politicalStability: 'Hybrid Regime (100/167) (Source: Democracy Index 2024)',
     electionCycles: 'Jan 2024 / Feb 2026',
     politicalSubParameters: [
       { label: 'Elections', value: 'National elections have recently concluded, initiating transitions in parliamentary dynamics.' },
@@ -749,12 +754,13 @@ export const nepalData: CountryDetailData = {
     },
   },
   sectionB: {
-    fundingLandscape: "",
+    fundingLandscape: "In 2021, UNDP Nepal implemented development programmes across the nation with a total expenditure of $20.4 million. The World Bank and the ADB have also jointly co-financed the Nepal Digital Transformation Project, contributing $50 million and $40 million respectively.",
     electricityAccess: 94,
     internetPenetration: 56,
     deviceAccess: 95.5,
+    digitalInclusion: "Higher internet access in urban areas (65%) versus rural regions (22%). Only 53% have 4G coverage.",
     dataCenters: '37 data centres (Internet Society: Pulse)',
-    politicalStability: 'Hybrid Regime (4.6/10)',
+    politicalStability: 'Hybrid Regime (4.6/10) (Source: Democracy Index 2024)',
     electionCycles: 'November 2022 | March 2026',
     politicalSubParameters: [
       { label: 'Elections', value: 'National Election cycle spans from November 2022 up to the upcoming March 2026 cycle.' },

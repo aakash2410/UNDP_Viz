@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import {
     Network, Zap, CheckCircle2, AlertCircle, Clock,
-    Map, Activity, Users, Building2, Lightbulb, TrendingUp, Handshake, Globe, ShieldCheck, FileText, Cpu, ArrowLeft, X, Info, Radio, Landmark
+    Map, Activity, Users, Building2, Lightbulb, TrendingUp, Handshake, Globe, ShieldCheck, FileText, Cpu, ArrowLeft, X, Info, Radio, Landmark, Banknote
 } from 'lucide-react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import Link from 'next/link';
@@ -344,6 +344,17 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                                     </div>
                                 </div>
                             )}
+
+                            {data.sectionB.digitalInclusion && (
+                                <div className="mt-6 pt-6 border-t border-slate-100">
+                                    <div className="flex justify-between items-center mb-2">
+                                        <span className="font-semibold text-slate-700">Digital Inclusion Gap</span>
+                                    </div>
+                                    <div className="text-sm font-medium text-slate-900 bg-slate-50/80 py-3 px-4 rounded-xl border border-slate-100 italic">
+                                        {data.sectionB.digitalInclusion}
+                                    </div>
+                                </div>
+                            )}
                         </div>
                     </motion.div>
                 </section>
@@ -416,7 +427,7 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                     <div className="p-8 md:p-10 border-b border-slate-100 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                         <div className="flex items-center gap-3">
                             <Users className="w-8 h-8 text-slate-700" />
-                            <h2 id="section-c-title" className="text-3xl font-bold tracking-tight">Community & Key Actors</h2>
+                            <h2 id="section-c-title" className="text-3xl font-bold tracking-tight">Stakeholder Participation</h2>
                         </div>
                     </div>
 
@@ -425,7 +436,7 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                             <thead className="bg-slate-50/80 backdrop-blur-md sticky top-0 z-10">
                                 <tr>
                                     <th scope="col" className="px-8 py-5 font-bold text-slate-900 border-b border-slate-200 w-1/4">Organization Name</th>
-                                    <th scope="col" className="px-8 py-5 font-bold text-slate-900 border-b border-slate-200">Sector</th>
+                                    <th scope="col" className="px-8 py-5 font-bold text-slate-900 border-b border-slate-200">Type</th>
                                     <th scope="col" className="px-8 py-5 font-bold text-slate-900 border-b border-slate-200 w-1/2">Major Initiatives</th>
                                 </tr>
                             </thead>
@@ -463,14 +474,14 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-50px" }}
                         transition={{ duration: 0.6 }}
-                        className="bg-emerald-50 border border-emerald-200 rounded-2xl p-8 shadow-sm flex gap-6"
+                        className="bg-indigo-50 border border-indigo-200 rounded-2xl p-8 shadow-sm flex flex-col sm:flex-row gap-6 items-start my-12"
                     >
-                        <div className="flex-shrink-0 mt-1">
-                            <Building2 className="w-8 h-8 text-emerald-600" />
+                        <div className="flex-shrink-0 mt-1 bg-white p-3 rounded-xl shadow-sm border border-indigo-100">
+                            <Banknote className="w-8 h-8 text-indigo-600" />
                         </div>
-                        <div>
-                            <h3 className="text-xl font-bold tracking-tight text-emerald-900 mb-3">Funding Landscape</h3>
-                            <p className="text-emerald-800 leading-relaxed font-medium">
+                        <div className="flex-1">
+                            <h3 className="text-2xl font-bold tracking-tight text-indigo-900 mb-3">Funding Landscape</h3>
+                            <p className="text-indigo-800 leading-relaxed font-medium text-lg">
                                 {data.sectionB.fundingLandscape}
                             </p>
                         </div>

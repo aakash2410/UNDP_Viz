@@ -201,7 +201,7 @@ export default function MacroOverview() {
                     <p className="text-xs italic mt-1 text-slate-400 text-center">Note: The specific qualitative interpretation of these stages varies for each parameter. See Methodology.</p>
                 </div>
 
-                {/* Regional Synthesis */}
+                {/* Regional Synthesis 
                 <div className="mt-16 pt-12 border-t border-slate-100 relative">
                     <div className="flex flex-col sm:flex-row justify-between items-start sm:items-baseline mb-8 gap-2">
                         <h3 className="text-2xl font-bold tracking-tight">Regional Synthesis</h3>
@@ -242,6 +242,7 @@ export default function MacroOverview() {
                         </motion.div>
                     </motion.div>
                 </div>
+                */}
             </section>
 
 
