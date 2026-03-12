@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import Link from 'next/link';
-import { Actor, CountryDetailData, MetricCard } from './MockData';
+import { Actor, CountryDetailData, MetricCard, ParameterStageEntry } from './MockData';
 
 // Reusable Status Badge
 const StatusBadge = ({ status }: { status: string }) => {
@@ -18,15 +18,64 @@ const StatusBadge = ({ status }: { status: string }) => {
         const lower = status.toLowerCase();
         if (lower.includes('advanced') || lower.includes('mature') || lower.includes('maturing')) return 'bg-emerald-100 text-emerald-800 border-emerald-200';
         if (lower.includes('early success')) return 'bg-indigo-100 text-indigo-800 border-indigo-200';
-        if (lower.includes('nascent') || lower.includes('drafted') || lower.includes('planned')) return 'bg-amber-100 text-amber-800 border-amber-200';
-        if (lower.includes('implemented')) return 'bg-blue-100 text-blue-800 border-blue-200';
+        if (lower.includes('active') || lower.includes('implemented') || lower.includes('role model')) return 'bg-amber-100 text-amber-800 border-amber-200';
+        if (lower.includes('greenfield')) return 'bg-slate-100 text-slate-600 border-slate-200';
+        if (lower.includes('open to adopt') || lower.includes('open')) return 'bg-sky-100 text-sky-800 border-sky-200';
         return 'bg-slate-100 text-slate-800 border-slate-200';
     };
 
     return (
-        <span className={`px-2.5 py-1 rounded-full text-xs font-semibold border ${getStyles()}`}>
-            {displayStatus}
+        <span className={`text-xs font-semibold px-2.5 py-1 rounded-md border ${getStyles()}`}>
+            {displayStatus || status}
         </span>
+    );
+};
+
+// Parameter Stage Badge with sub-parameter breakdown
+const ParameterStageBadge = ({ entry, pKey }: { entry: ParameterStageEntry; pKey: string }) => {
+    const [expanded, setExpanded] = useState(false);
+    const stageColors: Record<string, string> = {
+        'Greenfield': 'bg-slate-100 text-slate-700 border-slate-300',
+        'Open to Adopt': 'bg-sky-100 text-sky-800 border-sky-300',
+        'Early Success': 'bg-indigo-100 text-indigo-800 border-indigo-300',
+        'Maturing': 'bg-emerald-100 text-emerald-800 border-emerald-300',
+        'Role Model': 'bg-amber-100 text-amber-800 border-amber-300',
+    };
+    const dotColors: Record<string, string> = {
+        'Greenfield': 'bg-slate-400',
+        'Open to Adopt': 'bg-sky-500',
+        'Early Success': 'bg-indigo-500',
+        'Maturing': 'bg-emerald-500',
+        'Role Model': 'bg-amber-500',
+    };
+    return (
+        <div className="relative">
+            <button
+                onClick={() => setExpanded(!expanded)}
+                className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold border transition-all hover:shadow-sm ${stageColors[entry.parameterStage] || 'bg-slate-100 text-slate-700 border-slate-300'}`}
+            >
+                <span className="opacity-60 font-mono">{pKey}</span>
+                <span className="mx-0.5">·</span>
+                {entry.parameterStage}
+                <svg className={`w-3.5 h-3.5 transition-transform ${expanded ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+            </button>
+            {expanded && (
+                <div className="absolute z-20 mt-2 left-0 bg-white rounded-xl border border-slate-200 shadow-lg p-4 min-w-[280px]">
+                    <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">Sub-Parameters</p>
+                    <div className="space-y-2">
+                        {entry.subParameters.map((sp, idx) => (
+                            <div key={idx} className="flex items-center justify-between gap-3">
+                                <span className="text-sm text-slate-700 leading-tight">{sp.name}</span>
+                                <span className={`flex-shrink-0 inline-flex items-center gap-1.5 text-xs font-semibold px-2 py-0.5 rounded-md border ${stageColors[sp.stage] || 'bg-slate-100 text-slate-700 border-slate-200'}`}>
+                                    <span className={`w-1.5 h-1.5 rounded-full ${dotColors[sp.stage] || 'bg-slate-400'}`}></span>
+                                    {sp.stage}
+                                </span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )}
+        </div>
     );
 };
 
@@ -241,9 +290,12 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
 
                 {/* SECTION A.1: Digital Public Infrastructure */}
                 <section aria-labelledby="section-dpi-title">
-                    <div className="flex items-center gap-3 mb-8">
-                        <Network className="w-8 h-8 text-blue-600" />
-                        <h2 id="section-dpi-title" className="text-3xl font-bold tracking-tight">Digital Public Infrastructure</h2>
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+                        <div className="flex items-center gap-3">
+                            <Network className="w-8 h-8 text-blue-600" />
+                            <h2 id="section-dpi-title" className="text-3xl font-bold tracking-tight">Digital Public Infrastructure</h2>
+                        </div>
+                        {data.parameterStages?.P2 && <ParameterStageBadge entry={data.parameterStages.P2} pKey="P2" />}
                     </div>
                     <motion.div
                         variants={containerVariant}
@@ -259,9 +311,12 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
 
                 {/* SECTION A.2: AI Ecosystems (Expanded) */}
                 <section aria-labelledby="section-ai-title">
-                    <div className="flex items-center gap-3 mb-8">
-                        <Cpu className="w-8 h-8 text-emerald-600" />
-                        <h2 id="section-ai-title" className="text-3xl font-bold tracking-tight">Artificial Intelligence Ecosystem</h2>
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+                        <div className="flex items-center gap-3">
+                            <Cpu className="w-8 h-8 text-emerald-600" />
+                            <h2 id="section-ai-title" className="text-3xl font-bold tracking-tight">Artificial Intelligence Ecosystem</h2>
+                        </div>
+                        {data.parameterStages?.P1 && <ParameterStageBadge entry={data.parameterStages.P1} pKey="P1" />}
                     </div>
                     <motion.div
                         variants={containerVariant}
@@ -284,14 +339,17 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                             <Radio className="w-8 h-8 text-indigo-600" />
                             <h2 id="section-infra-title" className="text-3xl font-bold tracking-tight">Digital Infrastructure</h2>
                         </div>
-                        {data.sectionB.infraModalDetails && (
-                            <button
-                                onClick={() => setSelectedMetric({ title: 'Digital Infrastructure', status: '', description: '', modalDetails: data.sectionB.infraModalDetails } as MetricCard)}
-                                className="text-sm font-semibold text-indigo-600 flex items-center gap-1.5 hover:text-indigo-700 transition-colors bg-indigo-50 px-3 py-1.5 rounded-lg hover:bg-indigo-100 w-fit"
-                            >
-                                <Info className="w-4 h-4" /> View Context
-                            </button>
-                        )}
+                        <div className="flex items-center gap-3">
+                            {data.parameterStages?.P3 && <ParameterStageBadge entry={data.parameterStages.P3} pKey="P3" />}
+                            {data.sectionB.infraModalDetails && (
+                                <button
+                                    onClick={() => setSelectedMetric({ title: 'Digital Infrastructure', status: '', description: '', modalDetails: data.sectionB.infraModalDetails } as MetricCard)}
+                                    className="text-sm font-semibold text-indigo-600 flex items-center gap-1.5 hover:text-indigo-700 transition-colors bg-indigo-50 px-3 py-1.5 rounded-lg hover:bg-indigo-100 w-fit"
+                                >
+                                    <Info className="w-4 h-4" /> View Context
+                                </button>
+                            )}
+                        </div>
                     </div>
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -366,14 +424,17 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                             <Landmark className="w-8 h-8 text-emerald-600" />
                             <h2 id="section-political-title" className="text-3xl font-bold tracking-tight">Political Context</h2>
                         </div>
-                        {data.sectionB.politicalModalDetails && (
-                            <button
-                                onClick={() => setSelectedMetric({ title: 'Political Context', status: '', description: '', modalDetails: data.sectionB.politicalModalDetails } as MetricCard)}
-                                className="text-sm font-semibold text-emerald-600 flex items-center gap-1.5 hover:text-emerald-700 transition-colors bg-emerald-50 px-3 py-1.5 rounded-lg hover:bg-emerald-100 w-fit"
-                            >
-                                <Info className="w-4 h-4" /> View Context
-                            </button>
-                        )}
+                        <div className="flex items-center gap-3">
+                            {data.parameterStages?.P4 && <ParameterStageBadge entry={data.parameterStages.P4} pKey="P4" />}
+                            {data.sectionB.politicalModalDetails && (
+                                <button
+                                    onClick={() => setSelectedMetric({ title: 'Political Context', status: '', description: '', modalDetails: data.sectionB.politicalModalDetails } as MetricCard)}
+                                    className="text-sm font-semibold text-emerald-600 flex items-center gap-1.5 hover:text-emerald-700 transition-colors bg-emerald-50 px-3 py-1.5 rounded-lg hover:bg-emerald-100 w-fit"
+                                >
+                                    <Info className="w-4 h-4" /> View Context
+                                </button>
+                            )}
+                        </div>
                     </div>
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -429,6 +490,7 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                             <Users className="w-8 h-8 text-slate-700" />
                             <h2 id="section-c-title" className="text-3xl font-bold tracking-tight">Stakeholder Participation</h2>
                         </div>
+                        {data.parameterStages?.P5 && <ParameterStageBadge entry={data.parameterStages.P5} pKey="P5" />}
                     </div>
 
                     <div className="w-full overflow-x-auto">
@@ -497,7 +559,10 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                             <Banknote className="w-8 h-8 text-indigo-600" />
                         </div>
                         <div className="flex-1">
-                            <h3 className="text-2xl font-bold tracking-tight text-indigo-900 mb-3">Funding Landscape</h3>
+                            <div className="flex flex-col sm:flex-row sm:items-center gap-3 mb-3">
+                                <h3 className="text-2xl font-bold tracking-tight text-indigo-900">Funding Landscape</h3>
+                                {data.parameterStages?.P6 && <ParameterStageBadge entry={data.parameterStages.P6} pKey="P6" />}
+                            </div>
                             <p className="text-indigo-800 leading-relaxed font-medium text-lg">
                                 {data.sectionB.fundingLandscape}
                             </p>

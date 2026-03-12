@@ -10,7 +10,7 @@ export interface RadarDataPoint {
 
 export const radarData: RadarDataPoint[] = [
   { parameter: 'AI Ecosystem Maturity', Malaysia: 4, Cambodia: 2, Philippines: 3, Bangladesh: 2, Nepal: 0, fullMark: 5 },
-  { parameter: 'DPI Ecosystem Maturity', Malaysia: 4, Cambodia: 4, Philippines: 4, Bangladesh: 3, Nepal: 0, fullMark: 5 },
+  { parameter: 'DPI Ecosystem Maturity', Malaysia: 3, Cambodia: 4, Philippines: 4, Bangladesh: 3, Nepal: 0, fullMark: 5 },
   { parameter: 'Digital Infra Availability', Malaysia: 5, Cambodia: 2, Philippines: 3, Bangladesh: 3, Nepal: 0, fullMark: 5 },
   { parameter: 'Political Stability', Malaysia: 4, Cambodia: 4, Philippines: 4, Bangladesh: 2, Nepal: 0, fullMark: 5 },
   { parameter: 'Stakeholder Participation', Malaysia: 3, Cambodia: 3, Philippines: 4, Bangladesh: 3, Nepal: 0, fullMark: 5 },
@@ -35,6 +35,17 @@ export interface Actor {
   type: string;
   role: string;
   initiatives: string[];
+}
+
+export interface SubParameterStage {
+  name: string;
+  stage: string;
+}
+
+export interface ParameterStageEntry {
+  parameter: string;
+  parameterStage: string;
+  subParameters: SubParameterStage[];
 }
 
 export interface InsightPoint {
@@ -93,6 +104,7 @@ export interface CountryDetailData {
     risks: InsightPoint[];
     partnerships: InsightPoint[];
   };
+  parameterStages?: Record<string, ParameterStageEntry>;
 }
 
 export const malaysiaData: CountryDetailData = {
@@ -238,6 +250,53 @@ export const malaysiaData: CountryDetailData = {
       { id: 'mp4', text: 'Operationalising ethical impact assessments: Partner with the NAIO and MOSTI to pilot UNESCO’s EIA tools to ensure that public sector AI succession remains human-centric, transparent, and accountable.' },
     ],
   },
+  parameterStages: {
+    P1: {
+      parameter: 'AI Ecosystem Maturity', parameterStage: 'Maturing', subParameters: [
+        { name: 'IMF AI Preparedness Index (AIPI)', stage: 'Maturing' },
+        { name: 'National AI Strategy / Policy Status', stage: 'Maturing' },
+        { name: 'AI Governance & Ethical AI Principles', stage: 'Early Success' },
+        { name: 'Data Protection & Privacy Legislation', stage: 'Maturing' },
+        { name: 'Government AI Initiatives & Projects', stage: 'Maturing' },
+      ]
+    },
+    P2: {
+      parameter: 'DPI Ecosystem Maturity', parameterStage: 'Early Success', subParameters: [
+        { name: 'National Digital Transformation Strategy', stage: 'Maturing' },
+        { name: 'Digital ID', stage: 'Maturing' },
+        { name: 'Digital Payments', stage: 'Maturing' },
+        { name: 'Data Exchange', stage: 'Maturing' },
+        { name: 'Use Cases of DPI Assets', stage: 'Early Success' },
+      ]
+    },
+    P3: {
+      parameter: 'Digital-Physical Infrastructure', parameterStage: 'Role Model', subParameters: [
+        { name: 'Electricity Access & Reliability', stage: 'Role Model' },
+        { name: 'Internet Penetration', stage: 'Maturing' },
+        { name: 'Compute & Cloud Capacity', stage: 'Maturing' },
+        { name: 'Digital Inclusion', stage: 'Role Model' },
+      ]
+    },
+    P4: {
+      parameter: 'Political Stability & Governance', parameterStage: 'Maturing', subParameters: [
+        { name: 'WB Political Stability Score (2024)', stage: 'Maturing' },
+      ]
+    },
+    P5: {
+      parameter: 'Stakeholder Participation', parameterStage: 'Early Success', subParameters: [
+        { name: 'Lead Agency & Govt Coordination', stage: 'Maturing' },
+        { name: 'Private Sector Engagement', stage: 'Early Success' },
+        { name: 'Development Partners & MDBs', stage: 'Open to Adopt' },
+        { name: 'Academic & Research Institutions', stage: 'Maturing' },
+        { name: 'Civil Society Engagement', stage: 'Early Success' },
+      ]
+    },
+    P6: {
+      parameter: 'Funding Landscape', parameterStage: 'Early Success', subParameters: [
+        { name: 'Domestic Public Budget for AI/DPI', stage: 'Early Success' },
+      ]
+    },
+  },
   sources: ["https://mastic.mosti.gov.my/publication/artificial-intelligence-roadmap-2021-2025/", "https://mastic.mosti.gov.my/publication/the-national-guidelines-on-ai-governance-ethics/", "https://asean.org/book/asean-guide-on-ai-governance-and-ethics/", "https://www.unesco.org/ethics-ai/en/malaysia", "https://digitaldevelopmentcompass.undp.org/country/MYS", "https://www.mygov.gov.my/ms-MY", "https://www.digital-id.my/_next/about", "https://www.mosti.gov.my/wp-content/uploads/2023/12/PR-231212-MYDIGITAL-ID-REGISTRATION-FOR-THE-GENERAL-PUBLIC-WILL-COMMENCE-IN-MARCH-2024.pdf", "https://www.thestar.com.my/news/nation/2026/02/24/weaknesses-in-management-and-expenditure-of-mydid-project-revealed", "https://fastpayments.worldbank.org/sites/default/files/2021", "https://www.malaysia.gov.my/en", "https://www.biometricupdate.com/202510/malaysia-targets-15m-mydigital-id-users-2026-funds-allocated", "https://malaysia.news.yahoo.com/only-2-8-million-malaysians-044521446.html", "https://www.malaymail.com/news/malaysia/2026/01/17/mydigital-id-hits-87-million-users-sets-sights-on-15-million-sign-ups-with-e-hailing-boost/205833", "https://fastpayments.worldbank.org/sites/default/files/2021-09/World_Bank_FPS_Malaysia_RPP_Case_Study.pdf", "https://paynet.my/", "https://en.wikipedia.org/wiki/Elections_in_Malaysia", "https://en.wikipedia.org/wiki/2022_Malaysian_general_election", "https://www.electiondata.my/elections", "https://www.malaysia.gov.my/en/government/sistem-pemerintahan-negara/federal-government", "https://www.eiu.com/n/campaigns/democracy-index-2024-confirmation/", "https://www.worldbank.org/en/publication/worldwide-governance-indicators/interactive-data-access", "https://www.ai.gov.my/", "https://www.ai.gov.my/thought-leadership"]
 };
 
@@ -372,6 +431,52 @@ export const cambodiaData: CountryDetailData = {
       { id: 'cp3', text: 'Policy Support for AI Ethics: Building on the UNESCO AI Readiness Assessment, partners can provide technical expertise to help turn ethical recommendations into enforceable local laws.' },
       { id: 'cp4', text: 'Private Sector De-risking: Work with the Techo Startup Center to provide grants or technical mentorship for "Impact Tech" startups that solve local developmental challenges using AI.' },
     ],
+  },
+  parameterStages: {
+    P1: {
+      parameter: 'AI Ecosystem Maturity', parameterStage: 'Open to Adopt', subParameters: [
+        { name: 'IMF AI Preparedness Index (AIPI)', stage: 'Open to Adopt' },
+        { name: 'National AI Strategy / Policy Status', stage: 'Open to Adopt' },
+        { name: 'AI Governance & Ethical AI Principles', stage: 'Open to Adopt' },
+        { name: 'Data Protection & Privacy Legislation', stage: 'Open to Adopt' },
+      ]
+    },
+    P2: {
+      parameter: 'DPI Ecosystem Maturity', parameterStage: 'Maturing', subParameters: [
+        { name: 'National Digital Transformation Strategy', stage: 'Maturing' },
+        { name: 'Digital ID', stage: 'Early Success' },
+        { name: 'Digital Payments', stage: 'Maturing' },
+        { name: 'Data Exchange', stage: 'Maturing' },
+        { name: 'Availability / Deployment Use Cases', stage: 'Early Success' },
+      ]
+    },
+    P3: {
+      parameter: 'Digital-Physical Infrastructure', parameterStage: 'Open to Adopt', subParameters: [
+        { name: 'Electricity Access & Reliability', stage: 'Early Success' },
+        { name: 'Internet Penetration', stage: 'Greenfield' },
+        { name: 'Compute & Cloud Capacity', stage: 'Early Success' },
+        { name: 'Digital Inclusion', stage: 'Open to Adopt' },
+      ]
+    },
+    P4: {
+      parameter: 'Political Stability & Governance', parameterStage: 'Maturing', subParameters: [
+        { name: 'WB Political Stability Score (2024)', stage: 'Maturing' },
+      ]
+    },
+    P5: {
+      parameter: 'Stakeholder Participation', parameterStage: 'Early Success', subParameters: [
+        { name: 'Lead Agency & Govt Coordination', stage: 'Open to Adopt' },
+        { name: 'Private Sector Engagement', stage: 'Open to Adopt' },
+        { name: 'Development Partners & MDBs', stage: 'Early Success' },
+        { name: 'Academic & Research Institutions', stage: 'Early Success' },
+        { name: 'Civil Society Engagement', stage: 'Early Success' },
+      ]
+    },
+    P6: {
+      parameter: 'Funding Landscape', parameterStage: 'Open to Adopt', subParameters: [
+        { name: 'Domestic Public Budget for AI/DPI', stage: 'Open to Adopt' },
+      ]
+    },
   },
   sources: ["https://oecd.ai/en/data", "https://data.opendevelopmentcambodia.net/en/dataset/5524b0b4-bb31-4cad-abf4-a36f8e82073d/resource/a35e29b9-3dbf-4a5d-92a9-4d3558ed3c03/download/nais-v5-en-for-consultation-clean.pdf", "https://www.unesco.org/ethics-ai/en/global-hub", "https://www.unesco.org/ethics-ai/en/cambodia", "https://www.dlapiperdataprotection.com/", "https://www.dlapiperdataprotection.com/?t=law&amp;c=KH#insight", "https://www.nec.com/en/press/202510/global_20251029_04.html", "https://www.worldbank.org/en/programs/govtech/gtmi-2025-update", "https://datahub.itu.int/dashboards/idi/?e=BGD&amp;y=2025", "https://dpimap.org/", "https://camdigikey.gov.kh/en", "https://bakong.nbc.gov.kh/en/", "https://camdx.gov.kh/", "https://dpiexplorer.org/explore", "http://verify.gov/", "https://verify.gov.kh/", "https://kiripost.com/stories/nbcs-bakong-charts-transaction-growth-at-13b-in-2025", "https://www.khmertimeskh.com/501517074/camdx-sees-13-increase-in-usage-to-17-3m-transactions/", "https://www.itu.int/reports/wsis-gdc-implementation/objectives/gdc-objective-4/data-for-sustainable-development-goals/", "https://kiripost.com/stories/cambodias-untold-digital-divide-why-not-all-daughters-get-to-imagine-a-different-future", "https://www.eiu.com/n/global-themes/democracy-index/", "https://cambodianess.com/article/hun-manet-says-teachers-catalysts-of-cambodias-ai-transformation", "https://databank.worldbank.org/reports.aspx?dsid=31&amp;series=IQ.CPA.MACR.XQ", "https://docs.google.com/spreadsheets/d/1vNBjyTfs7Ysur_2Zwu3cPb26NQurQAkcQp_InWwLI0Y/edit?gid=0#gid=0", "https://theinvestor.vn/cambodia-focuses-on-digital-revolution-d9023.html#:~:text=By%20Vietnam%20News%20Agency,growth%20and%20improve%20social%20welfare.", "https://www.mordorintelligence.com/industry-reports/cambodia-ict-market/companies", "https://firstcambodia.com.kh/", "https://www.alibabacloud.com/en/campaign/cambodia-contact-us?_p_lc=1#:~:text=Secure%2C%20convenient%2C%20and%20private%20connections,private%20domain%20name%20management%20service", "https://www.zoominfo.com/top-lists/top-telecommunications-companies-in-KH", "https://cambodia.un.org/en/about/un-entities-in-country?afd_azwaf_tok=eyJraWQiOiJGQ0U3Q0M5QjEyMjMyMDkzMkU2RUI5N0I5MTM5NTkzREU2NUZDNjlBRDFDQUVGMkY5REFFOUY1MEJFMEVCNTcwIiwiYWxnIjoiUlMyNTYifQ.eyJhdWQiOiJjYW1ib2RpYS51bi5vcmciLCJleHAiOjE3NzA5Nzc5OTAsImlhdCI6MTc3MDk3Nzk4MCwiaXNzIjoidGllcjEtNjg1YmZiOTU1Ni03ODR0NyIsInN1YiI6IjEyNDo0OToxNDg4OmVhMmE6YTczZDo1YzE0OmVjOGU6NzVmZSIsImRhdGEiOnsidHlwZSI6Imlzc3VlZCIsInJlZiI6IjIwMjYwMjEzVDEwMTk0MFotMTY4NWJmYjk1NTY3ODR0N2hDMUJPTW1tZzQwMDAwMDAwZmNnMDAwMDAwMDAyNHNzIiwiYiI6IkktWC12UFNGTUc0UmItRmxJOVJZSG5zdWtVcHkwc3ZSNHZtVGQxSnhEa0EiLCJoIjoiVDhPVTl3UFpadHBEaU1ONWpFenVMTHF6alljNmo2emVMZXdGNEgzd1FQUSJ9fQ.OqXDB32T7SrmR4kTCQbxCyMv9pCZlP0-6ZYEXcNwGB81XIVwBbXtrjRIR-JTl37MqqIIpc4Gxgl0YIQipsQHhNtHptVlhh-4VRIVD_f_T2MHiWtyPe85PTaMaInH7gJaGFmbzweBHAnQpnGlurLJNUfgyfhTdWNr1jL06G8l8vqontZStkLernOSryiXXjBDUOIker2pdsaE8SPepBN_KWaxjKk6vRxXYAZs8t9x6ZXbYppgI2OGwdcqo2hajUveiY--VIvb2sczO1TqdFzaKbhXjOS4NIG595iFIQ3fl_OUfPco3lbKG3YPinFoweMRSVTAJhS7AwVZDYpzKtXXTQ.WF3obl2IDtqgvMFRqVdYkD5s", "https://cambodiainvestmentreview.com/2026/02/17/cna-documentary-highlights-6-7b-ai-opportunity-by-2030-or-a-widening-digital-divide-for-cambodia-video/"]
 };
@@ -519,6 +624,53 @@ export const philippinesData: CountryDetailData = {
       { id: 'pp3', text: 'Strengthen Ethical AI Policy Integration: Support contextualizing AI ethics within Filipino socio-cultural frameworks and promote responsible AI awareness.' },
       { id: 'pp4', text: 'Enhance Data Governance: Support robust data governance frameworks, cross-sector data sharing mechanisms, and AI cybersecurity risk mitigation.' },
     ],
+  },
+  parameterStages: {
+    P1: {
+      parameter: 'AI Ecosystem Maturity', parameterStage: 'Early Success', subParameters: [
+        { name: 'IMF AI Preparedness Index (AIPI)', stage: 'Early Success' },
+        { name: 'National AI Strategy / Policy Status', stage: 'Early Success' },
+        { name: 'AI Governance & Ethical AI Principles', stage: 'Open to Adopt' },
+        { name: 'Data Protection & Privacy Legislation', stage: 'Maturing' },
+        { name: 'Government AI Initiatives & Projects', stage: 'Maturing' },
+      ]
+    },
+    P2: {
+      parameter: 'DPI Ecosystem Maturity', parameterStage: 'Maturing', subParameters: [
+        { name: 'National Digital Transformation Strategy', stage: 'Maturing' },
+        { name: 'Digital ID', stage: 'Maturing' },
+        { name: 'Digital Payments', stage: 'Maturing' },
+        { name: 'Data Exchange', stage: 'Maturing' },
+        { name: 'Use Cases of DPI Assets', stage: 'Maturing' },
+      ]
+    },
+    P3: {
+      parameter: 'Digital-Physical Infrastructure', parameterStage: 'Early Success', subParameters: [
+        { name: 'Electricity Access & Reliability', stage: 'Early Success' },
+        { name: 'Internet Penetration', stage: 'Early Success' },
+        { name: 'Compute & Cloud Capacity', stage: 'Maturing' },
+      ]
+    },
+    P4: {
+      parameter: 'Political Stability & Governance', parameterStage: 'Maturing', subParameters: [
+        { name: 'WB Political Stability Score (2024)', stage: 'Early Success' },
+        { name: 'Strategic & Long-term Subjective Call', stage: 'Maturing' },
+      ]
+    },
+    P5: {
+      parameter: 'Stakeholder Participation', parameterStage: 'Maturing', subParameters: [
+        { name: 'Lead Agency & Govt Coordination', stage: 'Maturing' },
+        { name: 'Private Sector Engagement', stage: 'Maturing' },
+        { name: 'Development Partners & MDBs', stage: 'Maturing' },
+        { name: 'Academic & Research Institutions', stage: 'Maturing' },
+        { name: 'Civil Society Engagement', stage: 'Early Success' },
+      ]
+    },
+    P6: {
+      parameter: 'Funding Landscape', parameterStage: 'Maturing', subParameters: [
+        { name: 'Domestic Public Budget for AI/DPI', stage: 'Maturing' },
+      ]
+    },
   },
   sources: ["https://erikalegara.com/uploads/NAISR2.0_July2024.pdf", "https://senate.gov.ph/legislative-documents/bills/594456", "https://www.deped.gov.ph/wp-content/uploads/DO_s2025_013.pdf", "https://www.lexology.com/library/detail.aspx?g=91e88551-72ff-439e-82a6-05ace8a7dd61", "https://asti.dost.gov.ph/news-articles/asti-pagasa-partner-with-atmo-for-ai-powered-weather-forecasting/", "https://atmo.ai/news/philippines-ai-transition", "https://asti.dost.gov.ph/projects/itanong/", "https://asti.dost.gov.ph/projects/alam-project/", "https://pia.gov.ph/news/mmda-eyes-use-of-ai-in-traffic-management/", "https://www.pchrd.dost.gov.ph/heartnovation/aina-artificial-intelligence-nutrition-assistant/", "https://registry.healthresearch.ph/index.php/registry?cid=8363&layout=details&view=research", "https://www.pchrd.dost.gov.ph/news_and_updates/dost-pchrd-presents-ai-driven-innovations-at-amcham-philippines/", "https://asti.dost.gov.ph/events/launch-of-the-national-artificial-intelligence-center-for-research-and-innovation/", "https://www.ditosapilipinas.com/national/news/article/05/19/2025/dost-asti-inclusive-ai-ecosystem/1599", "https://mb.com.ph/2026/02/21/dost-to-launch-national-ai-center", "https://pia.gov.ph/news/soccsksargen-backs-dosts-geospatial-technology-ai-initiative/", "https://asti.dost.gov.ph/wp-content/uploads/PPAs-2025.pdf", "https://dict.gov.ph/news-and-updates/25385", "https://pia.gov.ph/news/first-in-asia-world-ph-to-use-blockchain-tech-for-budget/", "https://businessmirror.com.ph/2025/07/28/government-to-provide-%E2%82%B11-5-b-for-ai-upskilling-in-2026/", "https://news.microsoft.com/source/asia/2026/02/03/deped-and-microsoft-accelerate-learning-recovery-and-ai-literacy-for-filipinos/", "https://coare.asti.dost.gov.ph/services", "https://asti.dost.gov.ph/news-articles/coare-supercomputing-facility-highlights-its-continuous-support-to-covid-19-centric-initiatives/", "https://datacommons.up.edu.ph/about-updc/", "https://datareportal.com/reports/digital-2026-philippines"]
 };
