@@ -432,38 +432,55 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                     </div>
 
                     <div className="w-full overflow-x-auto">
-                        <table className="w-full text-left text-lg" aria-label="Community Actors">
-                            <thead className="bg-slate-50/80 backdrop-blur-md sticky top-0 z-10">
-                                <tr>
-                                    <th scope="col" className="px-8 py-5 font-bold text-slate-900 border-b border-slate-200 w-1/4">Organization Name</th>
-                                    <th scope="col" className="px-8 py-5 font-bold text-slate-900 border-b border-slate-200">Type</th>
-                                    <th scope="col" className="px-8 py-5 font-bold text-slate-900 border-b border-slate-200 w-1/2">Major Initiatives</th>
-                                </tr>
-                            </thead>
-                            <tbody className="divide-y divide-slate-100">
-                                {data.sectionC.actors.map((actor: Actor) => (
-                                    <tr key={actor.id} className="hover:bg-blue-50/40 transition-colors group">
-                                        <td className="px-8 py-6 font-bold text-slate-900">{actor.name}</td>
-                                        <td className="px-8 py-6">
-                                            <span className="inline-flex items-center px-3 py-1.5 rounded-md text-sm font-semibold bg-slate-100 text-slate-800 border border-slate-200">
-                                                {actor.type}
-                                            </span>
-                                        </td>
-                                        <td className="px-8 py-6 text-slate-700">
-                                            {actor.initiatives && actor.initiatives.length > 0 ? (
-                                                <ul className="list-disc list-inside space-y-1.5 text-sm">
-                                                    {actor.initiatives.map((init, idx) => (
-                                                        <li key={idx} className="leading-relaxed">{init}</li>
-                                                    ))}
-                                                </ul>
-                                            ) : (
-                                                <span className="text-slate-500 italic text-sm">No explicit initiatives documented.</span>
-                                            )}
-                                        </td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
+                        {(() => {
+                            const subParamOrder = ['Lead Agency & Govt Coordination', 'Private Sector', 'Development Partners & MDBs', 'Academic & Research', 'Civil Society'];
+                            const subParamColors: Record<string, { bg: string; border: string; text: string; badge: string }> = {
+                                'Lead Agency & Govt Coordination': { bg: 'bg-blue-50/50', border: 'border-blue-200', text: 'text-blue-800', badge: 'bg-blue-100 text-blue-800 border-blue-200' },
+                                'Private Sector': { bg: 'bg-violet-50/50', border: 'border-violet-200', text: 'text-violet-800', badge: 'bg-violet-100 text-violet-800 border-violet-200' },
+                                'Development Partners & MDBs': { bg: 'bg-emerald-50/50', border: 'border-emerald-200', text: 'text-emerald-800', badge: 'bg-emerald-100 text-emerald-800 border-emerald-200' },
+                                'Academic & Research': { bg: 'bg-amber-50/50', border: 'border-amber-200', text: 'text-amber-800', badge: 'bg-amber-100 text-amber-800 border-amber-200' },
+                                'Civil Society': { bg: 'bg-rose-50/50', border: 'border-rose-200', text: 'text-rose-800', badge: 'bg-rose-100 text-rose-800 border-rose-200' },
+                            };
+                            const grouped = subParamOrder.map(type => ({
+                                type,
+                                actors: data.sectionC.actors.filter((a: Actor) => a.type === type),
+                            })).filter(g => g.actors.length > 0);
+                            return (
+                                <div className="divide-y divide-slate-100">
+                                    {grouped.map((group) => {
+                                        const colors = subParamColors[group.type] || { bg: 'bg-slate-50', border: 'border-slate-200', text: 'text-slate-700', badge: 'bg-slate-100 text-slate-700 border-slate-200' };
+                                        return (
+                                            <div key={group.type}>
+                                                <div className={`px-8 py-4 ${colors.bg} border-l-4 ${colors.border}`}>
+                                                    <span className={`text-sm font-bold uppercase tracking-wider ${colors.text}`}>{group.type}</span>
+                                                </div>
+                                                {group.actors.map((actor: Actor) => (
+                                                    <div key={actor.id} className="px-8 py-6 hover:bg-blue-50/30 transition-colors border-b border-slate-50">
+                                                        <div className="flex flex-col md:flex-row md:items-start gap-4">
+                                                            <div className="md:w-1/3">
+                                                                <h4 className="font-bold text-slate-900 text-base">{actor.name}</h4>
+                                                                <span className={`inline-flex items-center mt-1.5 px-2.5 py-1 rounded-md text-xs font-semibold border ${colors.badge}`}>{actor.role}</span>
+                                                            </div>
+                                                            <div className="md:w-2/3">
+                                                                {actor.initiatives && actor.initiatives.length > 0 ? (
+                                                                    <ul className="list-disc list-inside space-y-1.5 text-sm text-slate-700">
+                                                                        {actor.initiatives.map((init, idx) => (
+                                                                            <li key={idx} className="leading-relaxed">{init}</li>
+                                                                        ))}
+                                                                    </ul>
+                                                                ) : (
+                                                                    <span className="text-slate-500 italic text-sm">No explicit initiatives documented.</span>
+                                                                )}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            );
+                        })()}
                     </div>
                 </motion.section>
 

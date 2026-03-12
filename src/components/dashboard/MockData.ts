@@ -12,9 +12,9 @@ export const radarData: RadarDataPoint[] = [
   { parameter: 'AI Ecosystem Maturity', Malaysia: 4, Cambodia: 2, Philippines: 3, Bangladesh: 2, Nepal: 0, fullMark: 5 },
   { parameter: 'DPI Ecosystem Maturity', Malaysia: 4, Cambodia: 4, Philippines: 4, Bangladesh: 3, Nepal: 0, fullMark: 5 },
   { parameter: 'Digital Infra Availability', Malaysia: 5, Cambodia: 2, Philippines: 3, Bangladesh: 3, Nepal: 0, fullMark: 5 },
-  { parameter: 'Political Stability', Malaysia: 4, Cambodia: 4, Philippines: 3, Bangladesh: 2, Nepal: 0, fullMark: 5 },
-  { parameter: 'Stakeholder Participation', Malaysia: 3, Cambodia: 3, Philippines: 3, Bangladesh: 3, Nepal: 0, fullMark: 5 },
-  { parameter: 'Funding Landscape', Malaysia: 3, Cambodia: 3, Philippines: 3, Bangladesh: 2, Nepal: 0, fullMark: 5 },
+  { parameter: 'Political Stability', Malaysia: 4, Cambodia: 4, Philippines: 4, Bangladesh: 2, Nepal: 0, fullMark: 5 },
+  { parameter: 'Stakeholder Participation', Malaysia: 3, Cambodia: 3, Philippines: 4, Bangladesh: 3, Nepal: 0, fullMark: 5 },
+  { parameter: 'Funding Landscape', Malaysia: 3, Cambodia: 2, Philippines: 4, Bangladesh: 2, Nepal: 0, fullMark: 5 },
 ];
 
 export interface MetricCard {
@@ -101,7 +101,7 @@ export const malaysiaData: CountryDetailData = {
     digitalId: {
       title: 'Digital ID', status: 'Maturing', description: 'MyDigital ID (8.7M users)', implementationAgency: 'My Digital ID Sdn Bhd',
       modalDetails: {
-        fullContext: "Implementation status: Implemented Program details: MyDigital ID I 2024 I RM80mn allocation Implementation agency: My Digital ID Sdn Bhd, Ministry of Digital Adoption: 8.7 million users (~33%) ",
+        fullContext: "MyDigital ID (RM80M allocation) is a secure government-backed digital identity enabling single sign-on for online portals, with 8.7M registered users. Goal: 95% of federal services integrated by 2030.",
         keyMetrics: [
           "RM80 million budget allocation",
           "Registration began in 2024 via MyGOV Malaysia",
@@ -113,7 +113,7 @@ export const malaysiaData: CountryDetailData = {
     payments: {
       title: 'Digital Payments', status: 'Maturing', description: 'DuitNow (5.3 bn transactions)', implementationAgency: 'PayNet',
       modalDetails: {
-        fullContext: "Implementation status: Implemented Program details: Real-time Retail Payments Platform I 2018, DuitNow Implementation agency: PayNet Adoption: 5.3 bn transactions in 2024, RM5.4T transaction value - 70% population (Above 15) made 1 digital payment in 2018/19 ",
+        fullContext: "The Real-time Retail Payments Platform (DuitNow), launched in 2018 and operated by PayNet, facilitated 5.3 billion transactions (RM5.4T value) in 2024. Over 70% of the adult population has made at least one digital payment.",
         keyMetrics: [
           "Real-time Retail Payments Platform (RPP) launched in 2018",
           "Enables real-time, data-rich payments between accounts",
@@ -126,7 +126,7 @@ export const malaysiaData: CountryDetailData = {
     dataExchange: {
       title: 'Data Exchange', status: 'Maturing', description: 'MYGDX (35 million transactions)', implementationAgency: 'MAMPU',
       modalDetails: {
-        fullContext: "Implementation status: Implemented Program details: Malaysian Government Central Data Exchange (MyGDX) I 2018  Implementation agency: MAMPU (Malaysian Administration Modernization and Management Planning Unit) Adoption:657 users, 35 million transactions ",
+        fullContext: "The Malaysian Government Central Data Exchange (MyGDX), managed by MAMPU since 2018, supports 657 users and 35 million transactions to empower data-driven governance across ministries.",
         keyMetrics: [
           "Enhances end-to-end (E2E) online services towards a data-driven government",
           "Reduces cost of infrastructure and system integration",
@@ -140,7 +140,7 @@ export const malaysiaData: CountryDetailData = {
     policy: {
       title: 'AI Strategy', status: 'Maturing', description: 'Malaysia Artificial Intelligence Roadmap 2021-2025', implementationAgency: 'Malaysian National AI Office (NAIO)',
       modalDetails: {
-        fullContext: "- Malaysia's Artificial Intelligence Roadmap 2021-2025 (launched in Aug 2022 by Malaysian Ministry of Science, Technology, and Innovation (MOSTI))  - National AI Office est. in 2024 under the Ministry of Digital to  oversee implementation and coordination   - As of the third quarter of 2024, Malaysia’s National AI Roadmap 2021-2025 has achieved 63% completion ",
+        fullContext: "Malaysia's AI Roadmap 2021-2025, overseen by the National AI Office (est. 2024), aims to augment jobs and drive innovation across 5 priority sectors. As of Q3 2024, implementation stands at 63% completion.",
         keyMetrics: [
           "Malaysia's Artificial Intelligence Roadmap 2021-2025",
           "Aims to augment jobs and drive national competitiveness",
@@ -151,9 +151,9 @@ export const malaysiaData: CountryDetailData = {
       }
     },
     governance: {
-      title: 'AI Governance', status: 'Early success', description: 'National Guidelines on AI Governance and Ethics (AIGE)', implementationAgency: 'Malaysian National AI Office (NAIO)',
+      title: 'AI Governance', status: 'Early Success', description: 'National Guidelines on AI Governance and Ethics (AIGE)', implementationAgency: 'Malaysian National AI Office (NAIO)',
       modalDetails: {
-        fullContext: "- There is currently no specific legislation regulating the use of machine learning and AI in Malaysia. But the govt has put forward guidelines for the AI users, policy makers and developers, designers etc.   - The intention of the National Guidelines on AI Governance & Ethics (AIGE) is to develop and deploy AI in a safe, trustworthy, and ethical manner, taking an approach to developing and deploying AI from both an ethical and legal point of view  - The guidelines are not legally binding and are for the voluntary adoption of the seven AI Principles by developers and deployers of AI alongside existing laws to ensure that the adoption of AI technology ",
+        fullContext: "Guided by the voluntary National Guidelines on AI Governance & Ethics (AIGE), Malaysia aims for safe and trustworthy AI deployment built on seven core principles. No AI-specific legislation is enacted yet.",
         keyMetrics: [
           "Built on 7 AI Principles including fairness, reliability, and human-centricity",
           "Structured across three levels: Users, Regulators, and Developers",
@@ -165,7 +165,7 @@ export const malaysiaData: CountryDetailData = {
     legislation: {
       title: 'Data Legislation', status: 'Maturing', description: 'Data Protection and Privacy Laws', implementationAgency: 'Department of Personal Data Protection',
       modalDetails: {
-        fullContext: "- Malaysia's Personal Data Protection (Amendment) Act 2024  - PDPA Act's enforcement is overseen by the Department of Personal Data Protection (JPDP)  -As per the UNDP Digital Development Compass, Malaysia has a score of 4.17 in data and privacy and  5 in cybersecurity. (5 is the top score representing transformational performance). It has dynamic Legal Framework: Comprehensive law, baselines, compliance, international alignment.",
+        fullContext: "Governed by the Personal Data Protection (Amendment) Act 2024, enforced by the JPDP. Malaysia scores 4.17/5 in data privacy and 5/5 in cybersecurity on the UNDP Digital Development Compass.",
         keyMetrics: [
           "Personal Data Protection (Amendment) Act 2024 addresses privacy",
           "Score of 4.17/5 in data and privacy (UNDP Digital Development Compass)",
@@ -177,7 +177,7 @@ export const malaysiaData: CountryDetailData = {
     initiatives: {
       title: 'Government AI Initiatives', status: 'Maturing', description: 'AI in Healthcare & Digital Hospitals', implementationAgency: 'Ministry of Health',
       modalDetails: {
-        fullContext: "- The National AI Roadmap has defined 11 national AI Use cases across 5 sectors (Agriculture and forestry, healthcare, smart cities and transportation, education and public services)  -Both Federal Government and the State Governments have embarked on numerous AI initiatives. - Examples: a. Healthcare:  Ministry of Health unveiled “DR. MATA”, an AI-powered diagnostic tool to detect diabetic retinopathy, a leading cause of blindness among diabetics.  AI is also digitally transforming the operations of public health clinics, with the roll-out of cloud-based digital management system (CCMS), enhancing efficiency and accessibility of healthcare services.   b. Smart cities and transportation: AI adoption is traffic management. In Kuala Lumpur, a citywide CCTV network enables AI platforms to count vehicles, classify them by type, and recognise licence plates. This allows real-time traffic analysis  c.Financial services: In August 2024, the Central Bank of Malaysia, in partnership with PayNet, and other financial institutions, launched the National Fraud Portal (NFP), utilising AI to combat financial fraud through predictive analysis.   d. Agriculture: Malaysia launched the world’s first AI-driven smart palm oil mill",
+        fullContext: "11 national AI use cases defined across healthcare, agriculture, smart cities, education, and public services. Key deployments include DR. MATA for diabetic retinopathy, AI traffic analysis in Kuala Lumpur, and the National Fraud Portal.",
         keyMetrics: [
           "MySejahtera: Public Health Digital Gateway",
           "DR MATA: AI-Based Diabetic Retinopathy Screening",
@@ -189,12 +189,12 @@ export const malaysiaData: CountryDetailData = {
     },
   },
   sectionB: {
-    fundingLandscape: "The 2025 National Budget allocates RM285M to MOSTI for AI governance and RM10M for the National AI Office (NAIO). Private sector investments are heavily focused on data centre development and smart city initiatives.",
+    fundingLandscape: "The 2025 Budget allocates RM285M to MOSTI for AI governance and RM10M for NAIO. Between 2021-2023, Malaysia attracted RM114.7B in data centre investments. In 2024, over USD 18B in foreign AI investments were secured from Microsoft, Google, ByteDance, and Oracle.",
     electricityAccess: 100, // 100% access to electricity (World Bank, 2022) 
     internetPenetration: 97.7, // 97.7% internet penetration rate (ITU, 2024)
     deviceAccess: 95.5,
-    digitalInclusion: "- Nearly equal access for men and women, urban and rural areas",
-    dataCenters: '- As of Nov 2024, 87 data centres  - RM114.7 billion in data centre and cloud investments (2021–2023)',
+    digitalInclusion: "Nearly equal access for men and women, urban and rural areas.",
+    dataCenters: '87 data centres as of Nov 2024; RM114.7B in data centre and cloud investments (2021-2023)',
     politicalStability: 'Political stability improved from 2014 to 2024 by ~5 percentage points (67.4 to 72.47) (Source: WB WGI 2024)',
     electionCycles: '5 years (Next: Nov-Dec 2027)',
     politicalSubParameters: [
@@ -213,10 +213,11 @@ export const malaysiaData: CountryDetailData = {
   },
   sectionC: {
     actors: [
-      { id: 'm1', type: 'Government', name: 'MOSTI, Ministry of Digital, MAMPU, NAIO', role: 'Decision-makers & Implementers', initiatives: ['National AI Roadmap 2021-2025', 'National Guidelines on AI Governance and Ethics', 'RM285M MOSTI budget allocation'] },
-      { id: 'm2', type: 'Private', name: 'Petronas, Google, Microsoft, Grab', role: 'Implementers & Influencers', initiatives: ['Data Cloud Region expansions', 'USD 18B+ foreign AI investment', 'Smart City integrations'] },
-      { id: 'm3', type: 'Development Partners', name: 'UNESCO, UNDP, World Bank', role: 'Policy Influencers & Funders', initiatives: ['AI Readiness Assessment Methodology (RAM)', 'Ethics Recommendation implementations', 'DFAT Australia standards funding'] },
-      { id: 'm4', type: 'Academia', name: 'UTM, UM, MIMOS', role: 'R&D & Talent Pipeline', initiatives: ['AI Sandbox 2024 Pilot', 'Faculty of AI (UTM)', 'RM50M AI education budget'] },
+      { id: 'm1', type: 'Lead Agency & Govt Coordination', name: 'Ministry of Digital, MOSTI, MAMPU, NAIO', role: 'Decision-makers & Implementers', initiatives: ['National AI Roadmap 2021-2025', 'National Guidelines on AI Governance and Ethics', 'RM285M MOSTI + RM10M NAIO budget allocation', '8 agencies under Ministry of Digital coordinating across ministries'] },
+      { id: 'm2', type: 'Private Sector', name: 'Toshiba, Microsoft, Google, AWS, YTL Power, ByteDance, Oracle', role: 'Implementers & Co-Investors', initiatives: ['Microsoft: USD 2.2B for cloud and AI services', 'Google: USD 2B for first data centre region', 'YTL Power: Developing Ilmu 0.1, a Malaysian LLM', '284 AI companies, targeting 900 by 2026'] },
+      { id: 'm3', type: 'Development Partners & MDBs', name: 'MYCentre4IR (WEF), UNESCO, UNDP', role: 'Advisory & Strategy Support', initiatives: ['MYCentre4IR connects NAIO with global WEF experts', 'AI Readiness Assessment Methodology (RAM)', 'Co-developing thought leadership publications'] },
+      { id: 'm4', type: 'Academic & Research', name: 'UTM (CAIRO), UM (MALAYA AIR), UMS (AiRU), Nottingham Malaysia', role: 'R&D & Talent Pipeline', initiatives: ['Centre for AI and Robotics (CAIRO) at UTM', 'RM50M AI education budget across research universities', 'AI Sandbox 2024 Pilot', 'Curriculum development and talent pipelines'] },
+      { id: 'm5', type: 'Civil Society', name: 'PIKOM, MIFA, Women in AI', role: 'Advocacy & Inclusion', initiatives: ['Promoting AI literacy and digital inclusion', 'Gender equity in AI adoption', 'Quadruple Helix Model engagement'] },
     ],
   },
   sectionD: {
@@ -246,7 +247,7 @@ export const cambodiaData: CountryDetailData = {
     digitalId: {
       title: 'Digital ID', status: 'Early Success', description: 'CamDigiKey (86k Users)', implementationAgency: 'MEF',
       modalDetails: {
-        fullContext: "Launched by the Ministry of Economy of Finance in 2019, CamDigiKey is Cambodia's national platform for verified e-kyc, though adoption presently leans heavily towards business-related government e-services over civilian use. ",
+        fullContext: "CamDigiKey, launched by the Ministry of Economy & Finance, serves as Cambodia's national e-KYC platform. With only ~86K downloads out of 18M population, adoption is concentrated in business-related government services.",
         keyMetrics: [
           "Targeted in Phase 1 (2021-2025) of the Digital Economy Framework",
           "Focus restricted to foundational E-ID and payment gateways",
@@ -258,7 +259,7 @@ export const cambodiaData: CountryDetailData = {
     payments: {
       title: 'Digital Payments', status: 'Maturing', description: 'Bakong (60% adult population)', implementationAgency: 'NBC',
       modalDetails: {
-        fullContext: "Bakong is Cambodia's flagship sovereign digital payment system. Operating on blockchain-inspired quasi-decentralized ledgers under the National Bank of Cambodia, it successfully synthesized mobile payments nationwide.",
+        fullContext: "Bakong, Cambodia's sovereign blockchain-based digital payment system under the National Bank of Cambodia, achieves ~100M transactions per month and reaches 60% of the adult population.",
         keyMetrics: ["Reaches 60% of the adult population", "Operates across local banks and e-wallets", "Blockchain-enabled architecture"],
         timeline: "Launched 2020"
       }
@@ -266,7 +267,7 @@ export const cambodiaData: CountryDetailData = {
     dataExchange: {
       title: 'Data Exchange', status: 'Maturing', description: 'CamDX', implementationAgency: 'Techo Startup Center',
       modalDetails: {
-        fullContext: "CamDX acts as the unified data exchange layer for the Cambodian government, notably powering systems like Verify.gov.kh for secure government document verification.",
+        fullContext: "CamDX is the unified data exchange layer for the Cambodian government, deployed across 22 ministries and processing 1M transactions monthly. It also powers Verify.gov.kh for secure document verification.",
         keyMetrics: ["Managed by MEF", "Powers Verify.gov.kh", "Core to Cambodian e-gov architecture", "Verify.gov Cambodia successfully integrated for national government document verification"],
         timeline: "Launched 2020"
       }
@@ -276,7 +277,7 @@ export const cambodiaData: CountryDetailData = {
     policy: {
       title: 'AI Strategy', status: 'Open to Adopt', description: 'National AI Strategy 2025-30', implementationAgency: 'Ministry of Post and Telecommunications',
       modalDetails: {
-        fullContext: "The National AI Strategy, finalized by the Ministry of Post & Telecommunications in 2024, establishes the foundational trajectory for AI capability and procurement in Cambodia.",
+        fullContext: "The National AI Strategy 2025-30 (drafted by MPTC) outlines six strategic priorities including a skilled workforce, digital government excellence, Khmer language inclusion via a national LLM, and establishing a National AI and Data Science Lab.",
         keyMetrics: [
           "Draft National AI Strategy 2025-30",
           "Establishing a National AI and Data Science Lab",
@@ -289,7 +290,7 @@ export const cambodiaData: CountryDetailData = {
     governance: {
       title: 'AI Governance', status: 'Open to Adopt', description: 'AI Readiness Assessment', implementationAgency: 'Ministry of Post and Telecommunications (MPTC)',
       modalDetails: {
-        fullContext: "Designed concurrently with the National Strategy, this framework intends to regulate AI deployment, emphasizing safety and human-centric deployment principles before widespread public integration.",
+        fullContext: "AI governance is being built through UNESCO RAM recommendations and the National AI Strategy. Cambodia scored 55/100 in the UNESCO AI Readiness Assessment, with data protection and cybersecurity laws still in draft stage.",
         keyMetrics: [
           "Scored 55 out of 100 in UNESCO AI Readiness Assessment",
           "Implementing a 'soft law' approach guided by UNESCO RAM",
@@ -301,7 +302,7 @@ export const cambodiaData: CountryDetailData = {
     legislation: {
       title: 'Data Legislation', status: 'Open to Adopt', description: 'Data protection and Privacy regulation', implementationAgency: 'Ministry of Post and Telecommunications (MPTC)',
       modalDetails: {
-        fullContext: "Draft Data Protection law w/ Public Consultation underway",
+        fullContext: "Sub-Decree 252 governs only MOI-held personal data. A comprehensive Draft Law on Personal Data Protection was released for public consultation in July 2025, expected to create a broader legal framework.",
         keyMetrics: [
           "Sub-Decree 252 applies only to Ministry of Interior identification data",
           "Draft Law on Personal Data Protection released for public consultation (July 2025)"
@@ -312,7 +313,7 @@ export const cambodiaData: CountryDetailData = {
     initiatives: {
       title: 'Government AI Initiatives', status: 'Early Success', description: 'National Research Center on AI & Landmine mapping', implementationAgency: 'CMAC & MPTC',
       modalDetails: {
-        fullContext: "Cambodia has launched several key AI initiatives, including the National Research Center on AI for Education and AI-assisted Landmine detection, with support from international partners.",
+        fullContext: "Key initiatives include AI-assisted landmine detection (CMAC), the National Research Center on AI for Education (inaugurated Nov 2025), and a partnership with AI Singapore to develop an open-source Khmer Large Language Model.",
         keyMetrics: [
           "National Research Center on AI for Education inaugurated (Nov 2025)",
           "AI-assisted Landmine detection targeting a landmine-free status by 2030",
@@ -323,21 +324,21 @@ export const cambodiaData: CountryDetailData = {
     },
   },
   sectionB: {
-    fundingLandscape: "Digital transformation is included in the $10.1B national budget, with specific AI/Digital R&D targeted to rise from 0.09% of GDP. Furthermore, private actors account for a part of $10B in registered investment projects with a major focus on Fintech and logistics AI",
+    fundingLandscape: "The government approved over $10B in investments in 2025, with AI/DPI R&D targeted to rise from 0.09% of GDP. However, dedicated domestic public funding for AI/DPI remains limited, with heavy reliance on external development assistance and annual project-tied approvals.",
     electricityAccess: 92.3,
     internetPenetration: 60.0,
-    digitalInclusion: "Gender divide more evident in rural areas for digital access.",
-    dataCenters: '4 Commercial Data Centres',
-    politicalStability: 'Authoritarian Regime - 123/169 (Source: Democracy Index 2024)',
-    electionCycles: 'Next: 2028',
+    digitalInclusion: "Stark urban-rural gap with internet usage concentrated among young urban users. UNICEF reports digital literacy restrictions for rural women.",
+    dataCenters: '4 modern data centres established; cloud services sparsely available. Only 11% of institutions have on-premises GPU processors',
+    politicalStability: 'WB Political Stability: 68th percentile (Maturing). Authoritarian Regime — 123/169 (Source: Democracy Index 2024)',
+    electionCycles: '5-year cycle (Previous: 2023-24; Next: 2028-29)',
     politicalSubParameters: [
-      { label: 'Elections', value: '5-year cycle (last: 2023-24; next: 2028-29). Predominantly single-party governance model.' },
-      { label: 'Governance Structure', value: 'Constitutional Monarchy with a Parliamentary system, governed centrally with one-party dominance.' },
-      { label: 'Political Stability', value: 'Classified as \'Authoritarian\' (Rank 123/169) in the 2024 Democracy Index.' },
-      { label: 'Digital Priority', value: 'High priority on human development and digital skills, prominently featuring a National AI Strategy draft and the National Research Center on AI for Education.' },
-      { label: 'Institutional Capacity', value: 'Data infrastructure capacity is improving steadily (2019-2023), aligning with long-term digital transformation objectives.' },
-      { label: 'Leadership Champions', value: 'Prime Minister Hun Manet and Minister of Post and Telecommunications expressly champion digital skills and ethical technology.' },
-      { label: 'Key Influencers', value: 'Ministry of Post and Telecommunications (MPTC) and Ministry of Industry, Science, Technology and Innovation (MISTI).' }
+      { label: 'Elections', value: '5-year cycle (last: 2023-24; next: 2028-29). Predominantly one-party governance model — could track key people of interest and their ministerial terms.' },
+      { label: 'Governance Structure', value: 'Constitutional Monarchy with a Parliamentary system, governed centrally by mostly one-party rule.' },
+      { label: 'Political Stability', value: 'WB Political Stability at 68th percentile (Maturing). Democracy Index 2024: Authoritarian (123/169). Cambodia-Thailand border tensions could escalate, potentially shifting priorities from DT toward national security.' },
+      { label: 'Digital Priority', value: 'Strong and growing. Pentagonal Strategy Phase I places human development and digital transformation as core pillars. National AI Strategy drafted, National Research Center on AI for Education inaugurated Nov 2025.' },
+      { label: 'Institutional Capacity', value: 'DataBank Performance Indicators show increasing capacity (2019-2023), especially in institutional data collection. Digital transformation policies are gaining institutional depth.' },
+      { label: 'Leadership Champions', value: 'PM Hun Manet (Digital Revolution emphasis); H.E. Chea Vandeth (Minister of PTC, Head of Digital Governance Committee, ethics-technology balance); H.E. Sam Sethserey (DG of ICT at MPTC, cybersecurity & startup ecosystem); Seng Molika (DDG of STI at MISTI, DT unit lead).' },
+      { label: 'Key Influencers', value: 'MPTC (backbone and governance), MISTI (R&D and adoption), Working Group on AI and Data Science R&D (drafted the National AI Strategy).' }
     ],
     leadershipQuote: {
       text: "Building a digital economy and society is a key priority to drive new economic growth and realize the vision of becoming a high-income country by 2050.",
@@ -347,10 +348,11 @@ export const cambodiaData: CountryDetailData = {
   },
   sectionC: {
     actors: [
-      { id: 'c1', type: 'Government', name: 'MPTC, MISTI, MOEYS', role: 'Decision-maker & Lead', initiatives: ['National AI Strategy (2024-2035)', '"AI for Good" policies', 'Khmer Large Language Model (Sarika)'] },
-      { id: 'c2', type: 'Private', name: 'Techo Startup Center', role: 'Implementer', initiatives: ['Biometric eID deployment', 'OCR liveness checks', 'Bakong fraud detection'] },
-      { id: 'c3', type: 'Development Partners', name: 'UNESCO, UNDP, ADB', role: 'Policy Influencer / Funder', initiatives: ['UNESCO AI Ethics RAM Implementation', '$50M ADB digital loan', '"AI Ethics Experts Without Borders"'] },
-      { id: 'c4', type: 'Academia', name: 'Cambodia Academy of Digital Tech (CADT)', role: 'Research Hub', initiatives: ['Research Area in AI for Education (RAIE)', '$27M STEPCam Phase II funding', 'LBE Research Grants'] },
+      { id: 'c1', type: 'Lead Agency & Govt Coordination', name: 'MPTC, MISTI, MEF', role: 'Decision-maker & Lead', initiatives: ['National AI Strategy 2025-30 (drafted by MPTC)', 'Digital Economy and Society Policy Framework 2021-2035', 'No single agency for overall DT — fragmented across ministries'] },
+      { id: 'c2', type: 'Private Sector', name: 'Techo Startup Center, First Cambodia, Smart Axiata, Alibaba Cloud', role: 'Implementer & Incubator', initiatives: ['Techo Startup Center: govt-supported private incubator/accelerator', 'Smart Axiata works with MPTC on connectivity', 'Alibaba Cloud increasing presence in Cambodia'] },
+      { id: 'c3', type: 'Development Partners & MDBs', name: 'UNESCO, ADB, UN ESCAP, AI Singapore', role: 'Technical Expertise & Funding', initiatives: ['~$3.1B in ADB concessional loans/SDRs', 'UNESCO "AI Ethics Experts Without Borders"', 'MoU with AI Singapore for open-source Khmer LLM'] },
+      { id: 'c4', type: 'Academic & Research', name: 'Cambodia Academy of Digital Technology (CADT)', role: 'Research & Capacity Building', initiatives: ['Co-drafted the National AI Strategy', 'National Research Center on AI for Education (inaugurated Nov 2025)', 'Part of country\'s capacity building efforts'] },
+      { id: 'c5', type: 'Civil Society', name: 'Development Innovations Project, Civil Society Consultations', role: 'Advocacy & Digital Literacy', initiatives: ['Cambodian Development Innovations Project (since 2013)', 'Civil societies actively consulted during NAS formulation', 'Internet penetration rose from 6.8% to 56.7% (2013-2024)'] },
     ],
   },
   sectionD: {
@@ -378,9 +380,9 @@ export const philippinesData: CountryDetailData = {
   countryName: 'Philippines',
   dpiEcosystem: {
     digitalId: {
-      title: 'Digital ID', status: 'Implemented', description: 'PhilSys / PhilID', implementationAgency: 'PSA & BSP',
+      title: 'Digital ID', status: 'Maturing', description: 'PhilSys / PhilID', implementationAgency: 'PSA & BSP',
       modalDetails: {
-        fullContext: "The Philippine Identification System (PhilSys) administers the PhilID and a unique biometric-supported identification number. Driven by the Philippine Statistics Authority, it streamlines transactions strictly under Data Privacy Act safeguards.",
+        fullContext: "PhilSys has enrolled 90 million Filipinos (~80% of population) with multi-modal biometrics. It is interoperable with banking (BSP Circular 1105 for instant e-KYC) and the eGovPH Super App for single sign-on across government services.",
         keyMetrics: [
           "PhilSys issues unique identification number supported by biometric data",
           "Administered by the Philippine Statistics Authority",
@@ -390,9 +392,9 @@ export const philippinesData: CountryDetailData = {
       }
     },
     payments: {
-      title: 'Digital Payments', status: 'Implemented', description: 'PhilPASSPlus, InstaPay, PESONet', implementationAgency: 'PSA & BSP',
+      title: 'Digital Payments', status: 'Maturing', description: 'PhilPASSPlus, InstaPay, PESONet', implementationAgency: 'PSA & BSP',
       modalDetails: {
-        fullContext: "PhilPaSSplus constitutes the BSP-operated real-time gross settlement system. It enables high-value interbank fund transfers and market settlements, strengthening payment system resilience and national liquidity management.",
+        fullContext: "PhilPaSSplus (ISO 20022 compliant) processed PHP 151.3 trillion in Q3 2025 (up 21% YoY). Retail rails include InstaPay and PESONet, with system expansion toward 24/7 operations in 2026 underpinning a wholesale CBDC pilot.",
         keyMetrics: [
           "PhilPaSSplus enables real time high-value interbank fund transfers",
           "Operated by the Bangko Sentral ng Pilipinas",
@@ -402,9 +404,9 @@ export const philippinesData: CountryDetailData = {
       }
     },
     dataExchange: {
-      title: 'Data Exchange', status: 'Implemented', description: 'eGovDX', implementationAgency: 'DICT',
+      title: 'Data Exchange', status: 'Maturing', description: 'eGovDX', implementationAgency: 'DICT',
       modalDetails: {
-        fullContext: "The eGovDX platform (DICT) enables interoperable inter-agency data sharing. Complementary retail payments rely on InstaPay, PESONet, and QR Ph for real-time, low-cost financial fund routing.",
+        fullContext: "eGovDX (DICT) provides secure middleware for interoperable data sharing across national agencies via standardised APIs, governed by the Data Privacy Act and Data Sharing Agreements. Active cross-agency use cases include DSWD-BSP and PSA-BSP integrations.",
         keyMetrics: [
           "eGovDX enables interoperable data sharing among government agencies",
           "InstaPay, PESONet, and QR Ph facilitate electronic fund transfers",
@@ -416,9 +418,9 @@ export const philippinesData: CountryDetailData = {
   },
   aiEcosystem: {
     policy: {
-      title: 'AI Strategy', status: 'Adopted', description: 'National Artificial Intelligence Strategy', implementationAgency: 'DTI',
+      title: 'AI Strategy', status: 'Early Success', description: 'National Artificial Intelligence Strategy', implementationAgency: 'DTI',
       modalDetails: {
-        fullContext: "The National AI Strategy Roadmap (NAISR) 2.0 targets boosting R&D spending to 1.0% GDP. It centers on the Center for AI Research (CAIR) to orchestrate sustainable agriculture, resilience, and large-scale workforce upskilling.",
+        fullContext: "NAISR 2.0 launched July 2024 by DTI, covering seven strategic imperatives. The Centre for AI Research (CAIR) targets agriculture and healthcare. Implementation remains early-stage with no public monitoring framework yet in place.",
         keyMetrics: [
           "National AI Strategy Roadmap (NAISR) 2.0 targets 1.0% of GDP R&D spending",
           "Aims to boost economy by up to PHP 2.6 trillion annually",
@@ -429,9 +431,9 @@ export const philippinesData: CountryDetailData = {
       }
     },
     governance: {
-      title: 'AI Governance', status: 'Drafted', description: 'Senate Bill no 25', implementationAgency: 'Senate',
+      title: 'AI Governance', status: 'Open to Adopt', description: 'Senate Bill no 25', implementationAgency: 'Senate',
       modalDetails: {
-        fullContext: "Senate Bill No. 25 (AI Regulation Act) is pending. It proposes a National AI Commission, an AI Ethics Review Board, risk-based system classifications, and strict labor protections requiring advanced notification of AI workplace integration.",
+        fullContext: "Senate Bill No. 25 (AI Regulation Act) remains in committee. DICT and CSC published a draft Joint Memorandum Circular on Ethical AI Use in Government (April 2024) drawing on OECD and UNESCO principles, but it is not yet enacted.",
         keyMetrics: [
           "Senate Bill No. 25 proposes a National AI Commission",
           "Mandates risk-based classification of AI systems",
@@ -441,9 +443,9 @@ export const philippinesData: CountryDetailData = {
       }
     },
     legislation: {
-      title: 'Data Legislation', status: 'Implemented', description: 'Data Privacy Act', implementationAgency: 'NPC',
+      title: 'Data Legislation', status: 'Maturing', description: 'Data Privacy Act', implementationAgency: 'NPC',
       modalDetails: {
-        fullContext: "The Data Privacy Act of 2012 (enforced by the National Privacy Commission) strictly regulates personal data processing, mandating lawful bases like consent, strict confidentiality, and 72-hour breach notifications.",
+        fullContext: "The Data Privacy Act of 2012 (RA 10173) is comprehensive and actively enforced by the National Privacy Commission. NPC Advisory 2024-04 extends regulation to AI, requiring Privacy Impact Assessments and meaningful human intervention in automated decision-making.",
         keyMetrics: [
           "Governed by the Data Privacy Act of 2012 (Republic Act No. 10173)",
           "Regulated by the independent National Privacy Commission",
@@ -453,9 +455,9 @@ export const philippinesData: CountryDetailData = {
       }
     },
     initiatives: {
-      title: 'Government AI Initiatives', status: 'Active', description: 'AI-4RP & SkAI-Pinas', implementationAgency: 'DOST',
+      title: 'Government AI Initiatives', status: 'Maturing', description: 'AI-4RP & SkAI-Pinas', implementationAgency: 'DOST',
       modalDetails: {
-        fullContext: "Over 12 major projects, including AI-4RP (weather forecasting), iTANONG (natural language government queries), AI traffic signaling by the MMDA, the National Data Lakehouse, and a ₱1.5 Billion national AI upskilling allocation.",
+        fullContext: "NAICRI launched Feb 2026 as the national HPC hub. Key deployments include Project AGAP.AI (1.5M learners), UTAK AI for brain tumour detection, AI weather forecasting (AI-4RP), and the Digital Bayanihan Chain for budget transparency.",
         keyMetrics: [
           "₱1.5 Billion national allocation for AI Upskilling Initiative",
           "Digital Bayanihan Chain (Blockchain for National Budget Transparency)",
@@ -467,13 +469,13 @@ export const philippinesData: CountryDetailData = {
     },
   },
   sectionB: {
-    fundingLandscape: "The DICT 2026 Proposed Budget allocates ₱18.9 Billion. Multilateral funding includes a $378M World Bank/AIIB Loan and $273M for the Philippine Digital Infrastructure Project (PDIP). Private sector valuation is led by GCash ($4.1 Billion) alongside roughly ~$2B projected for data centers by 2026.",
-    electricityAccess: 97.5,
+    fundingLandscape: "2026 National Budget: PHP 6.793 trillion with record DepEd allocation of PHP 992.7B. World Bank digital portfolio totals USD 1.637B. Digital Bayanihan Chain records the entire national budget on blockchain for fiscal transparency.",
+    electricityAccess: 89,
     internetPenetration: 83.8,
     deviceAccess: 81.0,
-    digitalInclusion: "Significant geographic gap between Metro Manila (~68.7% penetration) and regions like BARMM (27.7%) or Zamboanga (21.2%).",
-    dataCenters: '28 operational, 13 upcoming',
-    politicalStability: 'Flawed Democracy (51/167) (Source: Democracy Index 2024)',
+    digitalInclusion: "47.5 percentage point gap between Metro Manila (68.7%) and Zamboanga Peninsula (21.2%). Near gender parity but affordability remains the primary barrier for 58% of unconnected households.",
+    dataCenters: '28 operational colocation facilities (632.80 MW); Google Cloud first PH region in 2026; NAICRI shared HPC via DOST-ASTI COARE',
+    politicalStability: 'WB Political Stability: 52.67 percentile (40-60th range). E-Governance Act (RA 12254) institutionalises DT as state policy. (Source: WB WGI 2024)',
     electionCycles: '6-year cycle (Next: May 2028)',
     politicalSubParameters: [
       { label: 'Elections', value: '6-year presidential terms; 3-year midterms (last: May 2025; next presidential: 2028). Transitions are often influenced by political alliance shifts.' },
@@ -493,10 +495,11 @@ export const philippinesData: CountryDetailData = {
   },
   sectionC: {
     actors: [
-      { id: 'p1', type: 'Government', name: 'DICT, DTI, DOST, PSA', role: 'Decision-makers & Implementers', initiatives: ['eGovPH Superapp deployment', 'National AI Strategy Roadmap 2.0', '₱18.9 Billion DICT budget allocation'] },
-      { id: 'p2', type: 'Private', name: 'GCash, Maya, Globe, PLDT', role: 'Implementers & Influencers', initiatives: ['Expansion of scalable digital banking', '$2B in domestic data center investments', '$4.1 Billion market valuation architectures'] },
-      { id: 'p3', type: 'Development Partners', name: 'UNDP, World Bank, ADB', role: 'Policy Influencers & Funders', initiatives: ['Digital-PINAS foundation', 'Philippine Digital Infrastructure Project (PDIP)', '$378M World Bank/AIIB Loans'] },
-      { id: 'p4', type: 'Academia', name: 'UP, DLSU, Center for AI Research (CAIR)', role: 'R&D & Talent Development', initiatives: ['AI4RP Weather Forecasting', 'GATES Program for Geospatial AI', 'DOST-funded R&D grants'] },
+      { id: 'p1', type: 'Lead Agency & Govt Coordination', name: 'DICT, DTI, DOST, PSA, NPC, BSP', role: 'Decision-makers & Implementers', initiatives: ['DICT is legally designated lead for DT (RA 10844, RA 12254)', 'BSP Circular 1153: regulatory sandbox for fintech/AI', 'NPC oversees data protection; PSA manages PhilSys', 'Gap: No single lead agency for AI governance as of 2026'] },
+      { id: 'p2', type: 'Private Sector', name: 'GCash (Mynt), Microsoft, Google Cloud, PLDT/Smart, Aboitiz Data', role: 'Implementers & Co-Investors', initiatives: ['GCash: 94M users, de facto digital public infrastructure', 'Microsoft: MOU with DICT for government Azure cloud', 'Google Cloud: first Philippine region activated early 2026', 'PLDT VITRO & STT Fairview: AI-ready hyperscale facilities'] },
+      { id: 'p3', type: 'Development Partners & MDBs', name: 'World Bank, ADB, USAID BEACON, Gates Foundation', role: 'Policy Influencers & Funders', initiatives: ['World Bank: USD 1.637B digital portfolio (DPLs + PDIP)', 'ADB ProSPER: digital tools for Mindanao agriculture', 'USAID BEACON: community network deployments', 'Gates Foundation: PhilSys + digital financial services grants'] },
+      { id: 'p4', type: 'Academic & Research', name: 'Ateneo TRL, University of the Philippines, DOST-ASTI COARE', role: 'R&D & Talent Development', initiatives: ['Ateneo TRL: DPI testing hub for PhilSys integration', 'UP Principles for Responsible AI (soft-law guide)', 'DepEd-Microsoft E-CAIR: AI literacy scaled to millions', 'DOST-ASTI COARE HPC: supercomputing for AI research'] },
+      { id: 'p5', type: 'Civil Society', name: 'Foundation for Media Alternatives (FMA), Democracy.Net.PH', role: 'Advocacy & Oversight', initiatives: ['FMA: lead digital rights watchdog monitoring DICT policy', 'Democracy.Net.PH: crowdsourced Magna Carta for Philippine Internet Freedom', 'Civil society consulted for E-Governance Act (RA 12254) IRR', 'Gap: PWDs, indigenous peoples, informal workers excluded from AI/DPI consultations'] },
     ],
   },
   sectionD: {
