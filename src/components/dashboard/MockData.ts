@@ -428,20 +428,18 @@ export const cambodiaData: CountryDetailData = {
   },
   sectionD: {
     opportunities: [
-      { id: 'co1', text: 'Early Succession of e-ID: eID has low Early Succession rates in Cambodia, majorly availed for business-related government service. Expanding this can ensure marginalized populations aren\'t left behind.' },
-      { id: 'co2', text: 'National AI Strategy implementation: Focus on AI Safety with operationalizing AI Sandboxes for public health and governance.' },
-      { id: 'co3', text: 'Infrastructure Bottlenecks: Connectivity in terms of internet and electricity is improving constantly, though GPU and CPU servers remain scarce.' },
+      { id: 'co1', text: 'UNDP can provide technical support on regulatory design for AI Governance and Regulatory Frameworks, drawing on examples from other countries such as Singapore' },
+      { id: 'co2', text: 'Malaysia is one of the most AI-mature countries in the Digital Stewardship Community. UNDP can position it as a knowledge contributor - the country can share its experience in developing an AI strategy, establishing a dedicated AI agency, implementing use cases, and building AI infrastructure etc. with earlier-stage countries in the region.' },
+      { id: 'co3', text: 'The government wants to grow its AI startup base from 284 to 900 companies by 2026. UNDP can support in an innovation accelerator program to provide grants and mentorship for startups focusing on AI for Good the startups. They can also support in creating an AI Sandbox initiative.' },
     ],
     risks: [
-      { id: 'cr1', text: 'Deepening Digital Divide: Rapid 5G and AI Early Succession risk leaving rural communities and women behind.' },
-      { id: 'cr2', text: 'Data Vulnerability & Privacy: With the Law on Personal Data Protection still in the drafting/ratification stage, there is a risk of data misuse.' },
-      { id: 'cr3', text: 'Institutional Fragmentation: Digital initiatives are currently split across MPTC, MISTI, and MEF along with separate working groups.' },
+      { id: 'cr1', text: 'AI adoption is accelerating across healthcare, finance, and agriculture, yet Malaysia’s AI ethics guidelines remain voluntary and non-binding. Without enforceable standards, biased or opaque algorithms in public services could erode citizen trust, creating a risk of AI adoption without accountability.' },
+      { id: 'cr2', text: 'Malaysia has invested heavily in individual DPI components, but integration between foundational DPI assets remains limited. Without deliberate interoperability design and careful sequencing of use cases, Malaysia risks not achieving its 2030 target of integrating 95% of services. As a result, despite significant public investment in infrastructure, citizen-facing outcomes may remain limited' },
     ],
     partnerships: [
-      { id: 'cp1', text: 'Joint Human Capital Initiatives: Collaborate with CADT and UNESCO on the $27M STEPCam Phase II to ensure the curriculum includes "Future of Work" skills and AI ethics.' },
-      { id: 'cp2', text: 'South-South Cooperation: UNDP can facilitate knowledge exchange between Cambodia and other regional leaders (like Singapore or Vietnam) on DPI implementations.' },
-      { id: 'cp3', text: 'Policy Support for AI Ethics: Building on the UNESCO AI Readiness Assessment, partners can provide technical expertise to help turn ethical recommendations into enforceable local laws.' },
-      { id: 'cp4', text: 'Private Sector De-risking: Work with the Techo Startup Center to provide grants or technical mentorship for "Impact Tech" startups that solve local developmental challenges using AI.' },
+      { id: 'cp1', text: 'Partnership with National AI Office (NAIO) - NAIO was established in 2024 and is still building operational capacity. UNDP can establish an advisory relationship with NAIO. UNDP can suuport the transition of voluntary AI ethics guidelines into an enforceable regulatory framework and can provide support in the capacity building of officials.' },
+      { id: 'cp2', text: 'Partnership with Malaysia Digital Economic Corporation (MEDC) and MyDIGITAL Corporation - UNDP can engage with these agencies to co-design a DPI interoperability roadmap and prioritise citizen-centric use cases and support the achievement of the 2030 target of integrating 95% of services with Digital ID.' },
+      { id: 'cp3', text: 'PPartnership with NAIO and Microsoft - Microsoft, NAIO, and PETRONAS Leadership Centre are jointly establishing an AI Center focused on developing real-world AI solutions and nurturing talent. UNDP can engage this initiative to co-design an AI for Good accelerator track that directs mentorship, grants, and sandbox access toward startups working on development challenges in areas like healthcare, agriculture, and social protection. With the government targeting growth from 284 to 900 AI companies by 2026, UNDP can play a focused role in ensuring a share of this startup growth is channelled toward public interest outcomes.' },
     ],
   },
   parameterStages: {
