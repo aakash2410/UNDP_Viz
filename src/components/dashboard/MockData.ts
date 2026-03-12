@@ -240,21 +240,19 @@ export const malaysiaData: CountryDetailData = {
   },
   sectionD: {
     opportunities: [
-      { id: 'mo1', text: 'Public service AI integration: Expanding the "AI at Work" initiative to enhance efficiency across 10 key socio-economic sectors.' },
-      { id: 'mo2', text: 'Rapid startup growth: Utilising the AI Sandbox to increase the number of AI technology companies from 284 to 900 by 2026.' },
-      { id: 'mo3', text: 'Regional AI leadership: Leveraging the NAIO and the 2024 AIGE guidelines to position Malaysia as a regional hub for ethical AI.' },
+      { id: 'co1', text: 'UNDP can provide technical support on regulatory design for AI Governance and Regulatory Frameworks, drawing on examples from other countries such as Singapore' },
+      { id: 'co2', text: 'Malaysia is one of the most AI-mature countries in the Digital Stewardship Community. UNDP can position it as a knowledge contributor - the country can share its experience in developing an AI strategy, establishing a dedicated AI agency, implementing use cases, and building AI infrastructure etc. with earlier-stage countries in the region.' },
+      { id: 'co3', text: 'The government wants to grow its AI startup base from 284 to 900 companies by 2026. UNDP can support in an innovation accelerator program to provide grants and mentorship for startups focusing on AI for Good the startups. They can also support in creating an AI Sandbox initiative.' },
     ],
     risks: [
-      { id: 'mr1', text: 'Governance and regulatory risks: Legal infrastructure requires significant updates, particularly in data protection and enforceable ethical standards.' },
-      { id: 'mr2', text: 'Loss of cultural and linguistic heritage: A lack of explicit policies addressing AI\'s impact on cultural preservation and indigenous languages could lead to a loss of national identity.' },
-      { id: 'mr3', text: 'Dependence on foreign Tech: There is a high cost and potential over-dependence on foreign AI vendors which can limit homegrown innovation and sovereign control over AI solutions.' },
+      { id: 'cr1', text: 'AI adoption is accelerating across healthcare, finance, and agriculture, yet Malaysia’s AI ethics guidelines remain voluntary and non-binding. Without enforceable standards, biased or opaque algorithms in public services could erode citizen trust, creating a risk of AI adoption without accountability.' },
+      { id: 'cr2', text: 'Malaysia has invested heavily in individual DPI components, but integration between foundational DPI assets remains limited. Without deliberate interoperability design and careful sequencing of use cases, Malaysia risks not achieving its 2030 target of integrating 95% of services. As a result, despite significant public investment in infrastructure, citizen-facing outcomes may remain limited' },
     ],
     partnerships: [
-      { id: 'mp1', text: 'Green AI advocacy: Working with the Ministry of Digital to establish monitoring systems and policies for sustainable data centers.' },
-      { id: 'mp2', text: 'Public sector digital literacy: Support the Department of National Digital (JDN) in implementing the "Public Sector AI Adaptation Guidelines". UNDP can help design training modules for civil servants.' },
-      { id: 'mp3', text: 'Strategic innovation-AI Sandbox: Collaborate with the AI Sandbox initiative to provide grants and mentorship for startups focusing on AI for Good.' },
-      { id: 'mp4', text: 'Operationalising ethical impact assessments: Partner with the NAIO and MOSTI to pilot UNESCO’s EIA tools to ensure that public sector AI succession remains human-centric, transparent, and accountable.' },
-    ],
+      { id: 'cp1', text: 'Partnership with National AI Office (NAIO) - NAIO was established in 2024 and is still building operational capacity. UNDP can establish an advisory relationship with NAIO. UNDP can suuport the transition of voluntary AI ethics guidelines into an enforceable regulatory framework and can provide support in the capacity building of officials.' },
+      { id: 'cp2', text: 'Partnership with Malaysia Digital Economic Corporation (MEDC) and MyDIGITAL Corporation - UNDP can engage with these agencies to co-design a DPI interoperability roadmap and prioritise citizen-centric use cases and support the achievement of the 2030 target of integrating 95% of services with Digital ID.' },
+      { id: 'cp3', text: 'Partnership with NAIO and Microsoft - Microsoft, NAIO, and PETRONAS Leadership Centre are jointly establishing an AI Center focused on developing real-world AI solutions and nurturing talent. UNDP can engage this initiative to co-design an AI for Good accelerator track that directs mentorship, grants, and sandbox access toward startups working on development challenges in areas like healthcare, agriculture, and social protection. With the government targeting growth from 284 to 900 AI companies by 2026, UNDP can play a focused role in ensuring a share of this startup growth is channelled toward public interest outcomes.' },
+    ]
   },
   parameterStages: {
     P1: {
