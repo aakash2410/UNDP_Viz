@@ -59,6 +59,7 @@ export interface CountryDetailData {
     digitalId: MetricCard;
     payments: MetricCard;
     dataExchange: MetricCard;
+    useCases?: { sector: string; description: string }[];
   };
   aiEcosystem: {
     policy: MetricCard;
@@ -147,6 +148,11 @@ export const malaysiaData: CountryDetailData = {
         timeline: ""
       }
     },
+    useCases: [
+      { sector: 'Government Services', description: 'Single sign-on via MyGovernment portal (managed by JDN) — goal: 95% federal services integrated with MyDigital ID by 2030' },
+      { sector: 'Telecommunications', description: 'SIM card registration linked to MyDigital ID for identity verification' },
+      { sector: 'Social Protection', description: 'Sumbangan Tunai Rahmah (STR) — G2P cash transfer program channelled via digital payment rails' },
+    ],
   },
   aiEcosystem: {
     policy: {
@@ -331,6 +337,12 @@ export const cambodiaData: CountryDetailData = {
         timeline: "Launched 2020"
       }
     },
+    useCases: [
+      { sector: 'Financial Services', description: 'CamDigiKey used for e-KYC authentication across banks and financial institutions' },
+      { sector: 'E-Government', description: 'CamDigiKey integrated into e-Government services for citizen identity verification' },
+      { sector: 'Business Registration', description: 'Major adoption in business registration workflows via digital identity and data exchange layers' },
+      { sector: 'Document Verification', description: 'Verify.gov.kh — blockchain-powered platform for secure government document verification' },
+    ],
   },
   aiEcosystem: {
     policy: {
@@ -520,6 +532,13 @@ export const philippinesData: CountryDetailData = {
         timeline: ""
       }
     },
+    useCases: [
+      { sector: 'Social Protection', description: '4Ps program (DSWD) — 4.4M+ households served; fully digitised via PhilSys ID verification and PhilPaSSplus payment rails' },
+      { sector: 'Health', description: 'PhilHealth insurance claims integrated with PhilSys registry for real-time eligibility checks and eClaims processing' },
+      { sector: 'Government Finance', description: 'LandBank — salaries, pensions, and social benefits processed via eMDS and Link.BizPortal digital rails' },
+      { sector: 'Education', description: 'DepEd Learner Information System (LIS) and Project Bukas use digital identifiers to track 1.5M+ teachers and learners' },
+      { sector: 'Cross-DPI Integration', description: 'eGovPH Super App — integrates 1,100+ government systems; 440M+ transactions processed as of early 2026' },
+    ],
   },
   aiEcosystem: {
     policy: {

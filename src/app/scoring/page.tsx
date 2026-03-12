@@ -105,13 +105,6 @@ export default function ScoringMethodologyPage() {
 
             {/* Glossary & Disclaimers */}
             <div className="max-w-[90rem] mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-                {/* Note */}
-                <div className="flex items-start gap-4 p-6 bg-blue-50 rounded-2xl border border-blue-100 h-full">
-                    <Info className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5" />
-                    <p className="text-sm text-blue-900 leading-relaxed">
-                        <strong>Analytical Note:</strong> The overall Parameter score for a country is synthesized from its underlying sub-parameters. A score of 5 ("Role Model") indicates the nation provides sovereign guidance and robust ecosystems acting as a standard-setter for the region, while a 1 ("Greenfield") indicates foundational gaps.
-                    </p>
-                </div>
 
                 {/* Glossary */}
                 <div className="flex items-start gap-4 p-6 bg-slate-50 rounded-2xl border border-slate-200 h-full">

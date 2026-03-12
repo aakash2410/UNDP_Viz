@@ -307,6 +307,36 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                         {renderMetricCard(data.dpiEcosystem.payments, <Zap className="w-6 h-6" />)}
                         {renderMetricCard(data.dpiEcosystem.dataExchange, <Activity className="w-6 h-6" />)}
                     </motion.div>
+
+                    {/* DPI Use Cases */}
+                    {data.dpiEcosystem.useCases && data.dpiEcosystem.useCases.length > 0 && (
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: 0.2 }}
+                            className="mt-8"
+                        >
+                            <h3 className="text-lg font-bold text-slate-800 mb-4 flex items-center gap-2">
+                                <Lightbulb className="w-5 h-5 text-blue-500" />
+                                DPI Use Cases
+                                {(() => {
+                                    const sp = data.parameterStages?.P2?.subParameters.find(s => s.name.toLowerCase().includes('use case') || s.name.toLowerCase().includes('deployment'));
+                                    if (!sp) return null;
+                                    const colors: Record<string, string> = { 'Greenfield': 'bg-slate-100 text-slate-700 border-slate-300', 'Open to Adopt': 'bg-sky-100 text-sky-800 border-sky-300', 'Early Success': 'bg-indigo-100 text-indigo-800 border-indigo-300', 'Maturing': 'bg-emerald-100 text-emerald-800 border-emerald-300', 'Role Model': 'bg-amber-100 text-amber-800 border-amber-300' };
+                                    return <span className={`text-xs font-semibold px-2.5 py-1 rounded-md border ml-2 ${colors[sp.stage] || 'bg-slate-100 text-slate-700 border-slate-200'}`}>{sp.stage}</span>;
+                                })()}
+                            </h3>
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                {data.dpiEcosystem.useCases.map((uc, idx) => (
+                                    <div key={idx} className="bg-white rounded-xl border border-slate-200 p-5 hover:border-blue-200 hover:shadow-md transition-all">
+                                        <span className="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-bold bg-blue-50 text-blue-700 border border-blue-100 mb-3">{uc.sector}</span>
+                                        <p className="text-sm text-slate-700 leading-relaxed">{uc.description}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </motion.div>
+                    )}
                 </section>
 
                 {/* SECTION A.2: AI Ecosystems (Expanded) */}

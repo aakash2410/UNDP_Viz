@@ -118,7 +118,7 @@ export const scoringCriteria = [
     },
     {
         "parameter": "Digital-Physical Infrastructure",
-        "subParameter": "Digital Inclusion ",
+        "subParameter": "Digital Inclusion",
         "greenfield": "Large access gaps across geographic, gender, and socioeconomic dimensions; no disaggregated data collected",
         "openToAdopt": "Inclusion gaps identified and measured; pilot programmes or targeted interventions initiated",
         "earlySuccess": "Inclusion programmes operational;gaps narrowing with measurable progress",
@@ -196,14 +196,5 @@ export const scoringCriteria = [
         "earlySuccess": "Dedicated recurring domestic budget for AI/DPI development and upkeep; responsible ministry funded with multi-year commitment",
         "maturing": "Sustained multi-year public investment programme; budget execution rates tracked and reported",
         "roleModel": "Long-term funding mechanisms; significant R&D allocation; domestic digital transformation budget substantial and independently sustained"
-    },
-    {
-        "parameter": "Funding Landscape",
-        "subParameter": "MDB and Multilateral/Bilateral Financing",
-        "greenfield": "No active engagement; no pipeline financing",
-        "openToAdopt": "MDB engagement exploratory; grants or small TA used primarily for strategy or feasibility",
-        "earlySuccess": "Recurrent MDB investment in AI/DPI projects; approved and pipeline financing visible",
-        "maturing": "MDB financing supplementary to domestic budget strategic multi-year partnerships established",
-        "roleModel": "External finance used selectively for innovation or regional public goods"
     }
 ];
