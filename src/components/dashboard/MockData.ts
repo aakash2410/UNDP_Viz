@@ -988,10 +988,6 @@ export const bangladeshData: CountryDetailData = {
         {
           name: "Domestic Public Budget for AI/DPI",
           stage: "Early Success"
-        },
-        {
-          name: "MDB and Multilateral/Bilateral Financing",
-          stage: "Early Success"
         }
       ]
     }
@@ -1248,7 +1244,7 @@ export const nepalData: CountryDetailData = {
       fullContext: "5 year election cycle. Mass and violent protests by youth against (popularily referred to as Gen Z protests) took place in September 2025 forcing the resignation of the Prime Minister Khadga Prasad Sharma Oli and desolution of the house of representatives. An interim government headed by former chief justice Sushila Karki has been appointed.",
       keyMetrics: [
         "5 year election cycle. Mass and violent protests by youth against (popularily referred to as Gen Z protests) took place in September 2025 forcing the resignation of the Prime Minister Khadga Prasad Sharma Oli and desolution of the house of representatives. An interim government headed by former chief justice Sushila Karki has been appointed."
-      ]
+        ]
     },
     deviceAccess: 95.5,
     digitalInclusion: "Higher internet access in urban areas (65%) versus rural regions (22%). Only 53% have 4G coverage.",
@@ -1407,10 +1403,6 @@ export const nepalData: CountryDetailData = {
         {
           name: "Domestic Public Budget for AI/DPI",
           stage: "Early Success"
-        },
-        {
-          name: "MDB and Multilateral/Bilateral Financing",
-          stage: "Greenfield"
         }
       ]
     }

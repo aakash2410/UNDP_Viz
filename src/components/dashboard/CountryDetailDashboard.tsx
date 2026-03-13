@@ -60,7 +60,7 @@ const ParameterStageBadge = ({ entry, pKey }: { entry: ParameterStageEntry; pKey
                 <svg className={`w-3.5 h-3.5 transition-transform ${expanded ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
             </button>
             {expanded && (
-                <div className="absolute z-20 mt-2 left-0 bg-white rounded-xl border border-slate-200 shadow-lg p-4 min-w-[280px]">
+                <div className="absolute z-20 mt-2 right-0 bg-white rounded-xl border border-slate-200 shadow-lg p-4 min-w-[280px]">
                     <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">Sub-Parameters</p>
                     <div className="space-y-2">
                         {entry.subParameters.map((sp, idx) => (
