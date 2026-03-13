@@ -1478,39 +1478,43 @@ export const nepalData: CountryDetailData = {
     opportunities: [
       {
         id: "np-o1",
-        text: "Digital Nepal Framework identifies 8 socio-economic sectors for digital growth, providing a clear roadmap for UNDP technical assistance."
+        text: "World Bank approved a $50m loan that aims to strengthen Nepal’s digital public infrastructure and improve the delivery and use of inclusive, high-impact digital government services"
       },
       {
         id: "np-o2",
-        text: "Rapid adoption of the National ID (over 17 million registered) and digital payments (Fonepay) show strong public appetite for DPI."
+        text: "IFC, Standard Chartered Bank Nepal Limited, and WorldLink Communications Ltd. partner on $29 million project to expand connectivity, create jobs, and drive economic growth"
+      },
+      {
+        id: "np-o3",
+        text: "Given Nepal’s focus on digital infrastructure expansion, there is scope for the country to become a part of the 50-in-5 initiative"
       }
     ],
     risks: [
       {
         id: "np-r1",
-        text: "High political instability and frequent government transitions hinder long-term DPI and AI policy continuity."
+        text: "Government Integrated Data Center (GIDC) is understaffed and lacks resources including technical infrastructure which led to outages and data loss across 10–15 agencies in 2023"
       },
       {
         id: "np-r2",
-        text: "A severe digital divide exists between urban (65% internet access) and rural (22%) populations, risking unequal DPI benefits."
+        text: "DPI understanding remains low beyond central ministries, limiting sectoral uptake. Nepal scores 0.439 on the GovTech Index, reflecting weak systems and skills across government"
       },
       {
         id: "np-r3",
-        text: "Lack of an operational authentication infrastructure (KYC) for the National ID prevents seamless end-to-end digital service delivery."
+        text: "The 2024 Draft Cyber Bill has been criticised for potentially enabling government surveillance and censorship - especially through a proposed national internet gateway - while lacking strong privacy safeguards and adequate public consultation"
       }
     ],
     partnerships: [
       {
         id: "np-p1",
-        text: "Strategic partnerships with the World Bank and ADB, who are currently funding foundational digital transformation projects."
+        text: "UNDP could support the institutional strengthening of the Government Integrated Data Center (GIDC) by helping design operational standards, cybersecurity protocols, and workforce capacity programmes for digital infrastructure management"
       },
       {
         id: "np-p2",
-        text: "Collaboration with local innovators like Fusemachines and Fonepay to build localized AI solutions and secure payment gateways."
+        text: "Since DPI understanding remains concentrated within central ministries, UNDP could run capacity-building programmes for specific ministries to increase adoption of digital systems"
       },
       {
         id: "np-p3",
-        text: "UNDP can support the e-Governance Commission to improve the GovTech index score through capacity building."
+        text: "With concerns around the 2024 Draft Cyber Bill, UNDP could facilitate multi-stakeholder dialogue and technical assistance on data protection and cybersecurity legislation, ensuring alignment with international norms"
       }
     ]
   },
