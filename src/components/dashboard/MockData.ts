@@ -823,8 +823,8 @@ export const bangladeshData: CountryDetailData = {
     fundingLandscape: "Domestic budget (~$211m) supplemented by WB (EDGE, DISTAR) and ADB projects.",
     electricityAccess: 100,
     internetPenetration: 44.5,
-    politicalStability: "-",
-    electionCycles: "-",
+    politicalStability: 'WB Political Stability: 40.90 percentile (40-60th range). Smart Bangladesh Vision 2041 institutionalises DT as state policy. (Source: WB WGI 2024)',
+    electionCycles: "Elections recently concluded",
     politicalModalDetails: {
       fullContext: "Elections recently concluded",
       keyMetrics: [
@@ -842,19 +842,27 @@ export const bangladeshData: CountryDetailData = {
     politicalSubParameters: [
       {
         label: "Elections",
-        value: "Elections recently concluded."
+        value: "Elections recently concluded (2024)."
       },
       {
         label: "Governance Structure",
-        value: "Centralised. Bangladesh is a democratic republic with a unicameral parliament (Jatiya Sangsad). The president appoints the head of the winning party as prime minister."
+        value: "Centralised Democratic Republic with a unicameral parliament (Jatiya Sangsad) of 350 members (including 50 seats reserved for women). The Prime Minister heads a 45-member cabinet."
+      },
+      {
+        label: "Worldwide Governance Indicators",
+        value: "Government Effectiveness: 39.31. Regulatory Quality: 39.88. Rule of Law: 40.44. Control of Corruption: 25.55. (Source: WB WGI 2024)"
       },
       {
         label: "Political Stability",
-        value: "Poor D ranking, with major challenges in corruption. Voice and Accountability: 36.53. Political Stability: 40.90. Control of Corruption: 25.55."
+        value: "Poor D ranking with major corruption challenges. WGI Political Stability: 40.90. Voice and Accountability: 36.53."
       },
       {
         label: "Institutional Capacity",
-        value: "CPIA Macroeconomic management rating assesses quality of policy implementation. Scores 3 out of 6, as of 2024."
+        value: "CPIA Macroeconomic management rating: 3/6. Institutional framework assessed for reducing poverty and supporting sustainable growth."
+      },
+      {
+        label: "Digital Transformation Priority",
+        value: "Transitioning to 'Smart Bangladesh 2041'. Aiming to train 20,000 cybersecurity experts by 2027 and 50,000 by 2030."
       }
     ]
   },
@@ -1054,39 +1062,43 @@ export const bangladeshData: CountryDetailData = {
     opportunities: [
       {
         id: "bd-o1",
-        text: "Unified Instant Payment System (Pipeline): From September 2025, Bangladesh Bank aims to develop an interoperable payment system with the Gates foundation for instant transfers."
+        text: "Smart Bangladesh focuses on expanding citizens’ digital skills and access to services, digitizing government operations and service delivery, applying digital technologies across sectors such  and promoting technology-driven economic growth."
       },
       {
         id: "bd-o2",
-        text: "First mover in 50-in-5 initiative: DPI efforts mapped to 20.5 Billion USD in savings and a reduction of public service visits down to 82%."
+        text: "From September 2025, the Bangladesh bank aims to develop an interoperable payment system with the Gates Foundation, built on Mojaloop-based IIPS by July 2027"
       },
       {
         id: "bd-o3",
-        text: "DPG Registry: Bangladesh enlisted three solutions (ekShop, GRS, NISE Skills) signifying strong commitment to digital public goods."
+        text: "Encompassing all 3 layers of DPI, Phygital Public Infrastructure also aims to bridge the gaps between marginalised groups and public services. These include aspiring youth, women; both urban and rural"
       }
     ],
     risks: [
       {
         id: "bd-r1",
-        text: "Infrastructure inadequacy and fragmented responsibility with a lack of existing released guidelines for DPI integration."
+        text: "Currently prone to a high volume of cyberattacks, severe shortage of cybersecurity professionals. The NID breach of 2023 exposed about 50 million citizen data"
       },
       {
         id: "bd-r2",
-        text: "Interoperability issues: Legacy systems and siloed data availability severely hamper the creation of a unified digital ecosystem."
+        text: "Bangladesh’s data remains fragmented and siloed.Systems lack secure interoperability.Isolation of systems has also led to high operational costs"
       },
       {
         id: "bd-r3",
-        text: "Digital payments lose ground to cash despite growth in volume, highlighting trust and financial literacy gaps."
+        text: "Low digital literacy rate. Limited infrastructure and last mile connectivity issues"
       }
     ],
     partnerships: [
       {
         id: "bd-p1",
-        text: "Multi-stakeholder partnerships at the national level are rated as Medium potential, offering an entry point for UNDP to broker agreements."
+        text: "Support large-scale digital literacy and workforce upskilling initiatives under programs such as Citizen Upskilling and the Digital Leadership Academy"
       },
       {
         id: "bd-p2",
-        text: "University collaboration and joint research evaluations for AI readiness provide another medium-impact strategic opportunity for engagement."
+        text: "Support could focus on designing interoperable digital platforms, improving public service delivery, and strengthening regulatory frameworks for data governance, privacy, and cybersecurity."
+      },
+      {
+        id: "bd-p3",
+        text: "Design programs that ensure women, rural communities, persons with disabilities, and other marginalized groups benefit from digital transformation. This could involve supporting affordable connectivity, inclusive service design, and targeted digital literacy programs."
       }
     ]
   },
@@ -1230,7 +1242,7 @@ export const nepalData: CountryDetailData = {
     fundingLandscape: "Dependent on external financing (WB, ADB) with emerging domestic allocations.",
     electricityAccess: 92,
     internetPenetration: 49.6,
-    politicalStability: "Previous cycle in 2022 next one in March, 2026",
+    politicalStability: 'WB Political Stability: 58.81 percentile (40-60th range). Digital Nepal Framework (2019) institutionalises DT as state policy. (Source: WB WGI 2024)',
     electionCycles: "Previous cycle in 2022 next one in March, 2026",
     politicalModalDetails: {
       fullContext: "5 year election cycle. Mass and violent protests by youth against (popularily referred to as Gen Z protests) took place in September 2025 forcing the resignation of the Prime Minister Khadga Prasad Sharma Oli and desolution of the house of representatives. An interim government headed by former chief justice Sushila Karki has been appointed.",
