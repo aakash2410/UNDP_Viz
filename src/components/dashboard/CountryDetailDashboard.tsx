@@ -456,14 +456,6 @@ export default function CountryDetailDashboard({ data }: { data: CountryDetailDa
                         </div>
                         <div className="flex items-center gap-3">
                             {data.parameterStages?.P4 && <ParameterStageBadge entry={data.parameterStages.P4} pKey="P4" />}
-                            {data.sectionB.politicalModalDetails && (
-                                <button
-                                    onClick={() => setSelectedMetric({ title: 'Political Context', status: '', description: '', modalDetails: data.sectionB.politicalModalDetails } as MetricCard)}
-                                    className="text-sm font-semibold text-emerald-600 flex items-center gap-1.5 hover:text-emerald-700 transition-colors bg-emerald-50 px-3 py-1.5 rounded-lg hover:bg-emerald-100 w-fit"
-                                >
-                                    <Info className="w-4 h-4" /> View Context
-                                </button>
-                            )}
                         </div>
                     </div>
                     <motion.div

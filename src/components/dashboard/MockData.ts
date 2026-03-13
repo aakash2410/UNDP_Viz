@@ -9,12 +9,12 @@ export interface RadarDataPoint {
 }
 
 export const radarData: RadarDataPoint[] = [
-  { parameter: 'AI Ecosystem Maturity', Malaysia: 4, Cambodia: 2, Philippines: 3, Bangladesh: 2, Nepal: 0, fullMark: 5 },
-  { parameter: 'DPI Ecosystem Maturity', Malaysia: 3, Cambodia: 4, Philippines: 4, Bangladesh: 3, Nepal: 0, fullMark: 5 },
-  { parameter: 'Digital Infra Availability', Malaysia: 5, Cambodia: 2, Philippines: 3, Bangladesh: 3, Nepal: 0, fullMark: 5 },
-  { parameter: 'Political Stability', Malaysia: 4, Cambodia: 4, Philippines: 4, Bangladesh: 2, Nepal: 0, fullMark: 5 },
-  { parameter: 'Stakeholder Participation', Malaysia: 3, Cambodia: 3, Philippines: 4, Bangladesh: 3, Nepal: 0, fullMark: 5 },
-  { parameter: 'Funding Landscape', Malaysia: 3, Cambodia: 2, Philippines: 4, Bangladesh: 2, Nepal: 0, fullMark: 5 },
+  { parameter: 'AI Ecosystem Maturity', Malaysia: 4, Cambodia: 2, Philippines: 3, Bangladesh: 1, Nepal: 2, fullMark: 5 },
+  { parameter: 'DPI Ecosystem Maturity', Malaysia: 3, Cambodia: 4, Philippines: 4, Bangladesh: 2, Nepal: 3, fullMark: 5 },
+  { parameter: 'Digital Infra Availability', Malaysia: 5, Cambodia: 2, Philippines: 3, Bangladesh: 1, Nepal: 2, fullMark: 5 },
+  { parameter: 'Political Stability', Malaysia: 4, Cambodia: 4, Philippines: 4, Bangladesh: 1, Nepal: 1, fullMark: 5 },
+  { parameter: 'Stakeholder Participation', Malaysia: 3, Cambodia: 3, Philippines: 4, Bangladesh: 2, Nepal: 1, fullMark: 5 },
+  { parameter: 'Funding Landscape', Malaysia: 3, Cambodia: 2, Philippines: 4, Bangladesh: 2, Nepal: 1, fullMark: 5 },
 ];
 
 export interface MetricCard {
@@ -426,18 +426,19 @@ export const cambodiaData: CountryDetailData = {
   },
   sectionD: {
     opportunities: [
-      { id: 'co1', text: 'UNDP can provide technical support on regulatory design for AI Governance and Regulatory Frameworks, drawing on examples from other countries such as Singapore' },
-      { id: 'co2', text: 'Malaysia is one of the most AI-mature countries in the Digital Stewardship Community. UNDP can position it as a knowledge contributor - the country can share its experience in developing an AI strategy, establishing a dedicated AI agency, implementing use cases, and building AI infrastructure etc. with earlier-stage countries in the region.' },
-      { id: 'co3', text: 'The government wants to grow its AI startup base from 284 to 900 companies by 2026. UNDP can support in an innovation accelerator program to provide grants and mentorship for startups focusing on AI for Good the startups. They can also support in creating an AI Sandbox initiative.' },
+      { id: 'kh-o1', text: 'KhmerLLM for eGov: Operationalising and integrating KhmerLLM to make eGov services more accessible for the ~95% of citizens using the Khmer language.' },
+      { id: 'kh-o2', text: 'Cyber-Resilience & Guidelines: Partnering with MPTC to prevent misinformation and deepfakes by operationalising specific guidelines and defensive tools.' },
+      { id: 'kh-o3', text: 'Democratising AI: Addressing gender, language, and urban/rural divides through programs that democratise AI access and technical capacity.' },
     ],
     risks: [
-      { id: 'cr1', text: 'AI adoption is accelerating across healthcare, finance, and agriculture, yet Malaysia’s AI ethics guidelines remain voluntary and non-binding. Without enforceable standards, biased or opaque algorithms in public services could erode citizen trust, creating a risk of AI adoption without accountability.' },
-      { id: 'cr2', text: 'Malaysia has invested heavily in individual DPI components, but integration between foundational DPI assets remains limited. Without deliberate interoperability design and careful sequencing of use cases, Malaysia risks not achieving its 2030 target of integrating 95% of services. As a result, despite significant public investment in infrastructure, citizen-facing outcomes may remain limited' },
+      { id: 'kh-r1', text: 'Institutional Fragmentation: Digital initiatives are currently split across MPTC, MISTI, and MEF, leading to coordination challenges.' },
+      { id: 'kh-r2', text: 'Political Prioritisation: Possible de-prioritisation of Digital Transformation if current regional or domestic conflicts escalate.' },
+      { id: 'kh-r3', text: 'Data Scarcity: Extremely limited digital text and audio data available for training the Khmer-based LLM despite widespread language use.' },
     ],
     partnerships: [
-      { id: 'cp1', text: 'Partnership with National AI Office (NAIO) - NAIO was established in 2024 and is still building operational capacity. UNDP can establish an advisory relationship with NAIO. UNDP can suuport the transition of voluntary AI ethics guidelines into an enforceable regulatory framework and can provide support in the capacity building of officials.' },
-      { id: 'cp2', text: 'Partnership with Malaysia Digital Economic Corporation (MEDC) and MyDIGITAL Corporation - UNDP can engage with these agencies to co-design a DPI interoperability roadmap and prioritise citizen-centric use cases and support the achievement of the 2030 target of integrating 95% of services with Digital ID.' },
-      { id: 'cp3', text: 'Partnership with NAIO and Microsoft - Microsoft, NAIO, and PETRONAS Leadership Centre are jointly establishing an AI Center focused on developing real-world AI solutions and nurturing talent. UNDP can engage this initiative to co-design an AI for Good accelerator track that directs mentorship, grants, and sandbox access toward startups working on development challenges in areas like healthcare, agriculture, and social protection. With the government targeting growth from 284 to 900 AI companies by 2026, UNDP can play a focused role in ensuring a share of this startup growth is channelled toward public interest outcomes.' },
+      { id: 'kh-p1', text: 'CADT Collaboration: Partnering with the Cambodia Academy of Digital Technology for inclusive capacity building and equitable representation in research.' },
+      { id: 'kh-p2', text: 'Cloud Compute Expansion: Working with technical institutions to increase GPU and cloud access, which currently sits at only 11%.' },
+      { id: 'kh-p3', text: 'CamDigiKey Adoption: Partnering with the Ministry of Economics and Finance (MEF) to increase adoption of CamDigiKey and assess barriers via KIIs.' },
     ],
   },
   parameterStages: {
@@ -624,18 +625,19 @@ export const philippinesData: CountryDetailData = {
   },
   sectionD: {
     opportunities: [
-      { id: 'co1', text: 'UNDP can provide technical support on regulatory design for AI Governance and Regulatory Frameworks, drawing on examples from other countries such as Singapore' },
-      { id: 'co2', text: 'Malaysia is one of the most AI-mature countries in the Digital Stewardship Community. UNDP can position it as a knowledge contributor - the country can share its experience in developing an AI strategy, establishing a dedicated AI agency, implementing use cases, and building AI infrastructure etc. with earlier-stage countries in the region.' },
-      { id: 'co3', text: 'The government wants to grow its AI startup base from 284 to 900 companies by 2026. UNDP can support in an innovation accelerator program to provide grants and mentorship for startups focusing on AI for Good the startups. They can also support in creating an AI Sandbox initiative.' },
+      { id: 'ph-o1', text: 'Operationalizing AI Governance: Technical support on AI governance and regulatory design, supporting the development of responsible AI standards.' },
+      { id: 'ph-o2', text: 'Integrated Digital Public Services: Leveraging foundational DPI components like PhilSys, eGovPH, and digital payments to design interoperability frameworks for high-impact use cases.' },
+      { id: 'ph-o3', text: 'AI-for-Good Ecosystem: Supporting the creation of an AI-for-Good accelerator program via NAICRI to addressed priorities like disaster resilience, healthcare, and agriculture.' },
     ],
     risks: [
-      { id: 'cr1', text: 'AI adoption is accelerating across healthcare, finance, and agriculture, yet Malaysia’s AI ethics guidelines remain voluntary and non-binding. Without enforceable standards, biased or opaque algorithms in public services could erode citizen trust, creating a risk of AI adoption without accountability.' },
-      { id: 'cr2', text: 'Malaysia has invested heavily in individual DPI components, but integration between foundational DPI assets remains limited. Without deliberate interoperability design and careful sequencing of use cases, Malaysia risks not achieving its 2030 target of integrating 95% of services. As a result, despite significant public investment in infrastructure, citizen-facing outcomes may remain limited' },
+      { id: 'ph-r1', text: 'Infrastructure reliability & Cybersecurity: Connectivity gaps in rural regions and high vulnerability to ransomware attacks. Reliance on foreign hyperscale providers raises concerns around cyber-resilience.' },
+      { id: 'ph-r2', text: 'Institutional fragmentation: Coordination gaps between national agencies (DICT) and local government units (LGUs). Procurement rules and public-sector talent loss further constrain deployments.' },
+      { id: 'ph-r3', text: 'Inclusion & Sustainability: Digital divide risks excluding vulnerable populations. Political transitions may affect investment continuity, while reliance on external financing raises long-term sustainability questions.' },
     ],
     partnerships: [
-      { id: 'cp1', text: 'Partnership with National AI Office (NAIO) - NAIO was established in 2024 and is still building operational capacity. UNDP can establish an advisory relationship with NAIO. UNDP can suuport the transition of voluntary AI ethics guidelines into an enforceable regulatory framework and can provide support in the capacity building of officials.' },
-      { id: 'cp2', text: 'Partnership with Malaysia Digital Economic Corporation (MEDC) and MyDIGITAL Corporation - UNDP can engage with these agencies to co-design a DPI interoperability roadmap and prioritise citizen-centric use cases and support the achievement of the 2030 target of integrating 95% of services with Digital ID.' },
-      { id: 'cp3', text: 'Partnership with NAIO and Microsoft - Microsoft, NAIO, and PETRONAS Leadership Centre are jointly establishing an AI Center focused on developing real-world AI solutions and nurturing talent. UNDP can engage this initiative to co-design an AI for Good accelerator track that directs mentorship, grants, and sandbox access toward startups working on development challenges in areas like healthcare, agriculture, and social protection. With the government targeting growth from 284 to 900 AI companies by 2026, UNDP can play a focused role in ensuring a share of this startup growth is channelled toward public interest outcomes.' },
+      { id: 'ph-p1', text: 'DICT & DILG for LGU Transformation: Developing LGU digital roadmaps, procurement templates, and capacity-building programs under the E-Governance Act.' },
+      { id: 'ph-p2', text: 'DOST & NAICRI for AI-for-Development: Piloting AI applications for disaster preparedness, climate resilience, and rural healthcare with academic partners.' },
+      { id: 'ph-p3', text: 'DTI & Startup Actors for AI Innovation: Partnering with innovation programs to develop an AI for Good accelerator, providing grants and sandbox access for startups.' },
     ]
   },
   parameterStages: {
@@ -688,277 +690,822 @@ export const philippinesData: CountryDetailData = {
   sources: ["https://erikalegara.com/uploads/NAISR2.0_July2024.pdf", "https://senate.gov.ph/legislative-documents/bills/594456", "https://www.deped.gov.ph/wp-content/uploads/DO_s2025_013.pdf", "https://www.lexology.com/library/detail.aspx?g=91e88551-72ff-439e-82a6-05ace8a7dd61", "https://asti.dost.gov.ph/news-articles/asti-pagasa-partner-with-atmo-for-ai-powered-weather-forecasting/", "https://atmo.ai/news/philippines-ai-transition", "https://asti.dost.gov.ph/projects/itanong/", "https://asti.dost.gov.ph/projects/alam-project/", "https://pia.gov.ph/news/mmda-eyes-use-of-ai-in-traffic-management/", "https://www.pchrd.dost.gov.ph/heartnovation/aina-artificial-intelligence-nutrition-assistant/", "https://registry.healthresearch.ph/index.php/registry?cid=8363&layout=details&view=research", "https://www.pchrd.dost.gov.ph/news_and_updates/dost-pchrd-presents-ai-driven-innovations-at-amcham-philippines/", "https://asti.dost.gov.ph/events/launch-of-the-national-artificial-intelligence-center-for-research-and-innovation/", "https://www.ditosapilipinas.com/national/news/article/05/19/2025/dost-asti-inclusive-ai-ecosystem/1599", "https://mb.com.ph/2026/02/21/dost-to-launch-national-ai-center", "https://pia.gov.ph/news/soccsksargen-backs-dosts-geospatial-technology-ai-initiative/", "https://asti.dost.gov.ph/wp-content/uploads/PPAs-2025.pdf", "https://dict.gov.ph/news-and-updates/25385", "https://pia.gov.ph/news/first-in-asia-world-ph-to-use-blockchain-tech-for-budget/", "https://businessmirror.com.ph/2025/07/28/government-to-provide-%E2%82%B11-5-b-for-ai-upskilling-in-2026/", "https://news.microsoft.com/source/asia/2026/02/03/deped-and-microsoft-accelerate-learning-recovery-and-ai-literacy-for-filipinos/", "https://coare.asti.dost.gov.ph/services", "https://asti.dost.gov.ph/news-articles/coare-supercomputing-facility-highlights-its-continuous-support-to-covid-19-centric-initiatives/", "https://datacommons.up.edu.ph/about-updc/", "https://datareportal.com/reports/digital-2026-philippines"]
 };
 
+
+
+
+
+
+
 export const bangladeshData: CountryDetailData = {
-  countryName: 'Bangladesh',
+  countryName: "Bangladesh",
   dpiEcosystem: {
     digitalId: {
-      title: 'Digital ID', status: 'Implemented', description: 'National ID', implementationAgency: 'Ministry of Home Affairs',
+      title: "Digital ID",
+      status: "Maturing",
+      description: "Present: National ID (DPI like)",
       modalDetails: {
-        fullContext: "The National ID is a microchip-embedded smart card featuring a unique 10-digit National Identification Number (NIN). It is historically foundational for verifying access to banking, mobile registration, and voting.",
+        fullContext: "National ID (Ongoing)  The National ID is a smart ID card containing an embedded microchip and featuring a unique 10-digit identification number – the National Identification Number (NIN). It is used to access public and private services such as banking, mobile registration and voter registration among other purposes. From 2011-2018, the World Bank Identification for Enhanced Access to Services (IDEAS) Project provided technical assistance. Due to implementation and policy delays, only 90 million NID cards (half the desired goal) was achieved by 2018",
         keyMetrics: [
-          "National ID is a smart card featuring a unique 10-digit NIN",
-          "90 million NID cards achieved by 2018 under World Bank IDEAS Project",
-          "Youth aged 16 or above now eligible for NID cards as of February 2026",
-          "Tk 70.63 crore allocated for NID initiatives spanning 2026-27"
-        ],
-        timeline: ""
-      }
+          "National ID (Ongoing)",
+          "The National ID is a smart ID card containing an embedded microchip and featuring a unique 10-digit identification number – the National Identification Number (NIN). It is used to access public and private services such as banking, mobile registration and voter registration among other purposes. From 2011-2018, the World Bank Identification for Enhanced Access to Services (IDEAS) Project provided technical assistance. Due to implementation and policy delays, only 90 million NID cards (half the desired goal) was achieved by 2018"
+        ]
+      },
+      implementationAgency: "Ministry of Home Affairs"
     },
     payments: {
-      title: 'Digital Payments', status: 'Implemented', description: 'National Payment Switch Bangladesh', implementationAgency: 'Bangladesh Bank',
+      title: "Digital Payments",
+      status: "Maturing",
+      description: "Present: National Payment Switch (DPI like)",
       modalDetails: {
-        fullContext: "Operational since 2012, the National Payment Switch (NPSB) allows seamless, structured fund routing from customers to banks to Mobile Financial Services (MFS) with strictly regulated transfer rates.",
+        fullContext: "National Payment Switch (Ongoing)  Operational since 2012, the National Payment Switch Bangladesh (NPSB) is a platform that allows for seamless movement of funds from customers to banks to Mobile Financial Services (MFS) providers. It   supports extensive bank-to-wallet and MFS-to-MFS transactions,  with an aim to replace existing banking platforms with a unified, secure system  Bank-to-MFS transfers fees set at Tk 1.5 per Tk 1,000; MFS-to-bank transfers set at Tk 8.5 per Tk 1,000; 2025",
         keyMetrics: [
-          "National Payment Switch Bangladesh (NPSB) operational since 2012",
-          "Fees regulated at Tk 1.5 per Tk 1,000 (Bank-to-MFS)",
-          "Regulated transaction fees: Bank-to-MFS set at Tk 1.5/Tk 1,000; MFS-to-bank at Tk 8.5/Tk 1,000"
-        ],
-        timeline: ""
-      }
+          "National Payment Switch (Ongoing)",
+          "Operational since 2012, the National Payment Switch Bangladesh (NPSB) is a platform that allows for seamless movement of funds from customers to banks to Mobile Financial Services (MFS) providers. It   supports extensive bank-to-wallet and MFS-to-MFS transactions,  with an aim to replace existing banking platforms with a unified, secure system",
+          "Bank-to-MFS transfers fees set at Tk 1.5 per Tk 1,000; MFS-to-bank transfers set at Tk 8.5 per Tk 1,000; 2025"
+        ]
+      },
+      implementationAgency: "Bangladesh Bank"
     },
     dataExchange: {
-      title: 'Data Exchange', status: 'Implemented', description: 'National E-Service Bus & Doptor', implementationAgency: 'BNEA',
+      title: "Data Exchange",
+      status: "Early Success",
+      description: "Present: National E-Service Bus (DPI like)",
       modalDetails: {
-        fullContext: "The National E-Service Bus connects roughly 15 government agencies (e.g. NID, agricultural ministries) by standardizing API specifications and operational technical capacity for consolidated service delivery.",
+        fullContext: "National E-Service Bus (Ongoing)  As of a document from August 2025, the National E-Service Bus was being used by around 15 government agencies including the NID agency, National Board of Revenue, BTRC, the Ministry of Agriculture, and the Office of the Registrar General. The platform still requires upgrades for scaling and broader adoption. The World Bank group is assisting with the software upgrading of the bus, along with standardized API specifications, operational processes, and technical capacity for government agencies to leverage the platform for service delivery",
         keyMetrics: [
-          "National E-Service Bus used by ~15 government agencies (Aug 2025)",
-          "World Bank assisting with API standardization and capacity building",
-          "National E-Service Bus utilization scaled to 15 key Bangladeshi government agencies as of August 2025"
-        ],
-        timeline: ""
-      }
+          "National E-Service Bus (Ongoing)",
+          "As of a document from August 2025, the National E-Service Bus was being used by around 15 government agencies including the NID agency, National Board of Revenue, BTRC, the Ministry of Agriculture, and the Office of the Registrar General. The platform still requires upgrades for scaling and broader adoption. The World Bank group is assisting with the software upgrading of the bus, along with standardized API specifications, operational processes, and technical capacity for government agencies to leverage the platform for service delivery"
+        ]
+      },
+      implementationAgency: "BNEA"
     },
+    useCases: [
+      {
+        sector: "Government Services",
+        description: "MyGov - One-stop service access for 172 digitized services"
+      },
+      {
+        sector: "Digital Commerce",
+        description: "Ekshop - Rural assisted e-commerce backbone with 12k+ artisans"
+      },
+      {
+        sector: "Language AI",
+        description: "Kagoj AI - Native Bangla AI platform and custom font (Julai)"
+      },
+      {
+        sector: "Agriculture",
+        description: "Krishi Batayan - Integrated information and service portal for farmers"
+      }
+    ]
   },
   aiEcosystem: {
     policy: {
-      title: 'AI Strategy', status: 'Drafted', description: 'National AI Policy Bangladesh 2026-30', implementationAgency: 'Ministry of ICT',
+      title: "AI Strategy",
+      status: "Open to Adopt",
+      description: "National Artificial Intelligence Policy 2026-30  (Drafts V1.1 and V2.0)",
       modalDetails: {
-        fullContext: "The Draft National AI Policy 2026-30 envisions a \'Smart Bangladesh\' mapped across Smart Government, Society, Economy, and Citizen. It focuses on elevating global AI readiness and ethical compliance.",
+        fullContext: "Vision To develop an ethical and innovative environment for the use and development of AI to accelerate Bangladesh’s path towards a middle-income country, as outlined in the Vision 2041 master plan and aligned with the UN’s Sustainable Development Goals (SDGs).   Mission  Establishing Bangladesh as a pioneer in AI innovation and adoption, creating a ‘Smart Bangladesh’ that leverages AI technologies for the well-being of all citizens, economic prosperity, and sustainable development in accord with four pillars; Smart Government, Smart Society, Smart Economy and Smart Citizen.  Objectives -Ethical and secure AI governance and compliance -Foster AI innovation for the public sector -Promoting economic growth -Strenghten AI readiness",
         keyMetrics: [
-          "National AI Policy 2026-30 (Draft V2.0)",
-          "4 Pillars: Smart Government, Smart Society, Smart Economy, Smart Citizen",
-          "Aligned with the Vision 2041 master plan"
-        ],
-        timeline: ""
-      }
+          "Vision",
+          "To develop an ethical and innovative environment for the use and development of AI to accelerate Bangladesh’s path towards a middle-income country, as outlined in the Vision 2041 master plan and aligned with the UN’s Sustainable Development Goals (SDGs).",
+          "Mission",
+          "Establishing Bangladesh as a pioneer in AI innovation and adoption, creating a ‘Smart Bangladesh’ that leverages AI technologies for the well-being of all citizens, economic prosperity, and sustainable development in accord with four pillars; Smart Government, Smart Society, Smart Economy and Smart Citizen."
+        ]
+      },
+      implementationAgency: "Ministry of ICT"
     },
     governance: {
-      title: 'AI Governance', status: 'Absent', description: '-', implementationAgency: 'N/A',
+      title: "AI Governance",
+      status: "Maturing",
+      description: "Algorithmic Impact Assessments (AIAs)",
       modalDetails: {
-        fullContext: "Governance targets are woven into the AI Policy drafting mechanisms to institute ethical oversight, secure compliance mandates, and champion innovation strictly within the public sector.",
+        fullContext: "Algorithmic Impact Assessments (AIAs) are implemented to monitor AI deployment across government agencies. This framework ensures transparency in public administration and actively works to prevent biases in automated decision-making. The Draft National AI Policy 2026-30 further establishes oversight mechanisms to ensure AI development aligns with Smart Bangladesh goals.",
         keyMetrics: [
-          "Objectives mandate ethical and secure AI governance and compliance"
-        ],
-        timeline: ""
-      }
+          "Mandatory Algorithmic Impact Assessments for public sector AI",
+          "Draft National AI Policy 2026-30 oversight framework",
+          "Integration of AI education across all educational tiers"
+        ]
+      },
+      implementationAgency: "Ministry of ICT"
     },
     legislation: {
-      title: 'Data Legislation', status: 'Implemented', description: 'Personal Data Protection Ordinance', implementationAgency: 'Ministry of ICT',
+      title: "Data Protection",
+      status: "Maturing",
+      description: "The Personal Data Protection Ordinance, 2025",
       modalDetails: {
-        fullContext: "The Personal Data Protection Ordinance 2025 intends to establish a unified data framework prioritizing citizen-focused control, consent-based operational processes, and overarching digital sovereignty.",
+        fullContext: "Vision Make provisions for processing personal data of a person for the purposes of legitimate use ensuring privacy, confidentiality and security and recognizing the personal data as personal right of a data-subject  Mission  Creating a unified framework that aligns with international standards and ensures privacy, confidentiality, and security of personal data, recognizing it as a right of the data subject.  Objectives  -Citizen focused control -Consent based processes -Digital sovereignty  -Grievance redressal -Responsible data fiduciary",
         keyMetrics: [
-          "Personal Data Protection Ordinance (2025)",
-          "Recognizes personal data as a personal right of the data-subject",
-          "Prioritizes citizen-focused control and consent-based processes"
-        ],
-        timeline: ""
-      }
+          "Vision",
+          "Make provisions for processing personal data of a person for the purposes of legitimate use ensuring privacy, confidentiality and security and recognizing the personal data as personal right of a data-subject",
+          "Mission",
+          "Creating a unified framework that aligns with international standards and ensures privacy, confidentiality, and security of personal data, recognizing it as a right of the data subject."
+        ]
+      },
+      implementationAgency: "Ministry of ICT"
     },
     initiatives: {
-      title: 'Government AI Initiatives', status: 'Drafted', description: 'MyGov, Kagoj AI & EBLICT', implementationAgency: 'Ministry of ICT',
+      title: "AI Initiatives",
+      status: "Early Success",
+      description: "MyGov, Kagoj AI & EBLICT",
       modalDetails: {
-        fullContext: "Prominent deployments include \'MyGov\' (centralizing 172 digitized services) and \'Kagoj AI\' (Bangladesh’s first Bangla-language AI processing platform enhancing dual-language digitized writing).",
+        fullContext: "MyGov is a one-stop service access point providing 172 digitized services using a single identity. Kagoj AI is the first Bangla-language AI platform, supporting advanced NLP and digitisation using the Julai font. Enhancement of Bangla Language in ICT (EBLICT) is a joint R&D initiative by the ICT division and BCC to ensure linguistic inclusion in AI development.",
         keyMetrics: [
-          "MyGov platform centralizes 172 digitized services across 7 sectors",
-          "Kagoj AI supports AI-driven language processing in Bangla",
-          "EBLICT initiative to increase inclusion of Bengali for AI development"
-        ],
-        timeline: ""
-      }
-    },
+          "MyGov: 172 services digitized with single-sign-on access",
+          "Kagoj AI: Native Bangla NLP for official digitisation",
+          "EBLICT: R&D for Bengali language inclusion in AI datasets",
+          "Smart Bangladesh 2041: AI-driven workforce transformation"
+        ]
+      },
+      implementationAgency: "ICT Division & BCC"
+    }
   },
   sectionB: {
-    fundingLandscape: "The government has aggressively prioritized digitalization, allocating ~$200 million to the ICT Division and $11 million to support digital entrepreneurship in the fiscal year 2024/25. Important multilateral support is also active via World Bank and ADB loans.",
-    electricityAccess: 99.5,
-    internetPenetration: 45,
-    deviceAccess: 40.0,
+    fundingLandscape: "Domestic budget (~$211m) supplemented by WB (EDGE, DISTAR) and ADB projects.",
+    electricityAccess: 100,
+    internetPenetration: 44.5,
+    politicalStability: "-",
+    electionCycles: "-",
+    politicalModalDetails: {
+      fullContext: "Elections recently concluded",
+      keyMetrics: [
+        "Elections recently concluded"
+      ]
+    },
+    deviceAccess: 40,
     digitalInclusion: "Higher access in urban areas (71.3% men, 62.4% women) vs rural (36.6% men, 23% women). Overall geographic divide: 66.8% vs 29.7%.",
-    dataCenters: '36 total operational',
-    politicalStability: 'Hybrid Regime (100/167) (Source: Democracy Index 2024)',
-    electionCycles: 'Jan 2024 / Feb 2026',
-    politicalSubParameters: [
-      { label: 'Elections', value: 'National elections have recently concluded, initiating transitions in parliamentary dynamics.' },
-      { label: 'Governance Structure', value: 'Centralized Democratic Republic. Unicameral parliament (Jatiya Sangsad) with an indirectly elected President and Prime Minister-led cabinet.' },
-      { label: 'Political Stability', value: 'Faces challenges. Scored lower on global Governance Indicators, particularly in Control of Corruption (25.5) and Accountability (36.5).' },
-      { label: 'Digital Priority', value: 'Transitioning from \'Digital Bangladesh\' to \'Smart Bangladesh 2041,\' prioritizing secure AI ecosystems and aiming for 50k cybersecurity experts by 2030.' },
-      { label: 'Institutional Capacity', value: 'Moderate macroeconomic management rating (3/6), reflecting ongoing efforts to improve central policy implementation.' },
-      { label: 'Leadership Champions', value: 'Strategic capacity-building partnerships formally signed with the e-Governance Academy and British Council to advance digital frameworks.' },
-      { label: 'Key Influencers', value: 'a2i (Aspire to Innovate), Bangladesh Bank, and the ICT Division of the Ministry of Posts and Telecommunications.' },
-      { label: 'Technical Expertise', value: 'Specialized authorities (BGD e-GOV CIRT, Digital Service Design Lab) collaborate tightly with academia to train civil servants.' }
-    ],
+    dataCenters: "36 total operational",
     leadershipQuote: {
-      text: "The Smart Bangladesh Vision 2041 aims to bridge the digital divide and ensure services reach every citizen equitably.",
-      author: "National Strategy Manifesto",
-      context: "Smart Bangladesh Vision 2041"
+      text: "Transforming Bangladesh into a digitally empowered, innovative, and inclusive society through ICT-driven sustainable growth.",
+      author: "National Reform Roadmap",
+      context: "Digital Transformation Strategy 2025"
+    },
+    politicalSubParameters: [
+      {
+        label: "Elections",
+        value: "Elections recently concluded."
+      },
+      {
+        label: "Governance Structure",
+        value: "Centralised. Bangladesh is a democratic republic with a unicameral parliament (Jatiya Sangsad). The president appoints the head of the winning party as prime minister."
+      },
+      {
+        label: "Political Stability",
+        value: "Poor D ranking, with major challenges in corruption. Voice and Accountability: 36.53. Political Stability: 40.90. Control of Corruption: 25.55."
+      },
+      {
+        label: "Institutional Capacity",
+        value: "CPIA Macroeconomic management rating assesses quality of policy implementation. Scores 3 out of 6, as of 2024."
+      }
+    ]
+  },
+  parameterStages: {
+    P1: {
+      parameter: "AI Ecosystem Maturity",
+      parameterStage: "Open to Adopt",
+      subParameters: [
+        {
+          name: "IMF AI Preparedness Index (AIPI)  (2023 dataset)",
+          stage: "Open to Adopt"
+        },
+        {
+          name: "National AI Strategy / Policy Status",
+          stage: "Open to Adopt"
+        },
+        {
+          name: "AI Governance and Regulatory Frameworks and Ethical AI Principles",
+          stage: "Open to Adopt"
+        },
+        {
+          name: "Data Protection and Privacy Legislation",
+          stage: "Maturing"
+        },
+        {
+          name: "Government AI Initiatives and Projects",
+          stage: "Early Success"
+        }
+      ]
+    },
+    P2: {
+      parameter: "DPI Ecosystem Maturity",
+      parameterStage: "Early Success",
+      subParameters: [
+        {
+          name: "National Digital Transformation Strategy",
+          stage: "Greenfield"
+        },
+        {
+          name: "Digital ID",
+          stage: "Maturing"
+        },
+        {
+          name: "Digital Payments",
+          stage: "Maturing"
+        },
+        {
+          name: "Data Exchange",
+          stage: "Early Success"
+        },
+        {
+          name: "Use Cases of DPI Assets",
+          stage: "Early Success"
+        }
+      ]
+    },
+    P3: {
+      parameter: "Digital-Physical Infrastructure",
+      parameterStage: "Open to Adopt",
+      subParameters: [
+        {
+          name: "Electricity Access and Reliability",
+          stage: "Role Model"
+        },
+        {
+          name: "Internet Penetration",
+          stage: "Greenfield"
+        },
+        {
+          name: "Compute and Cloud Capacity",
+          stage: "Early Success"
+        },
+        {
+          name: "Digital Inclusion",
+          stage: "Open to Adopt"
+        }
+      ]
+    },
+    P4: {
+      parameter: "Political Stability and Governance",
+      parameterStage: "Open to Adopt",
+      subParameters: [
+        {
+          name: "WB Worldwide Governance Indicators - Political Stability Score 2024",
+          stage: "Open to Adopt"
+        },
+        {
+          name: "Political stability and DT policy continuity (Requirement of KIIs)",
+          stage: "Open to Adopt"
+        }
+      ]
+    },
+    P5: {
+      parameter: "Stakeholder Participation and Ecosystem Coordination",
+      parameterStage: "Early Success",
+      subParameters: [
+        {
+          name: "Lead Agency and Government Coordination",
+          stage: "Maturing"
+        },
+        {
+          name: "Private Sector Engagement",
+          stage: "Open to Adopt"
+        },
+        {
+          name: "Development Partners and MDBs",
+          stage: "Maturing"
+        },
+        {
+          name: "Academic and Research Institutions",
+          stage: "Early Success"
+        },
+        {
+          name: "Civil Society Engagement",
+          stage: "Early Success"
+        }
+      ]
+    },
+    P6: {
+      parameter: "Funding Landscape",
+      parameterStage: "Early Success",
+      subParameters: [
+        {
+          name: "Domestic Public Budget for AI/DPI",
+          stage: "Early Success"
+        },
+        {
+          name: "MDB and Multilateral/Bilateral Financing",
+          stage: "Early Success"
+        }
+      ]
     }
   },
   sectionC: {
     actors: [
-      { id: 'b1', type: 'Government', name: 'MoPTICT, Bangladesh Bank, A2i', role: 'Decision-makers & Implementers', initiatives: ['Smart Bangladesh Vision 2041', 'National ID deployment', '~$200M ICT Division allocation'] },
-      { id: 'b2', type: 'Private', name: 'bKash, Banglalink, Intellier', role: 'Implementers', initiatives: ['bHive by Bkash', 'MyBL by Banglalink', 'Nidle by Intellier'] },
-      { id: 'b3', type: 'Development Partners', name: 'World Bank, ADB', role: 'Policy Influencers & Funders', initiatives: ['Enhancing Digital Government & Economy Project (EDGE)', 'Promoting AI-Enhanced Distribution Support'] },
-    ],
+      {
+        id: "bd-1",
+        name: "ICT Division",
+        type: "Lead Agency & Govt Coordination",
+        role: "Primary policy maker",
+        initiatives: [
+          "Smart Bangladesh 2041 Roadmap"
+        ]
+      },
+      {
+        id: "bd-2",
+        name: "a2i (Aspire to Innovate)",
+        type: "Lead Agency & Govt Coordination",
+        role: "Digital transformation catalyst",
+        initiatives: [
+          "MyGov",
+          "G2P",
+          "NDX"
+        ]
+      },
+      {
+        id: "bd-3",
+        name: "Bangladesh Bank",
+        type: "Private Sector",
+        role: "Central Bank",
+        initiatives: [
+          "NPSB",
+          "Interbank Payment System"
+        ]
+      },
+      {
+        id: "bd-4",
+        name: "Brain Station 23",
+        type: "Private Sector",
+        role: "Tech Solution Provider",
+        initiatives: [
+          "AI/ML in Fintech"
+        ]
+      },
+      {
+        id: "bd-5",
+        name: "World Bank",
+        type: "Development Partners & MDBs",
+        role: "Funding & Technical Partner",
+        initiatives: [
+          "EDGE Project",
+          "DISTAR"
+        ]
+      },
+      {
+        id: "bd-6",
+        name: "BRAC",
+        type: "Civil Society",
+        role: "Implementation Partner",
+        initiatives: [
+          "Digital Innovation Research"
+        ]
+      }
+    ]
   },
   sectionD: {
     opportunities: [
-      { id: 'bo1', text: 'Interbank Payment System: From September 2025, the Bangladesh bank aims to develop an interoperable payment system with the Gates Foundation, built on Mojaloop-based IIPS by July 2027.' },
-      { id: 'bo2', text: 'ICT Division Roadmap: A phased approach scaling from immediate technological requirements (Phase 1) to achieving a robust digital economy (Phase 3) by 2030.' },
-      { id: 'bo3', text: 'Phygital Public Infrastructure: Aiming to bridge gaps for marginalised groups with physical and digital inclusion touchpoints across urban and rural sectors.' },
+      {
+        id: "bd-o1",
+        text: "Unified Instant Payment System (Pipeline): From September 2025, Bangladesh Bank aims to develop an interoperable payment system with the Gates foundation for instant transfers."
+      },
+      {
+        id: "bd-o2",
+        text: "First mover in 50-in-5 initiative: DPI efforts mapped to 20.5 Billion USD in savings and a reduction of public service visits down to 82%."
+      },
+      {
+        id: "bd-o3",
+        text: "DPG Registry: Bangladesh enlisted three solutions (ekShop, GRS, NISE Skills) signifying strong commitment to digital public goods."
+      }
     ],
     risks: [
-      { id: 'br1', text: 'Data Vulnerability: The NID breach of 2023 exposed about 50 million citizen records, emphasizing a severe shortage of cybersecurity professionals.' },
-      { id: 'br2', text: 'Siloed Architectures: Bangladesh’s digital data remains heavily fragmented and isolated, leading to high operational costs and lack of secure interoperability.' },
-      { id: 'br3', text: 'Digital Literacy Gap: High volumes of cyberattacks compounded by low public digital literacy and last mile connectivity issues pose significant scaling barriers.' },
+      {
+        id: "bd-r1",
+        text: "Infrastructure inadequacy and fragmented responsibility with a lack of existing released guidelines for DPI integration."
+      },
+      {
+        id: "bd-r2",
+        text: "Interoperability issues: Legacy systems and siloed data availability severely hamper the creation of a unified digital ecosystem."
+      },
+      {
+        id: "bd-r3",
+        text: "Digital payments lose ground to cash despite growth in volume, highlighting trust and financial literacy gaps."
+      }
     ],
     partnerships: [
-      { id: 'bp1', text: 'Data Pending: Information on specific UNDP partnerships in Bangladesh is currently being compiled and will be available in the next report update.' },
-      { id: 'bp2', text: 'Cybersecurity Capacity Building: Potential opportunities exist to support MoPTICT in training a resilient workforce to address the critical shortage of cybersecurity professionals.' },
-    ],
+      {
+        id: "bd-p1",
+        text: "Multi-stakeholder partnerships at the national level are rated as Medium potential, offering an entry point for UNDP to broker agreements."
+      },
+      {
+        id: "bd-p2",
+        text: "University collaboration and joint research evaluations for AI readiness provide another medium-impact strategic opportunity for engagement."
+      }
+    ]
   },
-  sources: ["https://oxfordinsights.com/wp-content/uploads/2025/12/2025-Government-AI-Readiness-Index-2.pdf", "https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v1.1.pdf", "https://www.unesco.org/ethics-ai/en/global-hub", "https://www.dlapiperdataprotection.com/", "https://file-rangpur.portal.gov.bd/files/pbs2.dinajpur.gov.bd/files/1885c0a0_28a4_4fcc_8d4d_dcd7ce23fd8b/7b684f19a15dfcd0f542382764572486.pdf", "https://dev.mygov.bd/#:~:text=Keyboard%20Shortcut%20Keys%0A%0AmyGov%20%2D%20%E0%A6%AE%E0%A6%BE%E0%A6%87%E0%A6%97%E0%A6%AD%20is%20an,apply%20for%20services%20via%20multiple%20access%20points.", "https://dpiexplorer.org/explore", "https://www.bkash.com/en", "https://datahub.itu.int/dashboards/idi/?e=BGD&amp;y=2025", "https://dpimap.org/", "https://services.nidw.gov.bd/nid-pub/citizen-home/apply", "https://www.old.eps.com.bd/blog-details/npsb-national-payment-switch-bangladesh", "https://bnda.gov.bd/page/service-detail.jsp?name=service-bus", "https://dikkha.com/", "https://www.linkedin.com/pulse/identity-infrastructure-why-bangladesh-must-get-id-md-saifuddin-cfa-ix37c#:~:text=Smart%20National%20ID%20Cards:%20Embedded,%2C%20selfies%2C%20and%20mobile%20OTP.", "https://www.thedailystar.net/business/news/digital-payments-lose-ground-cash-despite-growth-volume-bb-4037511#:~:text=Bangladesh%20Bank%20data%20show%20that,in%20both%20number%20and%20value.", "https://lightcastlepartners.com/cases/digital-transformation-bangladesh-integrated-dpi/#:~:text=However%2C%20the%20study%20found%20that,frameworks%20limit%20seamless%20user%20experiences.", "https://www.itu.int/reports/wsis-gdc-implementation/objectives/gdc-objective-4/data-for-sustainable-development-goals/", "https://www.undp.org/sites/g/files/zskgke326/files/2025-11/final_digital_bangladesh_ai_ram.pdf", "https://www.wipo.int/gii-ranking/en/indicators/313", "https://decentralization.net/countries/bangladesh/", "https://www.eiu.com/n/global-themes/democracy-index/", "https://www.worldbank.org/en/publication/worldwide-governance-indicators", "https://govinsider.asia/intl-en/article/bangladeshs-phygital-public-infrastructure-bridges-dpi-theory-and-practice", "https://databank.worldbank.org/reports.aspx?dsid=31&amp;series=IQ.CPA.MACR.XQ", "https://ega.ee/government-of-bangladesh-signed-strategic-partnership-advance-digital-government/#:~:text=The%20Government%20of%20Bangladesh%20signed%20a%20strategic%20partnership%20with%20the,supported%20E%2Dffective%20Governance%20project.", "https://lightcastlepartners.com/cases/digital-transformation-bangladesh-integrated-dpi/", "https://ptd.gov.bd/", "https://bjitgroup.com/", "https://www.acmeai.tech/", "https://colocity.com.bd/", "https://banglalink.net/en", "https://www.unesco.org/en/articles/bangladesh-advances-responsible-ai-agenda-through-multi-partner-cooperation-0#:~:text=Bangladesh%20advances%20responsible%20AI%20agenda%20through%20multi%2Dpartner%20cooperation,Dr.", "https://documents1.worldbank.org/curated/en/099082525051033525/pdf/P511786-ad6fb108-5072-428b-a766-0d4659d179d5.pdf", "https://www.adb.org/where-we-work/bangladesh", "https://www.bd.emb-japan.go.jp/en/assistance/rollingplan2013.pdf", "https://www.adb.org/sites/default/files/publication/1050686/asian-development-policy-report-2025.pdf", "https://bigd.bracu.ac.bd/wp-content/uploads/2021/12/SCANNING-FOR-DIGITAL-INNOVATIONS-AND-OPPORTUNITIES.pdf", "https://erc.undp.org/evaluation/evaluations/detail/13448", "https://bnnrc.net/", "https://mojaloop.io/bangladesh-bank-building-mojaloop-based-ips/", "https://blogs.lse.ac.uk/southasia/2026/02/16/bangladesh-elections-democratic-transition-or-ideological-shift/", "https://50in5.net/wp-content/uploads/2024/12/Bangladesh.pdf", "https://dspace.bracu.ac.bd/xmlui/bitstream/handle/10361/24162/21164018_MBA.pdf?sequence=1&amp;isAllowed=y#:~:text=Inadequate%20infrastructure%2C%20resource%20restrictions%2C%20political,Bangladesh%2C%20according%20to%20the%20research.", "https://dl.acm.org/doi/10.1145/3700794.3700820", "https://thefinancialexpress.com.bd/views/views/ai-challenges-bangladeshs-promise-of-inclusion", "https://earthjournalism.net/stories/digital-dreams-parched-reality-the-hidden-cost-of-bangladeshs-data-industry-gold-rush#:~:text=The%20Kaliakoir%20Hi%2DTech%20Park%2C%20for%20instance%2C%20has%20a,the%20city's%2024%20million%20residents.", "https://www.tbsnews.net/economy/koica-grants-96m-boost-bangladeshs-future-advanced-tech-ai-and-sustainable-development", "https://www.adb.org/sites/default/files/publication/1114321/digital-public-infrastructure-south-asia.pdf", "https://www.undp.org/bangladesh/publications/bangladesh-artificial-intelligence-readiness-assessment-report"]
+  sources: [
+    "https://oxfordinsights.com/wp-content/uploads/2025/12/2025-Government-AI-Readiness-Index-2.pdf",
+    "https://aipolicy.gov.bd/docs/national-ai-policy-bangladesh-2026-2030-draft-v1.1.pdf",
+    "https://www.unesco.org/ethics-ai/en/global-hub",
+    "https://www.dlapiperdataprotection.com/",
+    "https://file-rangpur.portal.gov.bd/files/pbs2.dinajpur.gov.bd/files/1885c0a0_28a4_4fcc_8d4d_dcd7ce23fd8b/7b684f19a15dfcd0f542382764572486.pdf"
+  ]
 };
 
 export const nepalData: CountryDetailData = {
-  countryName: 'Nepal',
+  countryName: "Nepal",
   dpiEcosystem: {
     digitalId: {
-      title: 'Digital ID', status: 'Implemented', description: 'Rastriya Parichaya Patra', implementationAgency: 'Department of National ID',
+      title: "Digital ID",
+      status: "Maturing",
+      description: "Rastriya Parichaya Patra; National Identity",
       modalDetails: {
-        fullContext: "The Rastriya Parichaya Patra (National Identity) integrates closely with the Nagarik App. It is mandated for vital events, banking, and social security across millions, though physical KYC authentication hurdles remain common.",
+        fullContext: "Rastriya Parichaya Patra; National Identity  As of 2025, over 17 million people have been registered which is about 57% of the population and approximately 6 million cards have been printed. Over 97% of local government units have switched to online civil registration of vital events like births and deaths, forming a foundational database. The government has also started making the card mandatory for certain services, such as banking, social security fund access, and real estate transactions.   The ID system is integrated with the Nagarik App and is mandated (in 28 districts) for accessing services like pensions and health insurance. It aims to unify credentials like voter ID, citizenship cards, and driving licenses. However, there is no operational authentication infrastructure i.e. KYC and most agencies still require physical documents",
         keyMetrics: [
-          "Rastriya Parichaya Patra registered over 17 million people (57% of population)",
-          "Mandated in 28 districts for access to pensions and health insurance",
-          "Integrated with the Nagarik App",
-          "Rastriya Parichaya Patra enrollment reached 57% of the total demographic population"
-        ],
-        timeline: ""
-      }
+          "Rastriya Parichaya Patra; National Identity",
+          "As of 2025, over 17 million people have been registered which is about 57% of the population and approximately 6 million cards have been printed. Over 97% of local government units have switched to online civil registration of vital events like births and deaths, forming a foundational database. The government has also started making the card mandatory for certain services, such as banking, social security fund access, and real estate transactions.",
+          "The ID system is integrated with the Nagarik App and is mandated (in 28 districts) for accessing services like pensions and health insurance. It aims to unify credentials like voter ID, citizenship cards, and driving licenses. However, there is no operational authentication infrastructure i.e. KYC and most agencies still require physical documents"
+        ]
+      },
+      implementationAgency: "Department of National ID"
     },
     payments: {
-      title: 'Digital Payments', status: 'Implemented', description: 'National Payments Interface (NPI)', implementationAgency: 'Nepal Rastra Bank',
+      title: "Digital Payments",
+      status: "Maturing",
+      description: "National Payments Interface (NPI)",
       modalDetails: {
-        fullContext: "The National Payments Interface (NPI) consolidates APIs across public payment systems (NCHL-IPS, RPS). Operated by Nepal Clearing House Limited, it handles immense trading volumes encompassing nearly 90% of government expenses.",
+        fullContext: "National Payments Interface (NPI) (Ongoing)  National Payments Interface (NPI) is the consolidated set of APIs of multiple payment systems hosted by NCHL or any other institutions built in an Open API platform concept. It currently provides access to the Nepal Clearing House Limited- Interbank Payment System (NCHL-IPS) and Retail Payment System (RPS); underlying payment systems with the overlaying services built on top of the platform.   Nepal Clearing House Limited (NCHL), a public limited company, serves as the core operator of the country’s clearing, settlement, and switching infrastructure and functions as the backbone of the National Payment Switch, enabling interoperability across systems.   It has also implemented initiatives such as NepalPay QR and NepalPay Instant for real-time payments. QR payments are accepted by over 2 million merchants, with volumes growing 117% in a year. In 2024/25, NCHL processed 186 million transactions, covering 17% of total market volume but 77% of value. Also ~90% of government expenses are digital transactions.",
         keyMetrics: [
-          "National Payments Interface (NPI) handles ~90% of government digital expenses",
-          "Processed 186 million transactions in 2024/25",
-          "QR payments accepted by over 2 million merchants (117% volume growth)",
-          "NPI processed 186 million transactions, covering 17% of total market volume but 77% of value"
-        ],
-        timeline: ""
-      }
+          "National Payments Interface (NPI) (Ongoing)",
+          "National Payments Interface (NPI) is the consolidated set of APIs of multiple payment systems hosted by NCHL or any other institutions built in an Open API platform concept. It currently provides access to the Nepal Clearing House Limited- Interbank Payment System (NCHL-IPS) and Retail Payment System (RPS); underlying payment systems with the overlaying services built on top of the platform.",
+          "Nepal Clearing House Limited (NCHL), a public limited company, serves as the core operator of the country’s clearing, settlement, and switching infrastructure and functions as the backbone of the National Payment Switch, enabling interoperability across systems.",
+          "It has also implemented initiatives such as NepalPay QR and NepalPay Instant for real-time payments. QR payments are accepted by over 2 million merchants, with volumes growing 117% in a year. In 2024/25, NCHL processed 186 million transactions, covering 17% of total market volume but 77% of value. Also ~90% of government expenses are digital transactions."
+        ]
+      },
+      implementationAgency: "Nepal Rastra Bank"
     },
     dataExchange: {
-      title: 'Data Exchange', status: 'Implemented', description: 'Government Cloud', implementationAgency: 'MoCIT',
+      title: "Data Exchange",
+      status: "Open to Adopt",
+      description: "Government Cloud",
       modalDetails: {
-        fullContext: "Inter-agency data interoperability predominantly rides the rails of the National Payments Interface stack to orchestrate real-time financial clearing routes.",
+        fullContext: "Government Cloud (Pipeline)  The government of Nepal has partnered with various cloud service providers to build its cloud infrastructure and improve the delivery of e-governance services.   Government Integrated Data Center (GIDC) is operational under the MoCIT",
         keyMetrics: [
-          "Operates an Open API platform concept via the National Payments Interface"
-        ],
-        timeline: ""
-      }
+          "Government Cloud (Pipeline)",
+          "The government of Nepal has partnered with various cloud service providers to build its cloud infrastructure and improve the delivery of e-governance services.",
+          "Government Integrated Data Center (GIDC) is operational under the MoCIT"
+        ]
+      },
+      implementationAgency: "MoCIT"
     },
+    useCases: [
+      {
+        sector: "Traffic Management",
+        description: "AI-based intelligent traffic light system in Lalitpur"
+      },
+      {
+        sector: "Healthcare Data",
+        description: "SITA - AI platform for analyzing national health datasets"
+      },
+      {
+        sector: "Agriculture",
+        description: "Plantsat & Geokrishi - Satellite monitoring and data-driven farming apps"
+      },
+      {
+        sector: "Education",
+        description: "Cognify - Personalized cognitive learning app to reduce drop-out rates"
+      }
+    ]
   },
   aiEcosystem: {
     policy: {
-      title: 'AI Strategy', status: 'Implemented', description: 'National AI Policy 2025', implementationAgency: 'MoCIT',
+      title: "AI Strategy",
+      status: "Early Success",
+      description: "National AI Policy, 2025",
       modalDetails: {
-        fullContext: "The National AI Policy 2025 strives to dramatically elevate socio-economic development, boost IT GDP contributions by 1%, train 5,000 AI professionals, establish provincial AI centers, and achieve universal AI literacy.",
+        fullContext: "Vision To build a human-Centered, ethical, and prosperous Nepal through Artificial Intelligence (AI) technology.  Mission To maximize the use of Artificial Intelligence for the socio-economic development of the nation.  Goals - Increase the contribution of the information technology sector to the Gross Domestic Product (GDP) by 1% through the optimal use of AI across all socio-economic sectors. - Improve Nepal’s position within the top 50 countries in the Global Government AI Readiness Index. - Produce at least five thousand skilled human resources in the field of AI within five years. - Establish AI Excellence Centres in all provinces within five years. - Achieve AI literacy for the entire population, including students at the basic education level.  Objectives - Build a sustainable and reliable AI ecosystem. - Accelerate the economic growth rate through the optimal use of AI. - Enhance the effectiveness of public service delivery through AI applications. - Strengthen AI governance",
         keyMetrics: [
-          "National AI Policy 2025 aims to increase IT sector GDP contribution by 1%",
-          "Goal to produce 5,000 skilled AI human resources within 5 years",
-          "Establish AI Excellence Centres across all provinces"
-        ],
-        timeline: ""
-      }
+          "Vision",
+          "To build a human-Centered, ethical, and prosperous Nepal through Artificial Intelligence (AI) technology.",
+          "Mission",
+          "To maximize the use of Artificial Intelligence for the socio-economic development of the nation."
+        ]
+      },
+      implementationAgency: "Ministry of ICT"
     },
     governance: {
-      title: 'AI Governance', status: 'Implemented', description: 'National AI Policy 2025', implementationAgency: 'MoCIT',
+      title: "AI Governance",
+      status: "Maturing",
+      description: "Policy Implementation Roadmap",
       modalDetails: {
-        fullContext: "Directly embedded inside the overarching AI Policy objectives to orchestrate a sustainable, reliable, and secure AI ecosystem bridging public service delivery systems.",
+        fullContext: "Nepal's AI governance focus is anchored in the National AI Policy 2025. It targets human-centered and ethical deployment, with an emphasis on improving the nation's position in the Global Government AI Readiness Index. The policy mandates the establishment of AI Excellence Centres in all provinces within five years to oversee regional governance and literacy.",
         keyMetrics: [
-          "Goal to improve Nepal’s position within the top 50 in Global Government AI Readiness",
-          "Build a sustainable and reliable AI ecosystem"
-        ],
-        timeline: ""
-      }
+          "Target: Top 50 in Global Government AI Readiness Index",
+          "AI Excellence Centres planned for all 7 provinces",
+          "Ethical framework integrated into National AI Policy 2025",
+          "Mandatory AI literacy programs for all tiers of education"
+        ]
+      },
+      implementationAgency: "Nepal e-Governance Board"
     },
     legislation: {
-      title: 'Data Legislation', status: 'Implemented', description: 'National Cyber Security Policy 2023', implementationAgency: 'MoCIT',
+      title: "Data Protection",
+      status: "Early Success",
+      description: "National Cyber Security Policy, 2023",
       modalDetails: {
-        fullContext: "Governed dynamically by the National Cyber Security Policy 2023, which aims to protect critical national infrastructure and aggressively scale Nepal\'s Global Cyber Security Index to 80% over 15 years.",
+        fullContext: "Building a secure as well as Resilient Cyber Space.  Mission To ensure information and data security and protection of information technology systems through a combination of people, process and technology by developing legal and institutional structure, enhancing public awareness and developing capacity.  Objectives -Establish legal and institutional frameworks to build a secure cyber space. -Protect critical national infrastructure while reducing the risk of cyberattacks. -Enhance cyber security research, human resource development and enhancing capacity of existing workforce, to ensure a robust and strong cyber space. -Improve the reliability and security of digital technology-based services. -Exchange bilateral, regional and international coordination, knowledge sharing, and assistance to reduce cyber security related risks.  Goal To increase Nepal's Global Cyber Security Index (GCI) score from the current 44.99% to 60% within the next 5 years, 70% within 10 years, and 80% in the 15 years.",
         keyMetrics: [
-          "National Cyber Security Policy 2023",
-          "Goal to increase Global Cyber Security Index score to 80% within 15 years",
-          "Aims to protect critical national infrastructure"
-        ],
-        timeline: ""
-      }
+          "Building a secure as well as Resilient Cyber Space.",
+          "Mission",
+          "To ensure information and data security and protection of information technology systems through a combination of people, process and technology by developing legal and institutional structure, enhancing public awareness and developing capacity.",
+          "Objectives"
+        ]
+      },
+      implementationAgency: "MoCIT"
     },
     initiatives: {
-      title: 'Government AI Initiatives', status: 'Implemented', description: 'Lalitpur Traffic & SITA', implementationAgency: 'Ministry of Health / LMC',
+      title: "AI Initiatives",
+      status: "Maturing",
+      description: "SITA, Intelligent Traffic & Agri-Tech",
       modalDetails: {
-        fullContext: "Implementations encompass a pioneering AI-based intelligent traffic light grid in Lalitpur City and the \'SITA\' AI platform which analyzes immense demographic datasets to instantly generate actionable, human-quality narrative insights.",
+        fullContext: "SITA is a flagship AI platform developed by UNFPA to analyze national health datasets instantly. Lalitpur's intelligent traffic light system is a pioneering urban deployment adjusting signal timings in real-time. In agriculture, Plantsat and Geokrishi leverage satellite data and AI to optimize crop management and livestock insurance for small-scale farmers.",
         keyMetrics: [
-          "SITA AI platform developed with UNFPA to rapidly analyze national datasets",
-          "AI-based intelligent traffic light system deployed in Lalitpur Metropolitan City"
-        ],
-        timeline: ""
-      }
-    },
+          "SITA: Rapid analysis of massive datasets for health insights",
+          "Intelligent Traffic: 10+ major junctions in Lalitpur automated via AI",
+          "Plantsat & Geokrishi: AI-driven satellite monitoring for 50k+ farmers",
+          "Cognify: Personalized cognitive learning to reduce dropout rates"
+        ]
+      },
+      implementationAgency: "MoCIT, UNFPA & Private Partners"
+    }
   },
   sectionB: {
-    fundingLandscape: "In 2021, UNDP Nepal implemented development programmes across the nation with a total expenditure of $20.4 million. The World Bank and the ADB have also jointly co-financed the Nepal Digital Transformation Project, contributing $50 million and $40 million respectively.",
-    electricityAccess: 94,
-    internetPenetration: 56,
+    fundingLandscape: "Dependent on external financing (WB, ADB) with emerging domestic allocations.",
+    electricityAccess: 92,
+    internetPenetration: 49.6,
+    politicalStability: "Previous cycle in 2022 next one in March, 2026",
+    electionCycles: "Previous cycle in 2022 next one in March, 2026",
+    politicalModalDetails: {
+      fullContext: "5 year election cycle. Mass and violent protests by youth against (popularily referred to as Gen Z protests) took place in September 2025 forcing the resignation of the Prime Minister Khadga Prasad Sharma Oli and desolution of the house of representatives. An interim government headed by former chief justice Sushila Karki has been appointed.",
+      keyMetrics: [
+        "5 year election cycle. Mass and violent protests by youth against (popularily referred to as Gen Z protests) took place in September 2025 forcing the resignation of the Prime Minister Khadga Prasad Sharma Oli and desolution of the house of representatives. An interim government headed by former chief justice Sushila Karki has been appointed."
+      ]
+    },
     deviceAccess: 95.5,
     digitalInclusion: "Higher internet access in urban areas (65%) versus rural regions (22%). Only 53% have 4G coverage.",
-    dataCenters: '37 data centres (Internet Society: Pulse)',
-    politicalStability: 'Hybrid Regime (4.6/10) (Source: Democracy Index 2024)',
-    electionCycles: 'November 2022 | March 2026',
+    dataCenters: "37 data centres (Internet Society: Pulse)",
+    leadershipQuote: {
+      text: "Accelerating good governance, development, and prosperity through the use of ICT is the foundation of our nation's digital journey.",
+      author: "KP Sharma Oli",
+      context: "Prime Minister of Nepal (Digital Nepal Framework)"
+    },
     politicalSubParameters: [
-      { label: 'Elections', value: 'National Election cycle spans from November 2022 up to the upcoming March 2026 cycle.' },
-      { label: 'Political Stability', value: 'Categorized as a Hybrid Regime (4.6/10). Saw a 10.87% increase in Political Stability Index (from 47.94 in 2014 to 58.81 in 2024).' },
-      { label: 'Digital Inclusion Gaps', value: 'Higher internet access in urban areas (65%) versus rural regions (22%). Only 53% have 4G coverage and just 56% used the internet recently.' },
-      { label: 'Institutional Capacity', value: 'Nepal is participating in the global 50-in-5 initiative for policy implementation.' }
+      {
+        label: "Elections",
+        value: "5 year election cycle. Mass and violent protests led to Prime Minister resignation in September 2025. Interim government appointed."
+      },
+      {
+        label: "Governance Structure",
+        value: "Federal Democratic Republic since 2008. Seven administrative regions and a bicameral legislature."
+      },
+      {
+        label: "Political Stability",
+        value: "Unstable. 27 Prime Ministers since 1990. Voice and Accountability: 55.80. Political Stability: 58.81. Control of Corruption: 35.05. Ranked 107 out of 143."
+      },
+      {
+        label: "Institutional Capacity",
+        value: "CPIA Macroeconomic management rating is 3 out of 6, as of 2024."
+      },
+      {
+        label: "Institutional Fragmentation",
+        value: "MoCIT has limited coordination power, and the e-Governance Board lacks formal authority."
+      },
+      {
+        label: "Capacity Constraints",
+        value: "DPI understanding remains low beyond central ministries. GovTech Index: 0.439."
+      }
     ]
+  },
+  parameterStages: {
+    P1: {
+      parameter: "AI Ecosystem Maturity",
+      parameterStage: "Open to Adopt",
+      subParameters: [
+        {
+          name: "IMF AI Preparedness Index (AIPI)  (2023 dataset)",
+          stage: "Open to Adopt"
+        },
+        {
+          name: "National AI Strategy / Policy Status",
+          stage: "Early Success"
+        },
+        {
+          name: "AI Governance and Regulatory Frameworks and Ethical AI Principles",
+          stage: "Open to Adopt"
+        },
+        {
+          name: "Data Protection and Privacy Legislation",
+          stage: "Early Success"
+        },
+        {
+          name: "Government AI Initiatives and Projects",
+          stage: "Open to Adopt"
+        }
+      ]
+    },
+    P2: {
+      parameter: "DPI Ecosystem Maturity",
+      parameterStage: "Maturing",
+      subParameters: [
+        {
+          name: "National Digital Transformation Strategy",
+          stage: "Maturing"
+        },
+        {
+          name: "Digital ID",
+          stage: "Maturing"
+        },
+        {
+          name: "Digital Payments",
+          stage: "Maturing"
+        },
+        {
+          name: "Data Exchange",
+          stage: "Open to Adopt"
+        },
+        {
+          name: "Use Cases of DPI Assets",
+          stage: "Open to Adopt"
+        }
+      ]
+    },
+    P3: {
+      parameter: "Digital-Physical Infrastructure",
+      parameterStage: "Early Success",
+      subParameters: [
+        {
+          name: "Electricity Access and Reliability",
+          stage: "Early Success"
+        },
+        {
+          name: "Internet Penetration",
+          stage: "Greenfield"
+        },
+        {
+          name: "Compute and Cloud Capacity",
+          stage: "Early Success"
+        },
+        {
+          name: "Digital Inclusion",
+          stage: "Open to Adopt"
+        }
+      ]
+    },
+    P4: {
+      parameter: "Political Stability and Governance",
+      parameterStage: "Open to Adopt",
+      subParameters: [
+        {
+          name: "WB Worldwide Governance Indicators - Political Stability Score 2024",
+          stage: "Open to Adopt"
+        },
+        {
+          name: "Political stability and DT policy continuity (Requirement of KIIs)",
+          stage: "Open to Adopt"
+        }
+      ]
+    },
+    P5: {
+      parameter: "Stakeholder Participation and Ecosystem Coordination",
+      parameterStage: "Open to Adopt",
+      subParameters: [
+        {
+          name: "Lead Agency and Government Coordination",
+          stage: "Open to Adopt"
+        },
+        {
+          name: "Private Sector Engagement",
+          stage: "Open to Adopt"
+        },
+        {
+          name: "Development Partners and MDBs",
+          stage: "Early Success"
+        },
+        {
+          name: "Academic and Research Institutions",
+          stage: "Open to Adopt"
+        },
+        {
+          name: "Civil Society Engagement",
+          stage: "Open to Adopt"
+        }
+      ]
+    },
+    P6: {
+      parameter: "Funding Landscape",
+      parameterStage: "Greenfield",
+      subParameters: [
+        {
+          name: "Domestic Public Budget for AI/DPI",
+          stage: "Early Success"
+        },
+        {
+          name: "MDB and Multilateral/Bilateral Financing",
+          stage: "Greenfield"
+        }
+      ]
+    }
   },
   sectionC: {
     actors: [
-      { id: 'nepal-g1', type: 'Government', name: 'MoCIT, Nepal e-governance board, Fonepay, NTA, OCC', role: 'Decision-makers & Implementers', initiatives: ['Fonepay collaborated with NPCI to facilitate UPI payments'] },
-      { id: 'nepal-p1', type: 'Private', name: 'Leapfrog, F1Soft, Verisk Nepal, CloudFactory, Fusemachines', role: 'Implementers', initiatives: [] },
-      { id: 'nepal-d1', type: 'Development Partners', name: 'World Bank, ADB, UNDP, GEF, GCF', role: 'Policy Influencers & Funders', initiatives: ['UNDP implemented $20.4M programmes in 2021', 'WB & ADB co-financed $90M Digital Transformation Project'] },
-      { id: 'nepal-a1', type: 'Academia', name: 'Open Knowledge Nepal', role: 'Policy Influencers', initiatives: [] },
-      { id: 'nepal-c1', type: 'Civil Society', name: 'Digital Rights Nepal', role: 'Policy Influencers & Implementers', initiatives: [] },
-      { id: 'nepal-f1', type: 'Funding Orgs', name: 'NPCI (NIPL), AI Association Nepal', role: 'Funders', initiatives: [] }
-    ],
+      {
+        id: "np-1",
+        name: "MoCIT",
+        type: "Lead Agency & Govt Coordination",
+        role: "Lead Ministry",
+        initiatives: [
+          "Digital Nepal Framework"
+        ]
+      },
+      {
+        id: "np-2",
+        name: "e-Governance Commission",
+        type: "Lead Agency & Govt Coordination",
+        role: "Implementation body",
+        initiatives: [
+          "Nagarik App"
+        ]
+      },
+      {
+        id: "np-3",
+        name: "Fonepay",
+        type: "Private Sector",
+        role: "Fintech Leader",
+        initiatives: [
+          "NepalPay QR",
+          "UPI Cross-border"
+        ]
+      },
+      {
+        id: "np-4",
+        name: "Fusemachines",
+        type: "Private Sector",
+        role: "AI Specialist",
+        initiatives: [
+          "AI Solutions"
+        ]
+      },
+      {
+        id: "np-5",
+        name: "Asian Development Bank (ADB)",
+        type: "Development Partners & MDBs",
+        role: "Funding Partner",
+        initiatives: [
+          "Digital Transformation Project"
+        ]
+      },
+      {
+        id: "np-6",
+        name: "Digital Rights Nepal",
+        type: "Civil Society",
+        role: "Advocacy",
+        initiatives: [
+          "Digital Privacy Campaign"
+        ]
+      }
+    ]
   },
   sectionD: {
     opportunities: [
-      { id: 'nepal-o1', text: 'Nepal Digital Transformation Project: World Bank approved a $50m loan that aims to strengthen Nepal’s digital public infrastructure and improve the delivery and use of inclusive, high-impact digital government services.' },
-      { id: 'nepal-o2', text: 'Broadband and Data Infrastructure Expansion: IFC, Standard Chartered Bank Nepal Limited, and WorldLink Communications Ltd. partner on $29 million project to expand connectivity, create jobs, and drive economic growth.' }
+      {
+        id: "np-o1",
+        text: "Digital Nepal Framework identifies 8 socio-economic sectors for digital growth, providing a clear roadmap for UNDP technical assistance."
+      },
+      {
+        id: "np-o2",
+        text: "Rapid adoption of the National ID (over 17 million registered) and digital payments (Fonepay) show strong public appetite for DPI."
+      }
     ],
     risks: [
-      { id: 'nepal-r1', text: 'GIDC lacks resources which results in outages/breaches: Government Integrated Data Center (GIDC) is understaffed and lacks resources including technical infrastructure which led to outages and data loss across 10–15 agencies in 2023.' },
-      { id: 'nepal-r2', text: 'Weak Systems and Limited Uptake: DPI understanding remains low beyond central ministries, limiting sectoral uptake. Nepal scores 0.439 on the GovTech Index, reflecting weak systems and skills across government.' },
-      { id: 'nepal-r3', text: 'Data Protection Landscape: The 2024 Draft Cyber Bill has been criticised for potentially enabling government surveillance and censorship — especially through a proposed national internet gateway — while lacking strong privacy safeguards and adequate public consultation.' }
+      {
+        id: "np-r1",
+        text: "High political instability and frequent government transitions hinder long-term DPI and AI policy continuity."
+      },
+      {
+        id: "np-r2",
+        text: "A severe digital divide exists between urban (65% internet access) and rural (22%) populations, risking unequal DPI benefits."
+      },
+      {
+        id: "np-r3",
+        text: "Lack of an operational authentication infrastructure (KYC) for the National ID prevents seamless end-to-end digital service delivery."
+      }
     ],
     partnerships: [
-      { id: 'nepal-p1', text: 'Strengthening of GDIC: UNDP could support the institutional strengthening of the Government Integrated Data Center (GIDC) by helping design operational standards, cybersecurity protocols, and workforce capacity programmes for digital infrastructure management.' },
-      { id: 'nepal-p2', text: 'Focused Capacity-Building Across High-Priority Ministries: Since DPI understanding remains concentrated within central ministries, UNDP could run capacity-building programmes for specific ministries to increase adoption of digital systems.' },
-      { id: 'nepal-p3', text: 'Supporting Rights-Based Data Governance: With concerns around the 2024 Draft Cyber Bill, UNDP could facilitate multi-stakeholder dialogue and technical assistance on data protection and cybersecurity legislation, ensuring alignment with international norms.' },
-      { id: 'nepal-p4', text: 'Given Nepal’s focus on digital infrastructure expansion, there is scope for the country to become a part of the 50-in-5 initiative.' }
+      {
+        id: "np-p1",
+        text: "Strategic partnerships with the World Bank and ADB, who are currently funding foundational digital transformation projects."
+      },
+      {
+        id: "np-p2",
+        text: "Collaboration with local innovators like Fusemachines and Fonepay to build localized AI solutions and secure payment gateways."
+      },
+      {
+        id: "np-p3",
+        text: "UNDP can support the e-Governance Commission to improve the GovTech index score through capacity building."
+      }
     ]
   },
-
-  sources: ["https://nepaleconomicforum.org/a-view-on-the-national-ai-policy/", "https://asiapacific.unfpa.org/en/news/sita-nepals-new-ai-tool-could-change-how-country-uses-data", "https://www.datacentermap.com/nepal/", "https://nagarikapp.gov.np/", "https://www.nepjol.info/index.php/njes2/article/view/82964/63413", "https://susasan.org/tools", "https://www.myrepublica.nagariknetwork.com/amp/news/national-id-backlog-details-of-20m-collected-only-75m-cards-printed-19-46.html#:~:text=Listen,Related%20story", "https://english.nepalnews.com/s/business/nepals-digital-transactions-hit-rs-98-43-trillion-in-fy-2024-25/", "https://nasc.org.np/sites/default/files/IT%20Infrastructure%20report.pdf", "https://www.wipo.int/gii-ranking/en/indicators/313", "https://carnegieendowment.org/russia-eurasia/research/2025/09/nepal-gen-z-topple-government", "https://risingnepaldaily.com/news/66941", "https://www.britishcouncil.org.np/sites/default/files/nepal_cso_landsape_study_final_report.pdf", "https://nexus.ingroupe.com/nepals-national-pki-relies-on-nexus", "https://digitalrightsnepal.org/wp-content/uploads/2025/05/Final-2022_organized.pdf", "https://www.digitalpublicgoods.net/r/rahat", "https://nta.gov.np/uploads/contents/MIS%202079%20Magh.pdf", "https://www.undp.org/nepal/funding-delivery", "https://www.worldbank.org/en/news/press-release/2026/02/09/nepal-world-bank-approves-50-million-digital-transformation-project", "https://docs.google.com/document/d/1fkS-vL6lOiX4vC5YfVEqGEmiGCafAZE8zq9ZgcYeDvA/edit?tab=t.wcy24r1uwpnr", "https://english.biznessnews.com/posts/nepal-to-resign-world-bank-loan-for-digital-transformation-"]
+  sources: [
+    "https://nepaleconomicforum.org/a-view-on-the-national-ai-policy/",
+    "https://asiapacific.unfpa.org/en/news/sita-nepals-new-ai-tool-could-change-how-country-uses-data",
+    "https://www.datacentermap.com/nepal/",
+    "https://nagarikapp.gov.np/"
+  ]
 };
