@@ -9,12 +9,12 @@ export interface RadarDataPoint {
 }
 
 export const radarData: RadarDataPoint[] = [
-  { parameter: 'AI Ecosystem Maturity', Malaysia: 4, Cambodia: 2, Philippines: 3, Bangladesh: 1, Nepal: 2, fullMark: 5 },
-  { parameter: 'DPI Ecosystem Maturity', Malaysia: 3, Cambodia: 4, Philippines: 4, Bangladesh: 2, Nepal: 3, fullMark: 5 },
-  { parameter: 'Digital Infra Availability', Malaysia: 5, Cambodia: 2, Philippines: 3, Bangladesh: 1, Nepal: 2, fullMark: 5 },
-  { parameter: 'Political Stability', Malaysia: 4, Cambodia: 4, Philippines: 4, Bangladesh: 1, Nepal: 1, fullMark: 5 },
-  { parameter: 'Stakeholder Participation', Malaysia: 3, Cambodia: 3, Philippines: 4, Bangladesh: 2, Nepal: 1, fullMark: 5 },
-  { parameter: 'Funding Landscape', Malaysia: 3, Cambodia: 2, Philippines: 4, Bangladesh: 2, Nepal: 1, fullMark: 5 },
+  { parameter: 'AI Ecosystem Maturity', Malaysia: 4, Cambodia: 2, Philippines: 3, Bangladesh: 2, Nepal: 2, fullMark: 5 },
+  { parameter: 'DPI Ecosystem Maturity', Malaysia: 3, Cambodia: 4, Philippines: 4, Bangladesh: 3, Nepal: 4, fullMark: 5 },
+  { parameter: 'Digital Infra Availability', Malaysia: 5, Cambodia: 2, Philippines: 3, Bangladesh: 2, Nepal: 3, fullMark: 5 },
+  { parameter: 'Political Stability', Malaysia: 4, Cambodia: 4, Philippines: 4, Bangladesh: 2, Nepal: 2, fullMark: 5 },
+  { parameter: 'Stakeholder Participation', Malaysia: 3, Cambodia: 3, Philippines: 4, Bangladesh: 3, Nepal: 2, fullMark: 5 },
+  { parameter: 'Funding Landscape', Malaysia: 3, Cambodia: 2, Philippines: 4, Bangladesh: 3, Nepal: 1, fullMark: 5 },
 ];
 
 export interface MetricCard {
