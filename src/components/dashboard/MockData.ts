@@ -576,7 +576,7 @@ export const philippinesData: CountryDetailData = {
       }
     },
     initiatives: {
-      title: 'Government AI Initiatives', status: 'Maturing', description: 'AI-4RP & SkAI-Pinas', implementationAgency: 'DOST',
+      title: 'Government AI Initiatives', status: 'Early Success', description: 'AI-4RP & SkAI-Pinas', implementationAgency: 'DOST',
       modalDetails: {
         fullContext: "NAICRI (launched Feb 2026) serves as the central HPC hub. Key deployments include Project AGAP.AI for education, UTAK AI for tumor detection, AI-4RP for weather forecasting, and the Digital Bayanihan Chain recording the national budget on a blockchain ledger.",
         keyMetrics: [
