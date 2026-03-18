@@ -530,7 +530,7 @@ export const philippinesData: CountryDetailData = {
       }
     },
     useCases: [
-      { sector: 'Social Protection', description: '4Ps program (DSWD) — 4.4M+ households served; fully digitised via PhilSys ID verification and PhilPaSSplus payment rails' },
+      { sector: 'Social Protection', description: '4Ps program (DSWD) — 4.4M+ households served; fully digitised via PhilSys ID verification and PhilPaSSplus payment rails. Note: digital integration with PhilSys and G2P payment rails is planned but not yet confirmed as operational at scale.' },
       { sector: 'Health', description: 'PhilHealth insurance claims integrated with PhilSys registry for real-time eligibility checks and eClaims processing' },
       { sector: 'Government Finance', description: 'LandBank — salaries, pensions, and social benefits processed via eMDS and Link.BizPortal digital rails' },
       { sector: 'Education', description: 'DepEd Learner Information System (LIS) and Project Bukas use digital identifiers to track 1.5M+ teachers and learners' },
@@ -1247,7 +1247,7 @@ export const nepalData: CountryDetailData = {
       fullContext: "5 year election cycle. Mass and violent protests by youth against (popularily referred to as Gen Z protests) took place in September 2025 forcing the resignation of the Prime Minister Khadga Prasad Sharma Oli and desolution of the house of representatives. An interim government headed by former chief justice Sushila Karki has been appointed.",
       keyMetrics: [
         "5 year election cycle. Mass and violent protests by youth against (popularily referred to as Gen Z protests) took place in September 2025 forcing the resignation of the Prime Minister Khadga Prasad Sharma Oli and desolution of the house of representatives. An interim government headed by former chief justice Sushila Karki has been appointed."
-        ]
+      ]
     },
     deviceAccess: 95.5,
     digitalInclusion: "Higher internet access in urban areas (65%) versus rural regions (22%). Only 53% have 4G coverage.",
