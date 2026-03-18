@@ -496,7 +496,7 @@ export const philippinesData: CountryDetailData = {
     digitalId: {
       title: 'Digital ID', status: 'Maturing', description: 'PhilSys / PhilID', implementationAgency: 'PSA & BSP',
       modalDetails: {
-        fullContext: "PhilSys has enrolled 90 million Filipinos (~80% of population) with multi-modal biometrics. It is interoperable with banking (BSP Circular 1105 for instant e-KYC) and the eGovPH Super App for single sign-on across government services.",
+        fullContext: "PhilSys has enrolled 90 million Filipinos (~80% of population) utilizing multi-modal biometrics to ensure a unique PhilSys Number (PSN). It is fully interoperable with the banking sector for instant e-KYC (BSP Circular 1105) and integrated with the eGovPH Super App for single sign-on access to government services.",
         keyMetrics: [
           "PhilSys issues unique identification number supported by biometric data",
           "Administered by the Philippine Statistics Authority",
@@ -508,7 +508,7 @@ export const philippinesData: CountryDetailData = {
     payments: {
       title: 'Digital Payments', status: 'Maturing', description: 'PhilPASSPlus, InstaPay, PESONet', implementationAgency: 'PSA & BSP',
       modalDetails: {
-        fullContext: "PhilPaSSplus (ISO 20022 compliant) processed PHP 151.3 trillion in Q3 2025 (up 21% YoY). Retail rails include InstaPay and PESONet, with system expansion toward 24/7 operations in 2026 underpinning a wholesale CBDC pilot.",
+        fullContext: "PhilPaSSplus, the ISO 20022-compliant real-time gross settlement system, processed PHP 151.3 trillion in Q3 2025 (a 21% YoY increase). Supported by InstaPay and PESONet retail rails, the system is expanding toward 24/7 operations and underpins the national wholesale CBDC pilot.",
         keyMetrics: [
           "PhilPaSSplus enables real time high-value interbank fund transfers",
           "Operated by the Bangko Sentral ng Pilipinas",
@@ -520,7 +520,7 @@ export const philippinesData: CountryDetailData = {
     dataExchange: {
       title: 'Data Exchange', status: 'Maturing', description: 'eGovDX', implementationAgency: 'DICT',
       modalDetails: {
-        fullContext: "eGovDX (DICT) provides secure middleware for interoperable data sharing across national agencies via standardised APIs, governed by the Data Privacy Act and Data Sharing Agreements. Active cross-agency use cases include DSWD-BSP and PSA-BSP integrations.",
+        fullContext: "eGovDX provides secure middleware for interoperable data sharing across national agencies via standardised APIs. Governed by the Data Privacy Act and Data Sharing Agreements, it actively supports cross-agency use cases such as DSWD-BSP social transfers and PSA-BSP identity verification.",
         keyMetrics: [
           "eGovDX enables interoperable data sharing among government agencies",
           "InstaPay, PESONet, and QR Ph facilitate electronic fund transfers",
@@ -541,7 +541,7 @@ export const philippinesData: CountryDetailData = {
     policy: {
       title: 'AI Strategy', status: 'Early Success', description: 'National Artificial Intelligence Strategy', implementationAgency: 'DTI',
       modalDetails: {
-        fullContext: "NAISR 2.0 launched July 2024 by DTI, covering seven strategic imperatives. The Centre for AI Research (CAIR) targets agriculture and healthcare. Implementation remains early-stage with no public monitoring framework yet in place.",
+        fullContext: "NAISR 2.0 (launched July 2024) outlines seven imperatives for ethical AI, infrastructure, and talent. The Center for AI Research (CAIR) targets agriculture and healthcare, though implementation remains early-stage without a verified public monitoring framework (UNESCO, 2025).",
         keyMetrics: [
           "National AI Strategy Roadmap (NAISR) 2.0 targets 1.0% of GDP R&D spending",
           "Aims to boost economy by up to PHP 2.6 trillion annually",
@@ -554,7 +554,7 @@ export const philippinesData: CountryDetailData = {
     governance: {
       title: 'AI Governance', status: 'Open to Adopt', description: 'Senate Bill no 25', implementationAgency: 'Senate',
       modalDetails: {
-        fullContext: "Senate Bill No. 25 (AI Regulation Act) remains in committee. DICT and CSC published a draft Joint Memorandum Circular on Ethical AI Use in Government (April 2024) drawing on OECD and UNESCO principles, but it is not yet enacted.",
+        fullContext: "Senate Bill No. 25 (AI Regulation Act) remains pending. A draft Joint Memorandum Circular on Ethical AI Use in Government (2024), drawing on OECD and ASEAN principles, is active but not enacted. A dedicated national lead agency for AI governance has yet to be finalized.",
         keyMetrics: [
           "Senate Bill No. 25 proposes a National AI Commission",
           "Mandates risk-based classification of AI systems",
@@ -566,7 +566,7 @@ export const philippinesData: CountryDetailData = {
     legislation: {
       title: 'Data Legislation', status: 'Maturing', description: 'Data Privacy Act', implementationAgency: 'NPC',
       modalDetails: {
-        fullContext: "The Data Privacy Act of 2012 (RA 10173) is comprehensive and actively enforced by the National Privacy Commission. NPC Advisory 2024-04 extends regulation to AI, requiring Privacy Impact Assessments and meaningful human intervention in automated decision-making.",
+        fullContext: "The Data Privacy Act of 2012 is comprehensively enforced by the National Privacy Commission with 72-hour breach reporting. NPC Advisory 2024-04 extends this to AI, requiring Privacy Impact Assessments and meaningful human intervention in automated decision-making.",
         keyMetrics: [
           "Governed by the Data Privacy Act of 2012 (Republic Act No. 10173)",
           "Regulated by the independent National Privacy Commission",
@@ -578,7 +578,7 @@ export const philippinesData: CountryDetailData = {
     initiatives: {
       title: 'Government AI Initiatives', status: 'Maturing', description: 'AI-4RP & SkAI-Pinas', implementationAgency: 'DOST',
       modalDetails: {
-        fullContext: "NAICRI launched Feb 2026 as the national HPC hub. Key deployments include Project AGAP.AI (1.5M learners), UTAK AI for brain tumour detection, AI weather forecasting (AI-4RP), and the Digital Bayanihan Chain for budget transparency.",
+        fullContext: "NAICRI (launched Feb 2026) serves as the central HPC hub. Key deployments include Project AGAP.AI for education, UTAK AI for tumor detection, AI-4RP for weather forecasting, and the Digital Bayanihan Chain recording the national budget on a blockchain ledger.",
         keyMetrics: [
           "₱1.5 Billion national allocation for AI Upskilling Initiative",
           "Digital Bayanihan Chain (Blockchain for National Budget Transparency)",
@@ -625,19 +625,22 @@ export const philippinesData: CountryDetailData = {
   },
   sectionD: {
     opportunities: [
-      { id: 'ph-o1', text: 'Operationalizing AI Governance: Technical support on AI governance and regulatory design, supporting the development of responsible AI standards.' },
-      { id: 'ph-o2', text: 'Integrated Digital Public Services: Leveraging foundational DPI components like PhilSys, eGovPH, and digital payments to design interoperability frameworks for high-impact use cases.' },
-      { id: 'ph-o3', text: 'AI-for-Good Ecosystem: Supporting the creation of an AI-for-Good accelerator program via NAICRI to addressed priorities like disaster resilience, healthcare, and agriculture.' },
+      { id: 'ph-o1', text: 'The Philippines is in the process of operationalising its AI governance architecture, with initiatives such as NAICRI and the national AI roadmap emerging alongside broader digital transformation policies. UNDP can provide technical support on AI governance and regulatory design, drawing on international best practices and supporting the development of responsible AI standards for public-sector deployment.' },
+      { id: 'ph-o2', text: 'With large-scale initiatives such as PhilSys (national digital ID), eGovPH, and digital payments infrastructure, the Philippines has built several foundational DPI components. A key opportunity is deepening the use of these foundations for efficient and effective public service delivery — for example, leveraging PhilSys and G2P payment rails for social protection programmes such as 4Ps, pending confirmation that current delivery remains paper-based and digital integration is still in transition. UNDP can support the government in designing interoperability frameworks and prioritising high-impact citizen-facing use cases, ensuring existing infrastructure translates into integrated public services.' },
+      { id: 'ph-o3', text: 'The government is investing in AI talent development through initiatives such as Project AGAP.AI and NAICRI, creating momentum for a domestic AI ecosystem. UNDP can support this by linking talent pipelines to real-world public sector use cases and establishing an AI-for-Good accelerator that provides mentorship, grants, and technical support for startups and research teams working on development-focused solutions in sectors such as healthcare, agriculture, and disaster resilience.' },
     ],
     risks: [
-      { id: 'ph-r1', text: 'Infrastructure reliability & Cybersecurity: Connectivity gaps in rural regions and high vulnerability to ransomware attacks. Reliance on foreign hyperscale providers raises concerns around cyber-resilience.' },
-      { id: 'ph-r2', text: 'Institutional fragmentation: Coordination gaps between national agencies (DICT) and local government units (LGUs). Procurement rules and public-sector talent loss further constrain deployments.' },
-      { id: 'ph-r3', text: 'Inclusion & Sustainability: Digital divide risks excluding vulnerable populations. Political transitions may affect investment continuity, while reliance on external financing raises long-term sustainability questions.' },
+      { id: 'ph-r1', text: 'Infrastructure reliability and cybersecurity risks: Despite rapid digital expansion and 5G growth, connectivity gaps persist across rural Visayas and Mindanao. The Philippines remains a major target for ransomware and cyberattacks, with critical digital infrastructure increasingly exposed as government services migrate online.' },
+      { id: 'ph-r2', text: 'Vendor dependency and technology lock-in risks: Heavy reliance on foreign hyperscale cloud providers — including AWS and Azure — raises concerns around cyber-resilience, data sovereignty, interoperability, and long-term technology lock-in. The absence of a domestic cloud-first policy creates structural dependency that may constrain future flexibility.' },
+      { id: 'ph-r3', text: 'Institutional fragmentation and LGU capacity constraints: Digital transformation mandates exist at the national level, but coordination between DICT, DILG, and Local Government Units remains uneven. The absence of structured capacity building programmes for LGUs — most of which lack dedicated technical staff and digital procurement expertise — is the most binding implementation constraint at the sub-national level. Procurement rules under RA 9184 that prioritise lowest-cost bids and the migration of public-sector IT talent to the private sector further compound this risk.' },
+      { id: 'ph-r4', text: 'Digital inclusion risks: Significant disparities in connectivity, device ownership, and digital literacy risk excluding vulnerable populations — particularly in rural Mindanao, the Bangsamoro region, and low-income households — from DPI-enabled services.' },
+      { id: 'ph-r5', text: 'Political continuity risks: Active political tensions — including the Marcos-Duterte rift and credible reports of potential election delays — may affect continuity of ICT investments and institutional ownership of the digital transformation agenda across the 2028 election cycle.' },
+      { id: 'ph-r6', text: 'Financial sustainability risks: Heavy reliance on external development financing, including World Bank and ADB loans, raises questions about long-term sustainability. High operational costs and limited domestic revenue generation capacity for digital infrastructure create fiscal exposure if external financing contracts.' },
     ],
     partnerships: [
-      { id: 'ph-p1', text: 'DICT & DILG for LGU Transformation: Developing LGU digital roadmaps, procurement templates, and capacity-building programs under the E-Governance Act.' },
-      { id: 'ph-p2', text: 'DOST & NAICRI for AI-for-Development: Piloting AI applications for disaster preparedness, climate resilience, and rural healthcare with academic partners.' },
-      { id: 'ph-p3', text: 'DTI & Startup Actors for AI Innovation: Partnering with innovation programs to develop an AI for Good accelerator, providing grants and sandbox access for startups.' },
+      { id: 'ph-p1', text: 'Partnership with DICT and DILG on LGU digital transformation: While national digital policies are well established, implementation gaps persist at the Local Government Unit (LGU) level. UNDP can work with DICT and the Department of the Interior and Local Government (DILG) to develop LGU digital roadmaps, procurement templates, and capacity-building programs, enabling municipalities to operationalise national digital mandates under the E-Governance Act.' },
+      { id: 'ph-p2', text: 'Partnership with DOST and NAICRI to operationalise AI-for-development use cases: The National Artificial Intelligence Center for Research and Innovation (NAICRI) was launched to strengthen AI research and ecosystem development. UNDP can collaborate with DOST, NAICRI, and academic partners to pilot AI applications for disaster preparedness, climate resilience, and rural healthcare, while supporting responsible AI governance practices.' },
+      { id: 'ph-p3', text: 'Partnership with DTI, DICT, and startup ecosystem actors to strengthen the AI innovation ecosystem: The government is seeking to expand the domestic AI and digital innovation ecosystem through startup support and technology entrepreneurship programs. UNDP can partner with the Department of Trade and Industry (DTI), DICT innovation programs, and local accelerators to develop an AI for Good startup accelerator, providing grants, mentorship, and sandbox access for startups working on development challenges such as agriculture, climate resilience, and social protection.' },
     ]
   },
   parameterStages: {
@@ -647,7 +650,7 @@ export const philippinesData: CountryDetailData = {
         { name: 'National AI Strategy / Policy Status', stage: 'Early Success' },
         { name: 'AI Governance & Ethical AI Principles', stage: 'Open to Adopt' },
         { name: 'Data Protection & Privacy Legislation', stage: 'Maturing' },
-        { name: 'Government AI Initiatives & Projects', stage: 'Maturing' },
+        { name: 'Government AI Initiatives & Projects', stage: 'Early Success' },
       ]
     },
     P2: {
@@ -667,9 +670,9 @@ export const philippinesData: CountryDetailData = {
       ]
     },
     P4: {
-      parameter: 'Political Stability & Governance', parameterStage: 'Maturing', subParameters: [
+      parameter: 'Political Stability & Governance', parameterStage: 'Early Success', subParameters: [
         { name: 'WB Political Stability Score (2024)', stage: 'Early Success' },
-        { name: 'Strategic & Long-term Subjective Call', stage: 'Maturing' },
+        { name: 'Strategic & Long-term Subjective Call', stage: 'Early Success' },
       ]
     },
     P5: {
