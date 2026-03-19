@@ -707,7 +707,7 @@ export const bangladeshData: CountryDetailData = {
       status: "Maturing",
       description: "Present: National ID (DPI like)",
       modalDetails: {
-        fullContext: "National ID (Ongoing)  The National ID is a smart ID card containing an embedded microchip and featuring a unique 10-digit identification number – the National Identification Number (NIN). It is used to access public and private services such as banking, mobile registration and voter registration among other purposes. From 2011-2018, the World Bank Identification for Enhanced Access to Services (IDEAS) Project provided technical assistance. Due to implementation and policy delays, only 90 million NID cards (half the desired goal) was achieved by 2018",
+        fullContext: "The National ID is a smart ID card containing an embedded microchip and featuring a unique 10-digit identification number – the National Identification Number (NIN). It is used to access public and private services such as banking, mobile registration and voter registration among other purposes. Currently, the National ID in Bangladesh covers 40% of the entire population. As of 2026, the age category has been relaxed from 18 to 16, meaning youth aged 16 or above are now eligible for NID cards and services",
         keyMetrics: [
           "National ID (Ongoing)",
           "The National ID is a smart ID card containing an embedded microchip and featuring a unique 10-digit identification number – the National Identification Number (NIN). It is used to access public and private services such as banking, mobile registration and voter registration among other purposes. From 2011-2018, the World Bank Identification for Enhanced Access to Services (IDEAS) Project provided technical assistance. Due to implementation and policy delays, only 90 million NID cards (half the desired goal) was achieved by 2018"
@@ -720,7 +720,7 @@ export const bangladeshData: CountryDetailData = {
       status: "Maturing",
       description: "Present: National Payment Switch (DPI like)",
       modalDetails: {
-        fullContext: "National Payment Switch (Ongoing)  Operational since 2012, the National Payment Switch Bangladesh (NPSB) is a platform that allows for seamless movement of funds from customers to banks to Mobile Financial Services (MFS) providers. It   supports extensive bank-to-wallet and MFS-to-MFS transactions,  with an aim to replace existing banking platforms with a unified, secure system  Bank-to-MFS transfers fees set at Tk 1.5 per Tk 1,000; MFS-to-bank transfers set at Tk 8.5 per Tk 1,000; 2025",
+        fullContext: "The National Payment Switch is an interoperable backbone with successful private MFS operators like bKash and Nagad built upon it. From 2021, bKash, a leading Mobile Financial Service (MFS) platform has introduced digital loans among other digital and financial services, handling about 24 million daily transactions. bKash also saw a 24% increase in transactions and a 9% rise in its customer base in 2023.",
         keyMetrics: [
           "National Payment Switch (Ongoing)",
           "Operational since 2012, the National Payment Switch Bangladesh (NPSB) is a platform that allows for seamless movement of funds from customers to banks to Mobile Financial Services (MFS) providers. It   supports extensive bank-to-wallet and MFS-to-MFS transactions,  with an aim to replace existing banking platforms with a unified, secure system",
@@ -734,7 +734,7 @@ export const bangladeshData: CountryDetailData = {
       status: "Early Success",
       description: "Present: National E-Service Bus (DPI like)",
       modalDetails: {
-        fullContext: "National E-Service Bus (Ongoing)  As of a document from August 2025, the National E-Service Bus was being used by around 15 government agencies including the NID agency, National Board of Revenue, BTRC, the Ministry of Agriculture, and the Office of the Registrar General. The platform still requires upgrades for scaling and broader adoption. The World Bank group is assisting with the software upgrading of the bus, along with standardized API specifications, operational processes, and technical capacity for government agencies to leverage the platform for service delivery",
+        fullContext: "The National E-Service Bus, implemented under the  Bangladesh National Digital Architecture (BNDA) is currently being used by 15 Bangladeshi government agencies, as of August 2025. The platform still requires upgrades for scaling and broader adoption. The World Bank group is assisting with the software upgrading of the bus, along with standardized API specifications, operational processes, and technical capacity for government agencies to leverage the platform for service delivery. The National Data Exchange (NDX) is another proposed forward looking data exchange system initiative, as of 2026",
         keyMetrics: [
           "National E-Service Bus (Ongoing)",
           "As of a document from August 2025, the National E-Service Bus was being used by around 15 government agencies including the NID agency, National Board of Revenue, BTRC, the Ministry of Agriculture, and the Office of the Registrar General. The platform still requires upgrades for scaling and broader adoption. The World Bank group is assisting with the software upgrading of the bus, along with standardized API specifications, operational processes, and technical capacity for government agencies to leverage the platform for service delivery"
@@ -767,7 +767,7 @@ export const bangladeshData: CountryDetailData = {
       status: "Open to Adopt",
       description: "National Artificial Intelligence Policy 2026-30  (Drafts V1.1 and V2.0)",
       modalDetails: {
-        fullContext: "Vision To develop an ethical and innovative environment for the use and development of AI to accelerate Bangladesh’s path towards a middle-income country, as outlined in the Vision 2041 master plan and aligned with the UN’s Sustainable Development Goals (SDGs).   Mission  Establishing Bangladesh as a pioneer in AI innovation and adoption, creating a ‘Smart Bangladesh’ that leverages AI technologies for the well-being of all citizens, economic prosperity, and sustainable development in accord with four pillars; Smart Government, Smart Society, Smart Economy and Smart Citizen.  Objectives -Ethical and secure AI governance and compliance -Foster AI innovation for the public sector -Promoting economic growth -Strenghten AI readiness",
+        fullContext: "The National AI Policy Bangladesh 2026-30 (Drafts V1.1 and V2.0), aiming to accelerate Bangladesh’s path towards a middle-income country, as outlined in the Vision 2041 master plan and aligned with the UN’s Sustainable Development Goals (SDGs).  An archive date has been set for June 30 2026",
         keyMetrics: [
           "Vision",
           "To develop an ethical and innovative environment for the use and development of AI to accelerate Bangladesh’s path towards a middle-income country, as outlined in the Vision 2041 master plan and aligned with the UN’s Sustainable Development Goals (SDGs).",
@@ -782,7 +782,7 @@ export const bangladeshData: CountryDetailData = {
       status: "Maturing",
       description: "Algorithmic Impact Assessments (AIAs)",
       modalDetails: {
-        fullContext: "Algorithmic Impact Assessments (AIAs) are implemented to monitor AI deployment across government agencies. This framework ensures transparency in public administration and actively works to prevent biases in automated decision-making. The Draft National AI Policy 2026-30 further establishes oversight mechanisms to ensure AI development aligns with Smart Bangladesh goals.",
+        fullContext: "AI governance and ethical AI principles are currently under consultation as parts of the draft stages of the National AI policy Bangladesh 2026-30",
         keyMetrics: [
           "Mandatory Algorithmic Impact Assessments for public sector AI",
           "Draft National AI Policy 2026-30 oversight framework",
@@ -811,7 +811,7 @@ export const bangladeshData: CountryDetailData = {
       status: "Early Success",
       description: "MyGov, Kagoj AI & EBLICT",
       modalDetails: {
-        fullContext: "MyGov is a one-stop service access point providing 172 digitized services using a single identity. Kagoj AI is the first Bangla-language AI platform, supporting advanced NLP and digitisation using the Julai font. Enhancement of Bangla Language in ICT (EBLICT) is a joint R&D initiative by the ICT division and BCC to ensure linguistic inclusion in AI development.",
+        fullContext: "Kagoj AI is Bangladesh's first Artificial Intelligence platform for the Bangla language; it uses a new Julai font that aids in digitising Bangla script for a large audience",
         keyMetrics: [
           "MyGov: 172 services digitized with single-sign-on access",
           "Kagoj AI: Native Bangla NLP for official digitisation",
@@ -902,7 +902,7 @@ export const bangladeshData: CountryDetailData = {
       subParameters: [
         {
           name: "National Digital Transformation Strategy",
-          stage: "Greenfield"
+          stage: "Open to Adopt"
         },
         {
           name: "Digital ID",
@@ -1118,7 +1118,7 @@ export const nepalData: CountryDetailData = {
       status: "Maturing",
       description: "Rastriya Parichaya Patra; National Identity",
       modalDetails: {
-        fullContext: "Rastriya Parichaya Patra; National Identity  As of 2025, over 17 million people have been registered which is about 57% of the population and approximately 6 million cards have been printed. Over 97% of local government units have switched to online civil registration of vital events like births and deaths, forming a foundational database. The government has also started making the card mandatory for certain services, such as banking, social security fund access, and real estate transactions.   The ID system is integrated with the Nagarik App and is mandated (in 28 districts) for accessing services like pensions and health insurance. It aims to unify credentials like voter ID, citizenship cards, and driving licenses. However, there is no operational authentication infrastructure i.e. KYC and most agencies still require physical documents",
+        fullContext: "Nepal's National Identity Document system or Rastriya Parichaya Patra is a biometric based ID launched in 2018. As of 2025, over 17 million people have been registered which is about 57% of the population and approximately 6 million cards have been printed.  It is also integrated with Nagarik App (a platform for accessing govt. services) and mandated (in 28 districts) for accessing services like pensions and health insurance. However, owing to the lack of authentication infrastructure agencies still rely on physical documentation and e-KYC is not leveraged",
         keyMetrics: [
           "Rastriya Parichaya Patra; National Identity",
           "As of 2025, over 17 million people have been registered which is about 57% of the population and approximately 6 million cards have been printed. Over 97% of local government units have switched to online civil registration of vital events like births and deaths, forming a foundational database. The government has also started making the card mandatory for certain services, such as banking, social security fund access, and real estate transactions.",
@@ -1132,7 +1132,7 @@ export const nepalData: CountryDetailData = {
       status: "Maturing",
       description: "National Payments Interface (NPI)",
       modalDetails: {
-        fullContext: "National Payments Interface (NPI) (Ongoing)  National Payments Interface (NPI) is the consolidated set of APIs of multiple payment systems hosted by NCHL or any other institutions built in an Open API platform concept. It currently provides access to the Nepal Clearing House Limited- Interbank Payment System (NCHL-IPS) and Retail Payment System (RPS); underlying payment systems with the overlaying services built on top of the platform.   Nepal Clearing House Limited (NCHL), a public limited company, serves as the core operator of the country’s clearing, settlement, and switching infrastructure and functions as the backbone of the National Payment Switch, enabling interoperability across systems.   It has also implemented initiatives such as NepalPay QR and NepalPay Instant for real-time payments. QR payments are accepted by over 2 million merchants, with volumes growing 117% in a year. In 2024/25, NCHL processed 186 million transactions, covering 17% of total market volume but 77% of value. Also ~90% of government expenses are digital transactions.",
+        fullContext: "Digital Payments system comprises of a National Payment Switch, an interbank payment system and retail payment system developed by Nepal Clearing House developed as a public infrastructure and thereby facilitating interoperability. It has aslo developed NepalPay QR and NepalPay Instant for real-time payments. Private digital wallets such as eSewa, Khalti and Fonepay also operate in the country. QR payments are accepted by over 2 million merchants, with volumes growing 117% in a year. In 2024/25, NCHL processed 186 million transactions, covering 17% of total market volume but 77% of value.",
         keyMetrics: [
           "National Payments Interface (NPI) (Ongoing)",
           "National Payments Interface (NPI) is the consolidated set of APIs of multiple payment systems hosted by NCHL or any other institutions built in an Open API platform concept. It currently provides access to the Nepal Clearing House Limited- Interbank Payment System (NCHL-IPS) and Retail Payment System (RPS); underlying payment systems with the overlaying services built on top of the platform.",
@@ -1147,7 +1147,7 @@ export const nepalData: CountryDetailData = {
       status: "Open to Adopt",
       description: "Government Cloud",
       modalDetails: {
-        fullContext: "Government Cloud (Pipeline)  The government of Nepal has partnered with various cloud service providers to build its cloud infrastructure and improve the delivery of e-governance services.   Government Integrated Data Center (GIDC) is operational under the MoCIT",
+        fullContext: "National Data Exchange platform planned which aims to enable enabling multiple government bodies to securely share information through a single interface to reduce duplication and streamline operations",
         keyMetrics: [
           "Government Cloud (Pipeline)",
           "The government of Nepal has partnered with various cloud service providers to build its cloud infrastructure and improve the delivery of e-governance services.",
@@ -1181,7 +1181,7 @@ export const nepalData: CountryDetailData = {
       status: "Early Success",
       description: "National AI Policy, 2025",
       modalDetails: {
-        fullContext: "Vision To build a human-Centered, ethical, and prosperous Nepal through Artificial Intelligence (AI) technology.  Mission To maximize the use of Artificial Intelligence for the socio-economic development of the nation.  Goals - Increase the contribution of the information technology sector to the Gross Domestic Product (GDP) by 1% through the optimal use of AI across all socio-economic sectors. - Improve Nepal’s position within the top 50 countries in the Global Government AI Readiness Index. - Produce at least five thousand skilled human resources in the field of AI within five years. - Establish AI Excellence Centres in all provinces within five years. - Achieve AI literacy for the entire population, including students at the basic education level.  Objectives - Build a sustainable and reliable AI ecosystem. - Accelerate the economic growth rate through the optimal use of AI. - Enhance the effectiveness of public service delivery through AI applications. - Strengthen AI governance",
+        fullContext: "National AI Policy released in 2025 aims to  - Build a human-centered, ethical, and prosperous Nepal through AI. - Maximize the use of Artificial Intelligence for the socio-economic development of the nation. - Build a sustainable and reliable AI ecosystem. - Accelerate the economic growth rate through the optimal use of AI. - Enhance the effectiveness of public service delivery through AI applications. - Strengthen AI governance",
         keyMetrics: [
           "Vision",
           "To build a human-Centered, ethical, and prosperous Nepal through Artificial Intelligence (AI) technology.",
@@ -1196,7 +1196,7 @@ export const nepalData: CountryDetailData = {
       status: "Maturing",
       description: "Policy Implementation Roadmap",
       modalDetails: {
-        fullContext: "Nepal's AI governance focus is anchored in the National AI Policy 2025. It targets human-centered and ethical deployment, with an emphasis on improving the nation's position in the Global Government AI Readiness Index. The policy mandates the establishment of AI Excellence Centres in all provinces within five years to oversee regional governance and literacy.",
+        fullContext: "Improving AI governance mentioned as one of the goals of AI policy but no framework or guidelines mentioned. Same applies for ethical AI principles",
         keyMetrics: [
           "Target: Top 50 in Global Government AI Readiness Index",
           "AI Excellence Centres planned for all 7 provinces",
@@ -1226,7 +1226,7 @@ export const nepalData: CountryDetailData = {
       status: "Maturing",
       description: "SITA, Intelligent Traffic & Agri-Tech",
       modalDetails: {
-        fullContext: "SITA is a flagship AI platform developed by UNFPA to analyze national health datasets instantly. Lalitpur's intelligent traffic light system is a pioneering urban deployment adjusting signal timings in real-time. In agriculture, Plantsat and Geokrishi leverage satellite data and AI to optimize crop management and livestock insurance for small-scale farmers.",
+        fullContext: "1. \"Lalitpur Metropolitan City (LMC) has successfully deployed an AI-based intelligent traffic light system in certain major junctions in the city to manage the traffic situation more efficiently. This system uses real-time data to adjust timings at traffic signals automatically.  2. SITA - Developed by UNFPA, in collaboration with the Ministry of Health and Population, UNFPA HQ’s IT Services Office, Google, and with support from the British Embassy Kathmandu. SITA is an AI platform to  rapidly analyze national datasets and generate detailed insights. It scans thousands of variables in massive datasets like the Nepal Demographic and Health Survey (NDHS), runs the analysis, and outputs polished charts, tables, and even written narratives that match human quality. This helps in making real time decisions at national level.\"",
         keyMetrics: [
           "SITA: Rapid analysis of massive datasets for health insights",
           "Intelligent Traffic: 10+ major junctions in Lalitpur automated via AI",
