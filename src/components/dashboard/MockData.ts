@@ -1114,29 +1114,28 @@ export const nepalData: CountryDetailData = {
       status: "Maturing",
       description: "Rastriya Parichaya Patra; National Identity",
       modalDetails: {
-        fullContext: "Nepal's National Identity Document system or Rastriya Parichaya Patra is a biometric based ID launched in 2018. As of 2025, over 17 million people have been registered which is about 57% of the population and approximately 6 million cards have been printed.  It is also integrated with Nagarik App (a platform for accessing govt. services) and mandated (in 28 districts) for accessing services like pensions and health insurance. However, owing to the lack of authentication infrastructure agencies still rely on physical documentation and e-KYC is not leveraged",
+        fullContext: "Nepal's National Identity Document system (Rastriya Parichaya Patra) is a biometric-based ID launched in 2018. It is integrated with Nagarik App and mandated in 28 districts for accessing services like pensions and health insurance. However, owing to the lack of operational authentication infrastructure, agencies still rely on physical documentation and e-KYC is not fully leveraged.",
         keyMetrics: [
-          "Rastriya Parichaya Patra; National Identity",
-          "As of 2025, over 17 million people have been registered which is about 57% of the population and approximately 6 million cards have been printed. Over 97% of local government units have switched to online civil registration of vital events like births and deaths, forming a foundational database. The government has also started making the card mandatory for certain services, such as banking, social security fund access, and real estate transactions.",
-          "The ID system is integrated with the Nagarik App and is mandated (in 28 districts) for accessing services like pensions and health insurance. It aims to unify credentials like voter ID, citizenship cards, and driving licenses. However, there is no operational authentication infrastructure i.e. KYC and most agencies still require physical documents"
+          "As of 2025, over 17 million people are registered (~57% of population); approximately 6 million cards printed.",
+          "Assisted over 97% of local government units to transition to online civil registration of vital events.",
+          "The ID system is integrated with the Nagarik App and is mandated (in 28 districts) for accessing services like pensions and health insurance."
         ]
       },
-      implementationAgency: "Department of National ID"
+      implementationAgency: "Department of National ID and Civil Registration"
     },
     payments: {
       title: "Digital Payments",
       status: "Maturing",
       description: "National Payments Interface (NPI)",
       modalDetails: {
-        fullContext: "Digital Payments system comprises of a National Payment Switch, an interbank payment system and retail payment system developed by Nepal Clearing House developed as a public infrastructure and thereby facilitating interoperability. It has aslo developed NepalPay QR and NepalPay Instant for real-time payments. Private digital wallets such as eSewa, Khalti and Fonepay also operate in the country. QR payments are accepted by over 2 million merchants, with volumes growing 117% in a year. In 2024/25, NCHL processed 186 million transactions, covering 17% of total market volume but 77% of value.",
+        fullContext: "Digital Payments system comprises a National Payment Switch, an interbank payment system, and a retail payment system developed by Nepal Clearing House (NCHL) as public infrastructure that facilitates interoperability. NRB has supported NepalPay QR and NepalPay Instant rails. Private digital wallets like eSewa, Khalti, and Fonepay also operate widely.",
         keyMetrics: [
-          "National Payments Interface (NPI) (Ongoing)",
-          "National Payments Interface (NPI) is the consolidated set of APIs of multiple payment systems hosted by NCHL or any other institutions built in an Open API platform concept. It currently provides access to the Nepal Clearing House Limited- Interbank Payment System (NCHL-IPS) and Retail Payment System (RPS); underlying payment systems with the overlaying services built on top of the platform.",
-          "Nepal Clearing House Limited (NCHL), a public limited company, serves as the core operator of the country’s clearing, settlement, and switching infrastructure and functions as the backbone of the National Payment Switch, enabling interoperability across systems.",
-          "It has also implemented initiatives such as NepalPay QR and NepalPay Instant for real-time payments. QR payments are accepted by over 2 million merchants, with volumes growing 117% in a year. In 2024/25, NCHL processed 186 million transactions, covering 17% of total market volume but 77% of value. Also ~90% of government expenses are digital transactions."
+          "National Payment Switch backbone developed by NCHL facilitating multi-vendor interoperability.",
+          "Over 2 million merchants accept QR payments rails (such as NepalPay), with volume growing 117% YoY.",
+          "In 2024/25, NCHL processed 186 million transactions covering 17% of total market volume and 77% of value."
         ]
       },
-      implementationAgency: "Nepal Rastra Bank"
+      implementationAgency: "Nepal Clearing House"
     },
     dataExchange: {
       title: "Data Exchange",
@@ -1155,7 +1154,7 @@ export const nepalData: CountryDetailData = {
     useCases: [
       {
         sector: "Government Services",
-        description: "Nagarik App - Single online e-governance platform offering 61+ public services to ~800k users"
+        description: "Nagarik App - Single online e-governance platform offering 61+ public services. Uptake remains low at ~800k users"
       }
     ]
   },
@@ -1173,44 +1172,41 @@ export const nepalData: CountryDetailData = {
           "To maximize the use of Artificial Intelligence for the socio-economic development of the nation."
         ]
       },
-      implementationAgency: "Ministry of ICT"
+      implementationAgency: "MoCIT"
     },
     governance: {
       title: "AI Governance",
-      status: "Maturing",
+      status: "Open to Adopt",
       description: "Policy Implementation Roadmap",
       modalDetails: {
         fullContext: "Improving AI governance mentioned as one of the goals of AI policy but no framework or guidelines mentioned. Same applies for ethical AI principles",
         keyMetrics: [
           "Target: Top 50 in Global Government AI Readiness Index",
           "AI Excellence Centres planned for all 7 provinces",
-          "Ethical framework integrated into National AI Policy 2025",
           "Mandatory AI literacy programs for all tiers of education"
         ]
       },
-      implementationAgency: "Nepal e-Governance Board"
+      implementationAgency: "MoCIT"
     },
     legislation: {
       title: "Data Protection",
-      status: "Early Success",
+      status: "Greenfield",
       description: "National Cyber Security Policy, 2023",
       modalDetails: {
-        fullContext: "Building a secure as well as Resilient Cyber Space.  Mission To ensure information and data security and protection of information technology systems through a combination of people, process and technology by developing legal and institutional structure, enhancing public awareness and developing capacity.  Objectives -Establish legal and institutional frameworks to build a secure cyber space. -Protect critical national infrastructure while reducing the risk of cyberattacks. -Enhance cyber security research, human resource development and enhancing capacity of existing workforce, to ensure a robust and strong cyber space. -Improve the reliability and security of digital technology-based services. -Exchange bilateral, regional and international coordination, knowledge sharing, and assistance to reduce cyber security related risks.  Goal To increase Nepal's Global Cyber Security Index (GCI) score from the current 44.99% to 60% within the next 5 years, 70% within 10 years, and 80% in the 15 years.",
+        fullContext: "No comprehensive data protection legislation and corresponding authority. However, data privacy is governed by various laws, chief among them being The Individual Privacy Act, 2018 and Individual Privacy Regulation",
         keyMetrics: [
-          "Building a secure as well as Resilient Cyber Space.",
-          "Mission",
-          "To ensure information and data security and protection of information technology systems through a combination of people, process and technology by developing legal and institutional structure, enhancing public awareness and developing capacity.",
-          "Objectives"
+          "No comprehensive data protection legislation.",
+          "Governed by Individual Privacy Act, 2018 and Individual Privacy Regulation"
         ]
       },
       implementationAgency: "MoCIT"
     },
     initiatives: {
       title: "AI Initiatives",
-      status: "Maturing",
+      status: "Open to Adopt",
       description: "SITA, Intelligent Traffic & Agri-Tech",
       modalDetails: {
-        fullContext: "1. \"Lalitpur Metropolitan City (LMC) has successfully deployed an AI-based intelligent traffic light system in certain major junctions in the city to manage the traffic situation more efficiently. This system uses real-time data to adjust timings at traffic signals automatically.  2. SITA - Developed by UNFPA, in collaboration with the Ministry of Health and Population, UNFPA HQ’s IT Services Office, Google, and with support from the British Embassy Kathmandu. SITA is an AI platform to  rapidly analyze national datasets and generate detailed insights. It scans thousands of variables in massive datasets like the Nepal Demographic and Health Survey (NDHS), runs the analysis, and outputs polished charts, tables, and even written narratives that match human quality. This helps in making real time decisions at national level.\"",
+        fullContext: "AI deployment in Nepal includes an intelligent traffic light system adjusting timings in real-time on major Lalitpur junctions. SITA is an AI platform by UNFPA that rapidly analyzes massive health datasets for rapid decision-making. Agritech tools Plantsat & Geokrishi offer satellite monitoring to farmers, while Cognify personalizes learning to reduce dropout rates.",
         keyMetrics: [
           "SITA: Rapid analysis of massive datasets for health insights",
           "Intelligent Traffic: 10+ major junctions in Lalitpur automated via AI",
@@ -1223,9 +1219,9 @@ export const nepalData: CountryDetailData = {
   },
   sectionB: {
     fundingLandscape: "Dependent on external financing (WB, ADB) with emerging domestic allocations.",
-    electricityAccess: 92,
+    electricityAccess: 94,
     internetPenetration: 49.6,
-    politicalStability: 'WB Political Stability: 58.81 percentile (40-60th range). Digital Nepal Framework (2019) institutionalises DT as state policy. (Source: WB WGI 2024)',
+    politicalStability: 'WB Political Stability: 39.34 (20-40th range). e-Governance Blueprint (v2 2025) and Digital Nepal Framework 2019.',
     electionCycles: "Previous cycle in 2022 next one in March, 2026",
     politicalModalDetails: {
       fullContext: "5 year election cycle. Mass and violent protests by youth against (popularily referred to as Gen Z protests) took place in September 2025 forcing the resignation of the Prime Minister Khadga Prasad Sharma Oli and desolution of the house of representatives. An interim government headed by former chief justice Sushila Karki has been appointed.",
@@ -1287,7 +1283,7 @@ export const nepalData: CountryDetailData = {
         },
         {
           name: "Data Protection and Privacy Legislation",
-          stage: "Early Success"
+          stage: "Greenfield"
         },
         {
           name: "Government AI Initiatives and Projects",
@@ -1402,7 +1398,8 @@ export const nepalData: CountryDetailData = {
         type: "Lead Agency & Govt Coordination",
         role: "Lead Ministry",
         initiatives: [
-          "Digital Nepal Framework"
+          "Digital Nepal Framework",
+          "e-Governance Blueprint"
         ]
       },
       {
@@ -1426,29 +1423,29 @@ export const nepalData: CountryDetailData = {
       },
       {
         id: "np-4",
-        name: "Fusemachines",
+        name: "Rumsan Associates",
         type: "Private Sector",
-        role: "AI Specialist",
+        role: "DPG Developer",
         initiatives: [
-          "AI Solutions"
+          "Developed Rahat, a DPG for humanitarian agencies supporting marginalized communities"
         ]
       },
       {
         id: "np-5",
-        name: "Asian Development Bank (ADB)",
+        name: "Joint Co-financing (WB & ADB)",
         type: "Development Partners & MDBs",
-        role: "Funding Partner",
+        role: "Funding & Development Partners",
         initiatives: [
-          "Digital Transformation Project"
+          "World Bank contributing $50 million and ADB contributing $40 million to Nepal Digital Transformation Project; invests in social registry & API framework"
         ]
       },
       {
         id: "np-6",
-        name: "Digital Rights Nepal",
+        name: "Open Knowledge Nepal",
         type: "Civil Society",
-        role: "Advocacy",
+        role: "Research & Advocacy",
         initiatives: [
-          "Digital Privacy Campaign"
+          "Research and advocacy on digital rights and data stewardship"
         ]
       }
     ]
