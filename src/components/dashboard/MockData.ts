@@ -10,11 +10,11 @@ export interface RadarDataPoint {
 
 export const radarData: RadarDataPoint[] = [
   { parameter: 'AI Ecosystem Maturity', Malaysia: 4, Cambodia: 2, Philippines: 3, Bangladesh: 2, Nepal: 2, fullMark: 5 },
-  { parameter: 'DPI Ecosystem Maturity', Malaysia: 3, Cambodia: 4, Philippines: 4, Bangladesh: 3, Nepal: 4, fullMark: 5 },
+  { parameter: 'DPI Ecosystem Maturity', Malaysia: 3, Cambodia: 4, Philippines: 3, Bangladesh: 3, Nepal: 4, fullMark: 5 },
   { parameter: 'Digital Infra Availability', Malaysia: 5, Cambodia: 2, Philippines: 3, Bangladesh: 2, Nepal: 3, fullMark: 5 },
-  { parameter: 'Political Stability', Malaysia: 4, Cambodia: 4, Philippines: 4, Bangladesh: 2, Nepal: 2, fullMark: 5 },
+  { parameter: 'Political Stability', Malaysia: 4, Cambodia: 4, Philippines: 3, Bangladesh: 2, Nepal: 2, fullMark: 5 },
   { parameter: 'Stakeholder Participation', Malaysia: 3, Cambodia: 3, Philippines: 4, Bangladesh: 3, Nepal: 2, fullMark: 5 },
-  { parameter: 'Funding Landscape', Malaysia: 3, Cambodia: 2, Philippines: 4, Bangladesh: 3, Nepal: 1, fullMark: 5 },
+  { parameter: 'Funding Landscape', Malaysia: 3, Cambodia: 2, Philippines: 3, Bangladesh: 3, Nepal: 1, fullMark: 5 },
 ];
 
 export interface MetricCard {
@@ -494,9 +494,9 @@ export const philippinesData: CountryDetailData = {
   countryName: 'Philippines',
   dpiEcosystem: {
     digitalId: {
-      title: 'Digital ID', status: 'Maturing', description: 'PhilSys / PhilID', implementationAgency: 'PSA & BSP',
+      title: 'Digital ID', status: 'Early Success', description: 'PhilSys / PhilID', implementationAgency: 'PSA & BSP',
       modalDetails: {
-        fullContext: "PhilSys has enrolled 90 million Filipinos (~80% of population) utilizing multi-modal biometrics to ensure a unique PhilSys Number (PSN). It is fully interoperable with the banking sector for instant e-KYC (BSP Circular 1105) and integrated with the eGovPH Super App for single sign-on access to government services.",
+        fullContext: "Implementation status: Implemented\nProgram details: Philippine Identification System (PhilSys) | 2021 onwards\nImplementation agency: Philippine Statistics Authority (PSA)\nAdoption: 90 million registered Filipinos (~80% of population) as of December 2025\n- Multi-modal biometrics (iris, fingerprint, facial capture) ensure unique, non-duplicable PhilSys Number (PSN) per citizen\n- Interoperable with banking (instant e-KYC under BSP Circular 1105) and the eGovPH Super App (Single Sign-On for health, social, and local government services)",
         keyMetrics: [
           "PhilSys issues unique identification number supported by biometric data",
           "Administered by the Philippine Statistics Authority",
@@ -506,9 +506,9 @@ export const philippinesData: CountryDetailData = {
       }
     },
     payments: {
-      title: 'Digital Payments', status: 'Maturing', description: 'PhilPASSPlus, InstaPay, PESONet', implementationAgency: 'PSA & BSP',
+      title: 'Digital Payments', status: 'Early Success', description: 'PhilPASSPlus, InstaPay, PESONet', implementationAgency: 'PSA & BSP',
       modalDetails: {
-        fullContext: "PhilPaSSplus, the ISO 20022-compliant real-time gross settlement system, processed PHP 151.3 trillion in Q3 2025 (a 21% YoY increase). Supported by InstaPay and PESONet retail rails, the system is expanding toward 24/7 operations and underpins the national wholesale CBDC pilot.",
+        fullContext: "Implementation status: Implemented\nProgram details: PhilPaSSplus (real-time gross settlement system) | BSP | ISO 20022 compliant\nImplementation agency: Bangko Sentral ng Pilipinas (BSP)\nAdoption: PHP 151.3 trillion in transactions processed in Q3 2025 (21% increase year-on-year)\n- Retail payment rails: InstaPay and PESONet for low-value real-time and high-value/batch transfers respectively\n- System expanded toward 24/7 operations in 2026; underpins national wholesale CBDC pilot",
         keyMetrics: [
           "PhilPaSSplus enables real time high-value interbank fund transfers",
           "Operated by the Bangko Sentral ng Pilipinas",
@@ -520,7 +520,7 @@ export const philippinesData: CountryDetailData = {
     dataExchange: {
       title: 'Data Exchange', status: 'Maturing', description: 'eGovDX', implementationAgency: 'DICT',
       modalDetails: {
-        fullContext: "eGovDX provides secure middleware for interoperable data sharing across national agencies via standardised APIs. Governed by the Data Privacy Act and Data Sharing Agreements, it actively supports cross-agency use cases such as DSWD-BSP social transfers and PSA-BSP identity verification.",
+        fullContext: "Implementation status: Implemented\nProgram details: eGovDX (Electronic Government Data Exchange) | DICT\nImplementation agency: Department of Information and Communications Technology (DICT)\n- Secure middleware enabling interoperable data sharing across national agencies via standardised APIs\n- Operates under the Data Privacy Act (RA 10173); governed by Data Sharing Agreements (DSAs) and NPC notifications\n- Active cross-agency use cases: DSWD–BSP social transfer targeting; PSA–BSP identity verification",
         keyMetrics: [
           "eGovDX enables interoperable data sharing among government agencies",
           "InstaPay, PESONet, and QR Ph facilitate electronic fund transfers",
@@ -541,7 +541,7 @@ export const philippinesData: CountryDetailData = {
     policy: {
       title: 'AI Strategy', status: 'Early Success', description: 'National Artificial Intelligence Strategy', implementationAgency: 'DTI',
       modalDetails: {
-        fullContext: "NAISR 2.0 (launched July 2024) outlines seven imperatives for ethical AI, infrastructure, and talent. The Center for AI Research (CAIR) targets agriculture and healthcare, though implementation remains early-stage without a verified public monitoring framework (UNESCO, 2025).",
+        fullContext: "- National AI Strategy and Research Agenda 2.0 (NAISR 2.0) launched in July 2024 by the Department of Trade and Industry (DTI), covering seven strategic imperatives across infrastructure, talent, and ethical AI\n- Centre for AI Research (CAIR) established concurrently as the Philippines' national AI research hub, targeting agriculture and healthcare sectors\n- As of 2026, implementation remains early-stage — no public monitoring framework or verified progress tracking in place (UNESCO, 2025)",
         keyMetrics: [
           "National AI Strategy Roadmap (NAISR) 2.0 targets 1.0% of GDP R&D spending",
           "Aims to boost economy by up to PHP 2.6 trillion annually",
@@ -554,7 +554,7 @@ export const philippinesData: CountryDetailData = {
     governance: {
       title: 'AI Governance', status: 'Open to Adopt', description: 'Senate Bill no 25', implementationAgency: 'Senate',
       modalDetails: {
-        fullContext: "Senate Bill No. 25 (AI Regulation Act) remains pending. A draft Joint Memorandum Circular on Ethical AI Use in Government (2024), drawing on OECD and ASEAN principles, is active but not enacted. A dedicated national lead agency for AI governance has yet to be finalized.",
+        fullContext: "- No enacted AI-specific legislation as of 2026; Senate Bill No. 25 (Artificial Intelligence Regulation Act) remains in Senate committee\n- House Bill 7396 (comprehensive AI deployment framework) also pending enactment\n- DICT and Civil Service Commission published a draft Joint Memorandum Circular on Ethical AI Use in Government (April 2024) — open for public consultation; not yet enacted as of March 2026\n- Draft JMC draws on OECD AI Principles, UNESCO Recommendation on Ethics of AI, and the ASEAN AI Governance Guide\n- No dedicated national lead agency for AI governance currently exists (UNESCO RAM, December 2025)",
         keyMetrics: [
           "Senate Bill No. 25 proposes a National AI Commission",
           "Mandates risk-based classification of AI systems",
@@ -566,7 +566,7 @@ export const philippinesData: CountryDetailData = {
     legislation: {
       title: 'Data Legislation', status: 'Maturing', description: 'Data Privacy Act', implementationAgency: 'NPC',
       modalDetails: {
-        fullContext: "The Data Privacy Act of 2012 is comprehensively enforced by the National Privacy Commission with 72-hour breach reporting. NPC Advisory 2024-04 extends this to AI, requiring Privacy Impact Assessments and meaningful human intervention in automated decision-making.",
+        fullContext: "- Data Privacy Act of 2012 (RA 10173): comprehensive, actively enforced privacy law with extraterritorial reach\n\n- National Privacy Commission (NPC) oversees compliance; mandates 72-hour breach reporting for high-risk incidents\n\n- NPC Advisory 2024-04 extends data privacy regulation to AI: requires Privacy Impact Assessments and 'meaningful human intervention' in AI-driven profiling and automated decision-making\n\n- UNDP Digital Development Compass: Philippines scores 4 in data and privacy",
         keyMetrics: [
           "Governed by the Data Privacy Act of 2012 (Republic Act No. 10173)",
           "Regulated by the independent National Privacy Commission",
@@ -578,7 +578,7 @@ export const philippinesData: CountryDetailData = {
     initiatives: {
       title: 'Government AI Initiatives', status: 'Early Success', description: 'AI-4RP & SkAI-Pinas', implementationAgency: 'DOST',
       modalDetails: {
-        fullContext: "NAICRI (launched Feb 2026) serves as the central HPC hub. Key deployments include Project AGAP.AI for education, UTAK AI for tumor detection, AI-4RP for weather forecasting, and the Digital Bayanihan Chain recording the national budget on a blockchain ledger.",
+        fullContext: "- National AI Center for Research and Innovation (NAICRI) launched February 2026 as the central shared high-performance computing (HPC) hub for government AI workloads\n- Key sector deployments:\n  a. Education: Project AGAP.AI (January 2026) — national AI upskilling program targeting 1.5 million learners and teachers\n  b. Health: UTAK AI deployed in public hospitals for brain tumour detection; AINA tool delivers AI-driven nutrition assessments for rural health workers\n  c. Disaster Resilience: AI-4RP (Project Gabay) — 2km resolution AI weather forecasting (DOST–Atmo Inc. partnership)\n  d. Governance: Digital Bayanihan Chain (January 2026) — Philippines is the first country to record its entire national budget on a blockchain ledger",
         keyMetrics: [
           "₱1.5 Billion national allocation for AI Upskilling Initiative",
           "Digital Bayanihan Chain (Blockchain for National Budget Transparency)",
@@ -655,11 +655,11 @@ export const philippinesData: CountryDetailData = {
     },
     P2: {
       parameter: 'DPI Ecosystem Maturity', parameterStage: 'Maturing', subParameters: [
-        { name: 'National Digital Transformation Strategy', stage: 'Maturing' },
-        { name: 'Digital ID', stage: 'Maturing' },
-        { name: 'Digital Payments', stage: 'Maturing' },
+        { name: 'National Digital Transformation Strategy', stage: 'Early Success' },
+        { name: 'Digital ID', stage: 'Early Success' },
+        { name: 'Digital Payments', stage: 'Early Success' },
         { name: 'Data Exchange', stage: 'Maturing' },
-        { name: 'Use Cases of DPI Assets', stage: 'Maturing' },
+        { name: 'Use Cases of DPI Assets', stage: 'Early Success' },
       ]
     },
     P3: {
