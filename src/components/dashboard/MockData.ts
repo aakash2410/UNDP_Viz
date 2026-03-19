@@ -713,7 +713,7 @@ export const bangladeshData: CountryDetailData = {
           "The National ID is a smart ID card containing an embedded microchip and featuring a unique 10-digit identification number – the National Identification Number (NIN). It is used to access public and private services such as banking, mobile registration and voter registration among other purposes. From 2011-2018, the World Bank Identification for Enhanced Access to Services (IDEAS) Project provided technical assistance. Due to implementation and policy delays, only 90 million NID cards (half the desired goal) was achieved by 2018"
         ]
       },
-      implementationAgency: "Ministry of Home Affairs"
+      implementationAgency: "National Election Commission"
     },
     payments: {
       title: "Digital Payments",
@@ -734,13 +734,14 @@ export const bangladeshData: CountryDetailData = {
       status: "Early Success",
       description: "Present: National E-Service Bus (DPI like)",
       modalDetails: {
-        fullContext: "The National E-Service Bus, implemented under the  Bangladesh National Digital Architecture (BNDA) is currently being used by 15 Bangladeshi government agencies, as of August 2025. The platform still requires upgrades for scaling and broader adoption. The World Bank group is assisting with the software upgrading of the bus, along with standardized API specifications, operational processes, and technical capacity for government agencies to leverage the platform for service delivery. The National Data Exchange (NDX) is another proposed forward looking data exchange system initiative, as of 2026",
+        fullContext: "The National Data Exchange (NDX) is a proposed forward looking data exchange system initiative, as of 2026. The National E-Service Bus, implemented under the Bangladesh National Digital Architecture (BNDA) is currently being used by 15 Bangladeshi government agencies, as of August 2025. The platform still requires upgrades for scaling and broader adoption. The World Bank group is assisting with the software upgrading of the bus, along with standardized API specifications, operational processes, and technical capacity for government agencies to leverage the platform for service delivery.",
         keyMetrics: [
+          "The National Data Exchange (NDX) (Proposed)",
           "National E-Service Bus (Ongoing)",
           "As of a document from August 2025, the National E-Service Bus was being used by around 15 government agencies including the NID agency, National Board of Revenue, BTRC, the Ministry of Agriculture, and the Office of the Registrar General. The platform still requires upgrades for scaling and broader adoption. The World Bank group is assisting with the software upgrading of the bus, along with standardized API specifications, operational processes, and technical capacity for government agencies to leverage the platform for service delivery"
         ]
       },
-      implementationAgency: "BNEA"
+      implementationAgency: "BNDA"
     },
     useCases: [
       {
@@ -820,8 +821,8 @@ export const bangladeshData: CountryDetailData = {
   },
   sectionB: {
     fundingLandscape: "Domestic budget (~$211m) supplemented by WB (EDGE, DISTAR) and ADB projects.",
-    electricityAccess: 100,
-    internetPenetration: 44.5,
+    electricityAccess: 99.5,
+    internetPenetration: 53,
     politicalStability: 'WB Political Stability: 40.90 percentile (40-60th range). Smart Bangladesh Vision 2041 institutionalises DT as state policy. (Source: WB WGI 2024)',
     electionCycles: "Elections recently concluded",
     politicalModalDetails: {
@@ -830,7 +831,7 @@ export const bangladeshData: CountryDetailData = {
         "Elections recently concluded"
       ]
     },
-    deviceAccess: 40,
+    deviceAccess: 98.9,
     digitalInclusion: "Higher access in urban areas (71.3% men, 62.4% women) vs rural (36.6% men, 23% women). Overall geographic divide: 66.8% vs 29.7%.",
     dataCenters: "36 total operational",
     leadershipQuote: {
@@ -1057,7 +1058,7 @@ export const bangladeshData: CountryDetailData = {
     opportunities: [
       {
         id: "bd-o1",
-        text: "Smart Bangladesh focuses on expanding citizens’ digital skills and access to services, digitizing government operations and service delivery, applying digital technologies across sectors such  and promoting technology-driven economic growth."
+        text: "Health digitisation is on the rise through unified identity and AI integration. Momentum in health is directed by the planned Universal Health ID and the Digital Health Strategy focusing on AI, telemedicine, and record interoperability"
       },
       {
         id: "bd-o2",
@@ -1065,7 +1066,7 @@ export const bangladeshData: CountryDetailData = {
       },
       {
         id: "bd-o3",
-        text: "Encompassing all 3 layers of DPI, Phygital Public Infrastructure also aims to bridge the gaps between marginalised groups and public services. These include aspiring youth, women; both urban and rural"
+        text: "Encompassing all 3 layers of DPI, Phygital Public Infrastructure also aims to bridge the gaps between marginalised groups and public services. These include aspiring youth, women; both urban and rural. 9,500 Digital Centers currently serve 6–7 million rural users monthly."
       }
     ],
     risks: [
