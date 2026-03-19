@@ -752,12 +752,8 @@ export const bangladeshData: CountryDetailData = {
         description: "Ekshop - Rural assisted e-commerce backbone with 12k+ artisans"
       },
       {
-        sector: "Language AI",
-        description: "Kagoj AI - Native Bangla AI platform and custom font (Julai)"
-      },
-      {
-        sector: "Agriculture",
-        description: "Krishi Batayan - Integrated information and service portal for farmers"
+        sector: "Government E-Services",
+        description: "Doptor - Integrated dashboard platform serving 14k+ government offices and 140k+ users across Bangladesh"
       }
     ]
   },
@@ -1158,20 +1154,8 @@ export const nepalData: CountryDetailData = {
     },
     useCases: [
       {
-        sector: "Traffic Management",
-        description: "AI-based intelligent traffic light system in Lalitpur"
-      },
-      {
-        sector: "Healthcare Data",
-        description: "SITA - AI platform for analyzing national health datasets"
-      },
-      {
-        sector: "Agriculture",
-        description: "Plantsat & Geokrishi - Satellite monitoring and data-driven farming apps"
-      },
-      {
-        sector: "Education",
-        description: "Cognify - Personalized cognitive learning app to reduce drop-out rates"
+        sector: "Government Services",
+        description: "Nagarik App - Single online e-governance platform offering 61+ public services to ~800k users"
       }
     ]
   },
